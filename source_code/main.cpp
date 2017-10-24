@@ -9,13 +9,10 @@ LIBSBML_CPP_NAMESPACE_USE
 int main (int argc, char* argv[])
 
 {
+    //Declare test input file
     const char* filename   = "/home/kevin/Downloads/test.xml";
-    SBMLDocument* document = readSBML(filename);
 
-    Model *model = document->getModel();
-    unsigned int errors = document->getNumErrors();
-    document->printErrors(std::cerr);
-
+    //Creating test output files
     std::ofstream output("test.txt");
     if(!output) {
         std::cerr << "Could not open output file." << std::endl;
@@ -34,27 +31,35 @@ int main (int argc, char* argv[])
         exit(1);
     }
 
-    output << "filename: "   << filename << "\n";
-    output << "validation error(s): "   << errors   << "\n";
+    //Read test input file with SBML
+    SBMLDocument* document = readSBML(filename);
+    Model *model = document->getModel();
+    unsigned int errors = document->getNumErrors();
+    document->printErrors(std::cerr);
 
     ListOfSpecies *spList = model->getListOfSpecies();
     ListOfReactions *reacList = model->getListOfReactions();
 
+    //Write basic information to output
+    output << "filename: "   << filename << "\n";
+    output << "validation error(s): "   << errors   << "\n";
     output << "number of metabolites:\t" << spList->size() << "\n";
     output << "number of reactions:\t" << reacList->size() << "\n";
 
+    //Create a GLPK problem with size #reactions and #metabolites
     glp_prob *lp;
     lp = glp_create_prob();
     glp_set_obj_dir(lp, GLP_MAX);
     glp_add_cols(lp, reacList->size());
     glp_add_rows(lp, spList->size());
 
+    //Create internal and external maps to link metabolite name to metabolite number
     std::map<std::string, int> environment;
     int envCount = 0;
     std::map<std::string, int> cytosol;
     int cytCount = 0;
 
-    // echo list of species
+    //Write metabolite and compartment data to output file
     output << "\nMETABOLITES\n\n";
     for(unsigned int i = 0u; i < spList->size(); ++i) {
 
@@ -64,6 +69,7 @@ int main (int argc, char* argv[])
         const char *spName_char = spName.c_str();
         glp_set_row_name(lp, i+1, spName_char);
 
+        //Store metabolite name and number in map
         if(spComp == "e") {
             environment[spName] = envCount;
             ++envCount;
@@ -89,10 +95,12 @@ int main (int argc, char* argv[])
         output2 << e.first << " : " << e.second << "\n";
     }
 
+    //Create arrays for GLPK stoichiometry matrix
     int ia[1+10000], ja[1+10000];
     double ar[1+10000];
     int matrixCount = 1;
-    // echo list of reactions
+
+    //Write reactions to output file
     output << "\nREACTIONS\n\n";
     for(unsigned int i = 0u; i < reacList->size(); ++i) {
         Reaction *reac = reacList->get(i);
@@ -108,6 +116,7 @@ int main (int argc, char* argv[])
                << "reversible? "<< (reac->getReversible() ? "Y\n" : "N\n")
                << "fast? " << (reac->getFast() ? "Y\n" : "N\n");
 
+        //For loop for substrates
         unsigned int m = reac->getListOfReactants()->size();
         output << "Reactants: " << m << "\n";
         for(unsigned int j = 0u; j < m; ++j) {
@@ -118,15 +127,17 @@ int main (int argc, char* argv[])
             output << (j == 0 ? "" : " + ");
             output   << reac->getReactant(j)->getStoichiometry()
                      << " " << subName << " " << subComp;
+
+            //Build stoichiometry matrix using maps.find() to get metabolite number
             if(subComp == "e") {
                 auto subNum = environment.find(subName);
-                ia[matrixCount] = subNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = subStoi;
+                ia[matrixCount] = subNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = subStoi; //should this sign be negative?
                 matrixCount++;
                 output3 << subComp << subNum->first << ", " << subNum->second << " ";
             }
             else if(subComp == "c") {
                 auto subNum = cytosol.find(subName);
-                ia[matrixCount] = subNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = subStoi;
+                ia[matrixCount] = subNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = subStoi; //should this sign be negative?
                 matrixCount++;
                 output3 << subComp << subNum->first << ", " << subNum->second << " ";
             }
@@ -136,6 +147,8 @@ int main (int argc, char* argv[])
             }
         }
         output3 << "--> ";
+
+        //For loop for products
         m = reac->getListOfProducts()->size();
         output << "\nProducts: " << m << "\n";
         for(unsigned int j = 0u; j < m; ++j) {
@@ -147,6 +160,7 @@ int main (int argc, char* argv[])
             output   << reac->getProduct(j)->getStoichiometry()
                      << " " << prodName << " " << prodComp;
 
+            //Build stoichiometry matrix using maps.find() to get metabolite number
             if(prodComp == "e") {
                 auto prodNum = environment.find(prodName);
                 ia[matrixCount] = prodNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = prodStoi;
@@ -172,10 +186,12 @@ int main (int argc, char* argv[])
         output << "\n\n";
     }
 
+    //Cout sparse matrix
     for(int i=1; i < matrixCount; i++){
-        std::cout << ia[i] << ", " << ja[i] << ", " << ar[i] << "\n";
+        std::cout << ia[i] << ", " << ja[i] << ", " << ar[i] << "\n"; //last reaction not sparse...?
     }
 
+    //Load and solve GLPK matrix
     glp_load_matrix(lp, matrixCount-1,ia,ja,ar);
     glp_simplex(lp, NULL);
 
