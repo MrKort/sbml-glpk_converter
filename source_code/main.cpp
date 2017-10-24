@@ -7,7 +7,6 @@
 LIBSBML_CPP_NAMESPACE_USE
 
 int main (int argc, char* argv[])
-
 {
     //Declare test input file
     const char* filename   = "/home/kevin/Downloads/test.xml";
@@ -18,13 +17,11 @@ int main (int argc, char* argv[])
         std::cerr << "Could not open output file." << std::endl;
         exit(1);
     }
-
     std::ofstream output2("test2.txt");
     if(!output2) {
         std::cerr << "Could not open output2 file." << std::endl;
         exit(1);
     }
-
     std::ofstream output3("test3.txt");
     if(!output3) {
         std::cerr << "Could not open output3 file." << std::endl;
@@ -96,7 +93,7 @@ int main (int argc, char* argv[])
     }
 
     //Create arrays for GLPK stoichiometry matrix
-    int ia[1+10000], ja[1+10000];
+    int ia[1+10000], ja[1+10000]; //need a good way to determine the size of the array from metabolite and reaction data...?
     double ar[1+10000];
     int matrixCount = 1;
 
@@ -131,13 +128,13 @@ int main (int argc, char* argv[])
             //Build stoichiometry matrix using maps.find() to get metabolite number
             if(subComp == "e") {
                 auto subNum = environment.find(subName);
-                ia[matrixCount] = subNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = subStoi; //should this sign be negative?
+                ia[matrixCount] = subNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = -subStoi;
                 matrixCount++;
                 output3 << subComp << subNum->first << ", " << subNum->second << " ";
             }
             else if(subComp == "c") {
                 auto subNum = cytosol.find(subName);
-                ia[matrixCount] = subNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = subStoi; //should this sign be negative?
+                ia[matrixCount] = subNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = -subStoi;
                 matrixCount++;
                 output3 << subComp << subNum->first << ", " << subNum->second << " ";
             }
