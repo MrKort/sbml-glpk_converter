@@ -9,7 +9,7 @@ LIBSBML_CPP_NAMESPACE_USE
 int main (int argc, char* argv[])
 {
     //Declare test input file
-    const char* filename   = "/home/kevin/Downloads/test.xml";
+    const char* filename   = "/home/kevin/Git/sbml-glpk_converter/test.xml";
 
     //Creating test output files
     std::ofstream output("test.txt");

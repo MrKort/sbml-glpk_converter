@@ -1,4 +1,4 @@
-filename: /home/kevin/Downloads/test.xml
+filename: /home/kevin/Git/sbml-glpk_converter/test.xml
 validation error(s): 0
 number of metabolites:	952
 number of reactions:	1069
