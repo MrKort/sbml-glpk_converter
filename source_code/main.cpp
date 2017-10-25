@@ -82,7 +82,7 @@ int main (int argc, char* argv[])
         output << i << " : " << spName << " " << spComp << "\n";
     }
 
-    //Cout metabolite maps with key and values
+    //Write metabolite maps with key and values to ouput file 2
     output2 << "internal metabolites:\n";
     for(const auto &c : cytosol){
         output2 << c.first << " : " << c.second << "\n";
@@ -192,6 +192,12 @@ int main (int argc, char* argv[])
     glp_load_matrix(lp, matrixCount-1,ia,ja,ar);
     glp_simplex(lp, NULL);
 
+    //Close output files
+    output.close();
+    output2.close();
+    output3.close();
+
+    //Delete SBML and GLPK elements
     delete document;
     glp_delete_prob(lp);
     return 0;

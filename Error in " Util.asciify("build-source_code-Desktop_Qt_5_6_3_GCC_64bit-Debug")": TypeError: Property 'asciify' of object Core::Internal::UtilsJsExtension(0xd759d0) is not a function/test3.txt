@@ -1,0 +1,3146 @@
+0 : R_23DHMPO:
+cM_23dhmp, 0 cM_nadp, 1 --> cM_3h3mop, 2 cM_h, 3 cM_nadph, 4 
+
+1 : R_26DAPLLAT:
+cM_akg, 5 cM_26dap_LL, 6 --> cM_h, 3 cM_h2o, 7 cM_glu_L, 8 cM_thdp, 9 
+
+2 : R_2AHBUTI:
+cM_2ahbut, 10 --> cM_3h3mop, 2 
+
+3 : R_2MBCOATA:
+cM_2mbcoa, 11 cM_ACP, 12 --> cM_coa, 13 cM_2mbutACP, 14 
+
+4 : R_3HAD10M12:
+cM_10m3hddcaACP, 15 --> cM_h2o, 7 cM_10mtddec2eACP, 16 
+
+5 : R_3HAD11M12:
+cM_11m3hddcaACP, 17 --> cM_h2o, 7 cM_11mtddec2eACP, 18 
+
+6 : R_3HAD12M14:
+cM_12m3hmyrsACP, 19 --> cM_h2o, 7 cM_12mtmrs2eACP, 20 
+
+7 : R_3HAD13M14:
+cM_13m3hmyrsACP, 21 --> cM_h2o, 7 cM_13mtmrs2eACP, 22 
+
+8 : R_3HAD14M16:
+cM_14m3hpalmACP, 23 --> cM_h2o, 7 cM_14mtpalm2eACP, 24 
+
+9 : R_3HAD15M16:
+cM_15m3hpalmACP, 25 --> cM_h2o, 7 cM_15mtpalm2eACP, 26 
+
+10 : R_3HAD4M6:
+cM_4m3hhexACP, 27 --> cM_h2o, 7 cM_4mthex2eACP, 28 
+
+11 : R_3HAD5M6:
+cM_5m3hhexACP, 29 --> cM_h2o, 7 cM_5mthex2eACP, 30 
+
+12 : R_3HAD6M8:
+cM_6m3hocACP, 31 --> cM_h2o, 7 cM_6mtoct2eACP, 32 
+
+13 : R_3HAD7M8:
+cM_7m3hocACP, 33 --> cM_h2o, 7 cM_7mtoct2eACP, 34 
+
+14 : R_3HAD8M10:
+cM_8m3hdcaACP, 35 --> cM_h2o, 7 cM_8mtdec2eACP, 36 
+
+15 : R_3HAD9M10:
+cM_9m3hdcaACP, 37 --> cM_h2o, 7 cM_9mtdec2eACP, 38 
+
+16 : R_3MOBS:
+cM_h, 3 cM_coa, 13 cM_3c3hmp, 39 --> cM_h2o, 7 cM_accoa, 40 cM_3mob, 41 
+
+17 : R_3OAR100:
+cM_h, 3 cM_nadph, 4 cM_3odecACP, 42 --> cM_nadp, 1 cM_3hdecACP, 43 
+
+18 : R_3OAR10M11:
+cM_h, 3 cM_nadph, 4 cM_10m3oundecACP, 44 --> cM_nadp, 1 cM_10m3hundecACP, 45 
+
+19 : R_3OAR10M12:
+cM_h, 3 cM_nadph, 4 cM_10m3oddcaACP, 46 --> cM_nadp, 1 cM_10m3hddcaACP, 15 
+
+20 : R_3OAR11M12:
+cM_h, 3 cM_nadph, 4 cM_11m3oddcaACP, 47 --> cM_nadp, 1 cM_11m3hddcaACP, 17 
+
+21 : R_3OAR120:
+cM_h, 3 cM_nadph, 4 cM_3oddecACP, 48 --> cM_nadp, 1 cM_3hddecACP, 49 
+
+22 : R_3OAR12M13:
+cM_h, 3 cM_nadph, 4 cM_12m3otridecACP, 50 --> cM_nadp, 1 cM_12m3htridecACP, 51 
+
+23 : R_3OAR12M14:
+cM_h, 3 cM_nadph, 4 cM_12m3omyrsACP, 52 --> cM_nadp, 1 cM_12m3hmyrsACP, 19 
+
+24 : R_3OAR13M14:
+cM_h, 3 cM_nadph, 4 cM_13m3omyrsACP, 53 --> cM_nadp, 1 cM_13m3hmyrsACP, 21 
+
+25 : R_3OAR140:
+cM_h, 3 cM_nadph, 4 cM_3omrsACP, 54 --> cM_nadp, 1 cM_3hmrsACP, 55 
+
+26 : R_3OAR14M15:
+cM_h, 3 cM_nadph, 4 cM_14m3opentdecACP, 56 --> cM_nadp, 1 cM_14m3hpentdecACP, 57 
+
+27 : R_3OAR14M16:
+cM_h, 3 cM_nadph, 4 cM_14m3opalmACP, 58 --> cM_nadp, 1 cM_14m3hpalmACP, 23 
+
+28 : R_3OAR15M16:
+cM_h, 3 cM_nadph, 4 cM_15m3opalmACP, 59 --> cM_nadp, 1 cM_15m3hpalmACP, 25 
+
+29 : R_3OAR160:
+cM_h, 3 cM_nadph, 4 cM_3opalmACP, 60 --> cM_nadp, 1 cM_3hpalmACP, 61 
+
+30 : R_3OAR180:
+cM_h, 3 cM_nadph, 4 cM_3ooctdACP, 62 --> cM_nadp, 1 cM_3hoctaACP, 63 
+
+31 : R_3OAR40:
+cM_h, 3 cM_nadph, 4 cM_actACP, 64 --> cM_nadp, 1 cM_3haACP, 65 
+
+32 : R_3OAR4M5:
+cM_h, 3 cM_nadph, 4 cM_4m3opentACP, 66 --> cM_nadp, 1 cM_4m3hpentACP, 67 
+
+33 : R_3OAR4M6:
+cM_h, 3 cM_nadph, 4 cM_4m3ohexACP, 68 --> cM_nadp, 1 cM_4m3hhexACP, 27 
+
+34 : R_3OAR5M6:
+cM_h, 3 cM_nadph, 4 cM_5m3ohexACP, 69 --> cM_nadp, 1 cM_5m3hhexACP, 29 
+
+35 : R_3OAR60:
+cM_h, 3 cM_nadph, 4 cM_3ohexACP, 70 --> cM_nadp, 1 cM_3hhexACP, 71 
+
+36 : R_3OAR6M7:
+cM_h, 3 cM_nadph, 4 cM_6m3oheptACP, 72 --> cM_nadp, 1 cM_6m3hheptACP, 73 
+
+37 : R_3OAR6M8:
+cM_h, 3 cM_nadph, 4 cM_6m3oocACP, 74 --> cM_nadp, 1 cM_6m3hocACP, 31 
+
+38 : R_3OAR7M8:
+cM_h, 3 cM_nadph, 4 cM_7m3oocACP, 75 --> cM_nadp, 1 cM_7m3hocACP, 33 
+
+39 : R_3OAR80:
+cM_h, 3 cM_nadph, 4 cM_3ooctACP, 76 --> cM_nadp, 1 cM_3hoctACP, 77 
+
+40 : R_3OAR8M10:
+cM_h, 3 cM_nadph, 4 cM_8m3odcaACP, 78 --> cM_nadp, 1 cM_8m3hdcaACP, 35 
+
+41 : R_3OAR8M9:
+cM_h, 3 cM_nadph, 4 cM_8m3ononACP, 79 --> cM_nadp, 1 cM_8m3hnonACP, 80 
+
+42 : R_3OAR9M10:
+cM_h, 3 cM_nadph, 4 cM_9m3odcaACP, 81 --> cM_nadp, 1 cM_9m3hdcaACP, 37 
+
+43 : R_3OAS100:
+cM_h, 3 cM_malACP, 82 cM_ocACP, 83 --> cM_ACP, 12 cM_3odecACP, 42 cM_co2, 84 
+
+44 : R_3OAS10M11:
+cM_h, 3 cM_malACP, 82 cM_10mundecACP, 85 --> cM_ACP, 12 cM_12m3otridecACP, 50 cM_co2, 84 
+
+45 : R_3OAS10M12:
+cM_h, 3 cM_malACP, 82 cM_10mddcaACP, 86 --> cM_ACP, 12 cM_12m3omyrsACP, 52 cM_co2, 84 
+
+46 : R_3OAS11M12:
+cM_h, 3 cM_malACP, 82 cM_11mddcaACP, 87 --> cM_ACP, 12 cM_13m3omyrsACP, 53 cM_co2, 84 
+
+47 : R_3OAS120:
+cM_h, 3 cM_malACP, 82 cM_dcaACP, 88 --> cM_ACP, 12 cM_3oddecACP, 48 cM_co2, 84 
+
+48 : R_3OAS12M13:
+cM_h, 3 cM_malACP, 82 cM_12mtridecACP, 89 --> cM_ACP, 12 cM_14m3opentdecACP, 56 cM_co2, 84 
+
+49 : R_3OAS12M14:
+cM_h, 3 cM_malACP, 82 cM_12mmyrsACP, 90 --> cM_ACP, 12 cM_14m3opalmACP, 58 cM_co2, 84 
+
+50 : R_3OAS13M14:
+cM_h, 3 cM_malACP, 82 cM_13mmyrsACP, 91 --> cM_ACP, 12 cM_15m3opalmACP, 59 cM_co2, 84 
+
+51 : R_3OAS140:
+cM_h, 3 cM_malACP, 82 cM_ddcaACP, 92 --> cM_ACP, 12 cM_3omrsACP, 54 cM_co2, 84 
+
+52 : R_3OAS160:
+cM_h, 3 cM_malACP, 82 cM_myrsACP, 93 --> cM_ACP, 12 cM_3opalmACP, 60 cM_co2, 84 
+
+53 : R_3OAS180:
+cM_h, 3 cM_malACP, 82 cM_palmACP, 94 --> cM_ACP, 12 cM_3ooctdACP, 62 cM_co2, 84 
+
+54 : R_3OAS2M3:
+cM_h, 3 cM_malACP, 82 cM_2mpropACP, 95 --> cM_ACP, 12 cM_4m3opentACP, 66 cM_co2, 84 
+
+55 : R_3OAS3M4:
+cM_h, 3 cM_malACP, 82 cM_3mbutACP, 96 --> cM_ACP, 12 cM_5m3ohexACP, 69 cM_co2, 84 
+
+56 : R_3OAS4M3O6:
+cM_h, 3 cM_2mbutACP, 14 cM_malACP, 82 --> cM_ACP, 12 cM_4m3ohexACP, 68 cM_co2, 84 
+
+57 : R_3OAS4M5:
+cM_h, 3 cM_malACP, 82 cM_4mpentACP, 97 --> cM_ACP, 12 cM_6m3oheptACP, 72 cM_co2, 84 
+
+58 : R_3OAS4M6:
+cM_h, 3 cM_malACP, 82 cM_4mhexACP, 98 --> cM_ACP, 12 cM_6m3oocACP, 74 cM_co2, 84 
+
+59 : R_3OAS5M6:
+cM_h, 3 cM_malACP, 82 cM_5mhexACP, 99 --> cM_ACP, 12 cM_7m3oocACP, 75 cM_co2, 84 
+
+60 : R_3OAS60:
+cM_h, 3 cM_malACP, 82 cM_butACP, 100 --> cM_ACP, 12 cM_3ohexACP, 70 cM_co2, 84 
+
+61 : R_3OAS6M7:
+cM_h, 3 cM_malACP, 82 cM_6mheptACP, 101 --> cM_ACP, 12 cM_8m3ononACP, 79 cM_co2, 84 
+
+62 : R_3OAS6M8:
+cM_h, 3 cM_malACP, 82 cM_6mocACP, 102 --> cM_ACP, 12 cM_8m3odcaACP, 78 cM_co2, 84 
+
+63 : R_3OAS7M8:
+cM_h, 3 cM_malACP, 82 cM_7mocACP, 103 --> cM_ACP, 12 cM_9m3odcaACP, 81 cM_co2, 84 
+
+64 : R_3OAS80:
+cM_h, 3 cM_malACP, 82 cM_hexACP, 104 --> cM_ACP, 12 cM_3ooctACP, 76 cM_co2, 84 
+
+65 : R_3OAS8M10:
+cM_h, 3 cM_malACP, 82 cM_8mdcaACP, 105 --> cM_ACP, 12 cM_10m3oddcaACP, 46 cM_co2, 84 
+
+66 : R_3OAS8M9:
+cM_h, 3 cM_malACP, 82 cM_8mnonACP, 106 --> cM_ACP, 12 cM_10m3oundecACP, 44 cM_co2, 84 
+
+67 : R_3OAS9M10:
+cM_h, 3 cM_malACP, 82 cM_9mdcaACP, 107 --> cM_ACP, 12 cM_11m3oddcaACP, 47 cM_co2, 84 
+
+68 : R_4HTHRS:
+cM_h2o, 7 cM_phthr, 108 --> cM_4hthr, 109 cM_pi, 110 
+
+69 : R_4NTPPH2:
+cM_h2o, 7 cM_HC01104, 111 --> cM_h, 3 cM_pi, 110 cM_pnp, 112 
+
+70 : R_5AIZCDC:
+cM_h, 3 cM_5aizc, 113 --> cM_co2, 84 cM_air, 114 
+
+71 : R_5MTHCYST:
+cM_h, 3 cM_ahcys, 115 cM_5mthglu, 116 --> cM_amet, 117 cM_thglu, 118 
+
+72 : R_6P3HXI:
+cM_ab6p3hxl, 119 --> cM_f6p, 120 
+
+73 : R_AACGLYDH:
+cM_h2o, 7 cM_nad, 121 cM_aacald, 122 --> cM_h, 3 cM_nadh, 123 cM_gly, 124 
+
+74 : R_AACOAT:
+cM_coa, 13 cM_atp, 125 cM_acac, 126 --> cM_aacoa, 127 cM_amp, 128 cM_ppi, 129 
+
+75 : R_AACPS7:
+cM_ACP, 12 cM_atp, 125 cM_ddca, 130 --> cM_ddcaACP, 92 cM_amp, 128 cM_ppi, 129 
+
+76 : R_ABTOXy:
+cM_nadp, 1 cM_abt, 131 --> cM_h, 3 cM_nadph, 4 cM_arab_L, 132 
+
+77 : R_ABUTD:
+cM_h2o, 7 cM_nad, 121 cM_4abutn, 133 --> cM_h, 3 cM_nadh, 123 cM_4abut, 134 
+
+78 : R_ABUTR:
+cM_nadp, 1 cM_h2o, 7 cM_4abutn, 133 --> cM_h, 3 cM_nadph, 4 cM_4abut, 134 
+
+79 : R_ACALD:
+cM_coa, 13 cM_nad, 121 cM_acald, 135 --> cM_h, 3 cM_accoa, 40 cM_nadh, 123 
+
+80 : R_ACALDt:
+eM_acald, 0 --> cM_acald, 135 
+
+81 : R_ACBIPGT:
+cM_h, 3 cM_adocbip, 136 cM_gtp, 137 --> cM_ppi, 129 cM_agdpcbi, 138 
+
+82 : R_ACCOACL:
+cM_accoa, 40 cM_btn_co2, 139 --> cM_apoC_Lys_btn, 140 cM_malcoa, 141 
+
+83 : R_ACGAMT:
+cM_uacgam, 142 cM_udcpp, 143 --> cM_ump, 144 cM_unaga, 145 
+
+84 : R_ACHBPL:
+cM_hethmpp, 146 cM_2obut, 147 --> cM_2ahbut, 10 cM_thmpp, 148 
+
+85 : R_ACKr:
+cM_atp, 125 cM_ac, 149 --> cM_actp, 150 cM_adp, 151 
+
+86 : R_ACLS_a:
+cM_h, 3 cM_thmpp, 148 cM_pyr, 152 --> cM_co2, 84 cM_hethmpp, 146 
+
+87 : R_ACLS_b:
+cM_thmpp, 148 cM_alac_S, 153 --> cM_hethmpp, 146 cM_pyr, 152 
+
+88 : R_ACNAMS:
+cM_h2o, 7 cM_pep, 154 cM_acmana, 155 --> cM_pi, 110 cM_acnam, 156 
+
+89 : R_ACOAAGPAT140:
+cM_1tdecg3p, 157 cM_tdcoa, 158 --> cM_coa, 13 cM_pa140, 159 
+
+90 : R_ACOAAGPAT160:
+cM_pmtcoa, 160 cM_1hdecg3p, 161 --> cM_coa, 13 cM_pa160, 162 
+
+91 : R_ACOAAGPAT180:
+cM_stcoa, 163 cM_1odecg3p, 164 --> cM_coa, 13 cM_pa180, 165 
+
+92 : R_ACOAAGPATAI15:
+cM_1aipdecg3p, 166 cM_aipdcoa, 167 --> cM_h, 3 cM_coa, 13 cM_paai15, 168 
+
+93 : R_ACOAAGPATAI17:
+cM_1aihpdecg3p, 169 cM_aihpdcoa, 170 --> cM_coa, 13 cM_paai17, 171 
+
+94 : R_ACOAAGPATI14:
+cM_itdcoa, 172 cM_1itdecg3p, 173 --> cM_h, 3 cM_coa, 13 cM_pai14, 174 
+
+95 : R_ACOAAGPATI15:
+cM_ipdcoa, 175 cM_1ipdecg3p, 176 --> cM_h, 3 cM_coa, 13 cM_pai15, 177 
+
+96 : R_ACOAAGPATI16:
+cM_ihdcoa, 178 cM_1ihdecg3p, 179 --> cM_h, 3 cM_coa, 13 cM_pai16, 180 
+
+97 : R_ACOAAGPATI17:
+cM_ihpdcoa, 181 cM_1ihpdecg3p, 182 --> cM_coa, 13 cM_pai17, 183 
+
+98 : R_ACOATA:
+cM_ACP, 12 cM_accoa, 40 --> cM_coa, 13 cM_acACP, 184 
+
+99 : R_ACPS1:
+cM_coa, 13 cM_apoACP, 185 --> cM_h, 3 cM_ACP, 12 cM_pap, 186 
+
+100 : R_ACtr:
+eM_ac, 1 --> cM_ac, 149 
+
+101 : R_ADK1:
+cM_atp, 125 cM_amp, 128 --> cM_adp, 151 
+
+102 : R_ADK10:
+cM_amp, 128 cM_dttp, 187 --> cM_adp, 151 cM_dtdp, 188 
+
+103 : R_ADK11:
+cM_amp, 128 cM_dutp, 189 --> cM_adp, 151 cM_dudp, 190 
+
+104 : R_ADK2:
+cM_amp, 128 cM_pppi, 191 --> cM_ppi, 129 cM_adp, 151 
+
+105 : R_ADK3:
+cM_amp, 128 cM_gtp, 137 --> cM_adp, 151 cM_gdp, 192 
+
+106 : R_ADK5:
+cM_amp, 128 cM_ctp, 193 --> cM_adp, 151 cM_cdp, 194 
+
+107 : R_ADK7:
+cM_amp, 128 cM_datp, 195 --> cM_adp, 151 cM_dadp, 196 
+
+108 : R_ADK8:
+cM_amp, 128 cM_dctp, 197 --> cM_adp, 151 cM_dcdp, 198 
+
+109 : R_ADK9:
+cM_amp, 128 cM_dgtp, 199 --> cM_adp, 151 cM_dgdp, 200 
+
+110 : R_ADNCYC:
+cM_atp, 125 --> cM_ppi, 129 cM_camp, 201 
+
+111 : R_ADNUC:
+cM_h2o, 7 cM_adn, 202 --> cM_ade, 203 cM_rib_D, 204 
+
+112 : R_ADOCBIK2:
+cM_gtp, 137 cM_adocbi, 205 --> cM_h, 3 cM_adocbip, 136 cM_gdp, 192 
+
+113 : R_ADOCBLS:
+cM_agdpcbi, 138 cM_rdmbzi, 206 --> cM_h, 3 cM_adocbl, 207 cM_gmp, 208 
+
+114 : R_ADOCBLabc:
+cM_h2o, 7 cM_atp, 125 eM_adocbl, 2 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_adocbl, 207 
+
+115 : R_ADPT:
+cM_ade, 203 cM_prpp, 209 --> cM_amp, 128 cM_ppi, 129 
+
+116 : R_ADSL1r:
+cM_dcamp, 210 --> cM_amp, 128 cM_fum, 211 
+
+117 : R_ADSL2r:
+cM_25aics, 212 --> cM_fum, 211 cM_aicar, 213 
+
+118 : R_ADSS:
+cM_gtp, 137 cM_asp_L, 214 cM_imp, 215 --> cM_h, 3 cM_pi, 110 cM_gdp, 192 cM_dcamp, 210 
+
+119 : R_AGDC:
+cM_h2o, 7 cM_acgam6p, 216 --> cM_ac, 149 cM_gam6p, 217 
+
+120 : R_AGMD:
+cM_h2o, 7 cM_agm, 218 --> cM_nh4, 219 cM_ncptrc, 220 
+
+121 : R_AGPAT120:
+cM_ddcaACP, 92 cM_1ddecg3p, 221 --> cM_ACP, 12 cM_pa120, 222 
+
+122 : R_AGPAT140:
+cM_myrsACP, 93 cM_1tdecg3p, 157 --> cM_ACP, 12 cM_pa140, 159 
+
+123 : R_AGPAT141:
+cM_1tdec7eg3p, 223 cM_tdeACP, 224 --> cM_ACP, 12 cM_pa141, 225 
+
+124 : R_AGPAT160:
+cM_palmACP, 94 cM_1hdecg3p, 161 --> cM_ACP, 12 cM_pa160, 162 
+
+125 : R_AGPAT161:
+cM_1hdec9eg3p, 226 cM_hdeACP, 227 --> cM_ACP, 12 cM_pa161, 228 
+
+126 : R_AGPAT180:
+cM_1odecg3p, 164 cM_ocdcaACP, 229 --> cM_ACP, 12 cM_pa180, 165 
+
+127 : R_AGPAT181:
+cM_1odec11eg3p, 230 cM_octeACP, 231 --> cM_ACP, 12 cM_pa181, 232 
+
+128 : R_AHCYSNS_r:
+cM_h2o, 7 cM_ahcys, 115 --> cM_ade, 203 cM_rhcys, 233 
+
+129 : R_AHEXASE3:
+cM_h2o, 7 cM_chtbs, 234 --> cM_acgam, 235 
+
+130 : R_AHSERL2:
+cM_achms, 236 cM_h2s, 237 --> cM_h, 3 cM_ac, 149 cM_hcys_L, 238 
+
+131 : R_AHSERL3:
+cM_achms, 236 cM_trdrd, 239 cM_tsul, 240 --> cM_h, 3 cM_ac, 149 cM_hcys_L, 238 cM_trdox, 241 cM_so3, 242 
+
+132 : R_AICART:
+cM_aicar, 213 cM_10fthf, 243 --> cM_fprica, 244 cM_thf, 245 
+
+133 : R_AIHDUDPMG:
+cM_udpg, 246 cM_12daihdglyc, 247 --> cM_h, 3 cM_udp, 248 cM_m12dahglyc, 249 
+
+134 : R_AIHDUPDG:
+cM_udpg, 246 cM_m12dahglyc, 249 --> cM_h, 3 cM_udp, 248 cM_diglcpgai17, 250 
+
+135 : R_AIHPDCOATA:
+cM_coa, 13 cM_14mpalmACP, 251 --> cM_ACP, 12 cM_aihpdcoa, 170 
+
+136 : R_AIPDCOATA:
+cM_coa, 13 cM_12mmyrsACP, 90 --> cM_ACP, 12 cM_aipdcoa, 167 
+
+137 : R_AIRC4:
+cM_air, 114 cM_atp, 125 cM_hco3, 252 --> cM_h, 3 cM_pi, 110 cM_5aizc, 113 cM_adp, 151 
+
+138 : R_AKP1:
+cM_h2o, 7 cM_ahdt, 253 --> cM_h, 3 cM_pi, 110 cM_dhnpt, 254 
+
+139 : R_ALAALA:
+cM_atp, 125 cM_ala_D, 255 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_alaala, 256 
+
+140 : R_ALAASP1c:
+cM_h2o, 7 cM_alaasp, 257 --> cM_asp_L, 214 cM_ala_L, 258 
+
+141 : R_ALAASPabc:
+cM_h2o, 7 cM_atp, 125 eM_alaasp, 3 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_alaasp, 257 
+
+142 : R_ALACI:
+cM_alac_S, 153 --> cM_33hmeoxobut, 259 
+
+143 : R_ALAGLN1c:
+cM_h2o, 7 cM_alagln, 260 --> cM_ala_L, 258 cM_gln_L, 261 
+
+144 : R_ALAGLNabc:
+cM_h2o, 7 cM_atp, 125 eM_alagln, 4 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_alagln, 260 
+
+145 : R_ALAGLU1c:
+cM_h2o, 7 cM_alaglu, 262 --> cM_glu_L, 8 cM_ala_L, 258 
+
+146 : R_ALAGLUabc:
+cM_h2o, 7 cM_atp, 125 eM_alaglu, 5 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_alaglu, 262 
+
+147 : R_ALAGLY1c:
+cM_h2o, 7 cM_alagly, 263 --> cM_gly, 124 cM_ala_L, 258 
+
+148 : R_ALAGLYabc:
+cM_h2o, 7 cM_atp, 125 eM_alagly, 6 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_alagly, 263 
+
+149 : R_ALAHIS1c:
+cM_h2o, 7 cM_alahis, 264 --> cM_ala_L, 258 cM_his_L, 265 
+
+150 : R_ALAHISabc:
+cM_h2o, 7 cM_atp, 125 eM_alahis, 7 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_alahis, 264 
+
+151 : R_ALALEU1c:
+cM_h2o, 7 cM_alaleu, 266 --> cM_ala_L, 258 cM_leu_L, 267 
+
+152 : R_ALALEUabc:
+cM_h2o, 7 cM_atp, 125 eM_alaleu, 8 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_alaleu, 266 
+
+153 : R_ALAPGPL:
+cM_atp, 125 cM_ala_D, 255 cM_prl45tca, 268 --> cM_h2o, 7 cM_amp, 128 cM_ppi, 129 cM_prl45tcaala, 269 
+
+154 : R_ALAR:
+cM_ala_L, 258 --> cM_ala_D, 255 
+
+155 : R_ALATHR1c:
+cM_h2o, 7 cM_alathr, 270 --> cM_ala_L, 258 cM_thr_L, 271 
+
+156 : R_ALATHRabc:
+cM_h2o, 7 cM_atp, 125 eM_alathr, 9 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_alathr, 270 
+
+157 : R_ALAt2r:
+eM_h, 10 eM_ala_L, 11 --> cM_h, 3 cM_ala_L, 258 
+
+158 : R_ALCD19:
+cM_h, 3 cM_nadh, 123 cM_glyald, 272 --> cM_nad, 121 cM_glyc, 273 
+
+159 : R_ALCD2x:
+cM_nad, 121 cM_etoh, 274 --> cM_h, 3 cM_nadh, 123 cM_acald, 135 
+
+160 : R_ALCD4:
+cM_nad, 121 cM_btoh, 275 --> cM_h, 3 cM_nadh, 123 cM_btal, 276 
+
+161 : R_ALDD2x:
+cM_h2o, 7 cM_nad, 121 cM_acald, 135 --> cM_h, 3 cM_nadh, 123 cM_ac, 149 
+
+162 : R_ALKP:
+cM_h2o, 7 cM_dhap, 277 --> cM_pi, 110 cM_dha, 278 
+
+163 : R_AMALT1:
+cM_malt, 279 cM_malttr, 280 --> cM_glc_D, 281 cM_maltttr, 282 
+
+164 : R_AMALT2:
+cM_malt, 279 cM_maltttr, 282 --> cM_glc_D, 281 cM_maltpt, 283 
+
+165 : R_AMALT3:
+cM_malt, 279 cM_maltpt, 283 --> cM_glc_D, 281 cM_malthx, 284 
+
+166 : R_AMALT4:
+cM_malt, 279 cM_malthx, 284 --> cM_glc_D, 281 cM_malthp, 285 
+
+167 : R_AMANAPEr:
+cM_acmanap, 286 --> cM_acgam6p, 216 
+
+168 : R_AMMQT7rev:
+cM_h, 3 cM_ahcys, 115 cM_mqn7, 287 --> cM_amet, 117 cM_2dmmq7, 288 
+
+169 : R_AMMQT8r:
+cM_amet, 117 cM_2dmmq8, 289 --> cM_h, 3 cM_ahcys, 115 cM_mqn8, 290 
+
+170 : R_AMPTASECG:
+cM_h2o, 7 cM_cgly, 291 --> cM_gly, 124 cM_cys_L, 292 
+
+171 : R_AMPTASEGC:
+cM_h2o, 7 cM_glycys, 293 --> cM_gly, 124 cM_cys_L, 292 
+
+172 : R_AOBUTDs:
+cM_h, 3 cM_2aobut, 294 --> cM_co2, 84 cM_aact, 295 
+
+173 : R_ARAI:
+cM_arab_L, 132 --> cM_rbl_L, 296 
+
+174 : R_ARBabc:
+cM_h2o, 7 cM_atp, 125 eM_arab_L, 12 --> cM_h, 3 cM_pi, 110 cM_arab_L, 132 cM_adp, 151 
+
+175 : R_ARGDC:
+cM_h, 3 cM_arg_L, 297 --> cM_co2, 84 cM_agm, 218 
+
+176 : R_ARGt2:
+eM_h, 10 eM_arg_L, 13 --> cM_h, 3 cM_arg_L, 297 
+
+177 : R_ARSENBt2:
+eM_h, 10 eM_arsenb, 14 --> cM_h, 3 cM_arsenb, 298 
+
+178 : R_ASAD:
+cM_nadp, 1 cM_pi, 110 cM_aspsa, 299 --> cM_h, 3 cM_nadph, 4 cM_4pasp, 300 
+
+179 : R_ASNS1:
+cM_h2o, 7 cM_atp, 125 cM_asp_L, 214 cM_gln_L, 261 --> cM_h, 3 cM_glu_L, 8 cM_amp, 128 cM_ppi, 129 cM_asn_L, 301 
+
+180 : R_ASNS2:
+cM_atp, 125 cM_asp_L, 214 cM_nh4, 219 --> cM_h, 3 cM_amp, 128 cM_ppi, 129 cM_asn_L, 301 
+
+181 : R_ASNt2r:
+eM_h, 10 eM_asn_L, 15 --> cM_h, 3 cM_asn_L, 301 
+
+182 : R_ASO3t:
+eM_aso3, 16 --> cM_aso3, 302 
+
+183 : R_ASO4t:
+eM_aso4, 17 --> cM_aso4, 303 
+
+184 : R_ASPCT:
+cM_asp_L, 214 cM_cbp, 304 --> cM_h, 3 cM_pi, 110 cM_cbasp, 305 
+
+185 : R_ASPKi:
+cM_atp, 125 cM_asp_L, 214 --> cM_adp, 151 cM_4pasp, 300 
+
+186 : R_ASPO1:
+cM_h2o, 7 cM_asp_L, 214 cM_o2, 306 --> cM_nh4, 219 cM_h2o2, 307 cM_oaa, 308 
+
+187 : R_ASPO5:
+cM_fum, 211 cM_asp_L, 214 --> cM_h, 3 cM_iasp, 309 cM_succ, 310 
+
+188 : R_ASPO6:
+cM_asp_L, 214 cM_o2, 306 --> cM_h, 3 cM_h2o2, 307 cM_iasp, 309 
+
+189 : R_ASPO7:
+cM_asp_L, 214 cM_fmn, 311 --> cM_h, 3 cM_iasp, 309 cM_fmnh2, 312 
+
+190 : R_ASPT:
+cM_asp_L, 214 --> cM_fum, 211 cM_nh4, 219 
+
+191 : R_ASPTA:
+cM_akg, 5 cM_asp_L, 214 --> cM_glu_L, 8 cM_oaa, 308 
+
+192 : R_ASPt2r:
+eM_h, 10 eM_asp_L, 18 --> cM_h, 3 cM_asp_L, 214 
+
+193 : R_ATPPRT:
+cM_atp, 125 cM_prpp, 209 --> cM_ppi, 129 cM_prbatp, 313 
+
+194 : R_ATPS4:
+cM_pi, 110 cM_adp, 151 eM_h, 10 --> cM_h, 3 cM_h2o, 7 cM_atp, 125 
+
+195 : R_BGLA:
+cM_h2o, 7 cM_cellb, 314 --> cM_glc_D, 281 
+
+196 : R_BGLAr:
+cM_h2o, 7 cM_cellb, 314 --> cM_glc_bD, 315 
+
+197 : R_BPNT:
+cM_h2o, 7 cM_pap, 186 --> cM_pi, 110 cM_amp, 128 
+
+198 : R_BTDD_RR:
+cM_nad, 121 cM_btd_RR, 316 --> cM_h, 3 cM_nadh, 123 cM_actn_R, 317 
+
+199 : R_BTNCLi:
+cM_atp, 125 cM_apoC_Lys_btn, 140 cM_hco3, 252 --> cM_h, 3 cM_pi, 110 cM_btn_co2, 139 cM_adp, 151 
+
+200 : R_BTNabc:
+cM_h2o, 7 cM_atp, 125 eM_btn, 19 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_btn, 318 
+
+201 : R_CAt4i:
+cM_h, 3 eM_ca2, 20 --> eM_h, 10 cM_ca2, 319 
+
+202 : R_CBIAT:
+cM_h, 3 cM_atp, 125 cM_cbi, 320 --> cM_pppi, 191 cM_adocbi, 205 
+
+203 : R_CBL1abc:
+cM_h2o, 7 cM_atp, 125 eM_cbl1, 21 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_cbl1, 321 
+
+204 : R_CBL2abc:
+cM_h2o, 7 cM_atp, 125 eM_cbl2, 22 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_cbl2, 322 
+
+205 : R_CBMK:
+cM_co2, 84 cM_atp, 125 cM_nh4, 219 --> cM_h, 3 cM_adp, 151 cM_cbp, 304 
+
+206 : R_CBPS:
+cM_h2o, 7 cM_atp, 125 cM_hco3, 252 cM_gln_L, 261 --> cM_h, 3 cM_glu_L, 8 cM_pi, 110 cM_adp, 151 cM_cbp, 304 
+
+207 : R_CD2abc1:
+cM_h2o, 7 cM_atp, 125 cM_cd2, 323 --> cM_h, 3 cM_pi, 110 cM_adp, 151 eM_cd2, 23 
+
+208 : R_CDPGLYCGPT:
+cM_acbdma14gapuc, 324 cM_cdpglyc, 325 --> cM_h, 3 cM_prl45tca, 268 cM_cmp, 326 
+
+209 : R_CDPMEK:
+cM_atp, 125 cM_4c2me, 327 --> cM_h, 3 cM_adp, 151 cM_2p4c2me, 328 
+
+210 : R_CGLYabc:
+cM_h2o, 7 cM_atp, 125 eM_cgly, 24 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_cgly, 291 
+
+211 : R_CHOLSH:
+cM_h2o, 7 cM_chols, 329 --> cM_h, 3 cM_chol, 330 cM_so4, 331 
+
+212 : R_CHORM:
+cM_chor, 332 --> cM_pphn, 333 
+
+213 : R_CHORS:
+cM_3psme, 334 --> cM_pi, 110 cM_chor, 332 
+
+214 : R_CHRPL:
+cM_chor, 332 --> cM_pyr, 152 cM_4hbz, 335 
+
+215 : R_CLPNS140:
+cM_pg140, 336 --> cM_glyc, 273 cM_clpn140, 337 
+
+216 : R_CLPNS160:
+cM_pg160, 338 --> cM_glyc, 273 cM_clpn160, 339 
+
+217 : R_CLPNS180:
+cM_pg180, 340 --> cM_glyc, 273 cM_clpn180, 341 
+
+218 : R_CLPNSAI15:
+cM_pgai15, 342 --> cM_glyc, 273 cM_clpnai15, 343 
+
+219 : R_CLPNSAI17:
+cM_pgai17, 344 --> cM_glyc, 273 cM_clpnai17, 345 
+
+220 : R_CLPNSI14:
+cM_pgi14, 346 --> cM_glyc, 273 cM_clpni14, 347 
+
+221 : R_CLPNSI15:
+cM_pgi15, 348 --> cM_glyc, 273 cM_clpni15, 349 
+
+222 : R_CLPNSI16:
+cM_pgi16, 350 --> cM_glyc, 273 cM_clpni16, 351 
+
+223 : R_CLPNSI17:
+cM_pgi17, 352 --> cM_glyc, 273 cM_clpni17, 353 
+
+224 : R_CMPSAS:
+cM_acnam, 156 cM_ctp, 193 --> cM_ppi, 129 cM_cmpacna, 354 
+
+225 : R_CO2t:
+eM_co2, 25 --> cM_co2, 84 
+
+226 : R_COBALTt5:
+cM_cobalt2, 355 --> eM_cobalt2, 26 
+
+227 : R_CPPPGO:
+cM_h, 3 cM_o2, 306 cM_cpppg3, 356 --> cM_h2o, 7 cM_co2, 84 cM_pppg9, 357 
+
+228 : R_CTPS1:
+cM_atp, 125 cM_nh4, 219 cM_utp, 358 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_ctp, 193 
+
+229 : R_CTPS2:
+cM_h2o, 7 cM_atp, 125 cM_gln_L, 261 cM_utp, 358 --> cM_h, 3 cM_glu_L, 8 cM_pi, 110 cM_adp, 151 cM_ctp, 193 
+
+230 : R_CYSDS:
+cM_h2o, 7 cM_cys_L, 292 --> cM_pyr, 152 cM_nh4, 219 cM_h2s, 237 
+
+231 : R_CYSS:
+cM_h2s, 237 cM_acser, 359 --> cM_h, 3 cM_ac, 149 cM_cys_L, 292 
+
+232 : R_CYSS3r:
+cM_trdrd, 239 cM_tsul, 240 cM_acser, 359 --> cM_h, 3 cM_ac, 149 cM_trdox, 241 cM_so3, 242 cM_cys_L, 292 
+
+233 : R_CYSTL:
+cM_h2o, 7 cM_cyst_L, 360 --> cM_pyr, 152 cM_nh4, 219 cM_hcys_L, 238 
+
+234 : R_CYSt2r:
+eM_h, 10 eM_cys_L, 27 --> cM_h, 3 cM_cys_L, 292 
+
+235 : R_CYTD:
+cM_h, 3 cM_h2o, 7 cM_cytd, 361 --> cM_nh4, 219 cM_uri, 362 
+
+236 : R_CYTDK1:
+cM_atp, 125 cM_cytd, 361 --> cM_h, 3 cM_adp, 151 cM_cmp, 326 
+
+237 : R_CYTDK2:
+cM_gtp, 137 cM_cytd, 361 --> cM_h, 3 cM_gdp, 192 cM_cmp, 326 
+
+238 : R_CYTDK3:
+cM_cytd, 361 cM_itp, 363 --> cM_h, 3 cM_cmp, 326 cM_idp, 364 
+
+239 : R_CYTDK4:
+cM_utp, 358 cM_cytd, 361 --> cM_h, 3 cM_udp, 248 cM_cmp, 326 
+
+240 : R_CYTK1:
+cM_atp, 125 cM_cmp, 326 --> cM_adp, 151 cM_cdp, 194 
+
+241 : R_CYTK2:
+cM_atp, 125 cM_dcmp, 365 --> cM_adp, 151 cM_dcdp, 198 
+
+242 : R_Cuabc:
+cM_h2o, 7 cM_atp, 125 eM_cu2, 28 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_cu2, 366 
+
+243 : R_Cut1:
+cM_h2o, 7 cM_atp, 125 cM_cu2, 366 --> cM_h, 3 cM_pi, 110 cM_adp, 151 eM_cu2, 28 
+
+244 : R_DAPDA:
+cM_h2o, 7 cM_n6all26d, 367 --> cM_26dap_LL, 6 cM_ac, 149 
+
+245 : R_DAPDC:
+cM_h, 3 cM_26dap_M, 368 --> cM_co2, 84 cM_lys_L, 369 
+
+246 : R_DAPE:
+cM_26dap_LL, 6 --> cM_26dap_M, 368 
+
+247 : R_DAPMDH:
+cM_nadp, 1 cM_h2o, 7 cM_26dap_M, 368 --> cM_h, 3 cM_nadph, 4 cM_nh4, 219 cM_l2a6o, 370 
+
+248 : R_DASYN120:
+cM_h, 3 cM_ctp, 193 cM_pa120, 222 --> cM_ppi, 129 cM_cdpdddecg, 371 
+
+249 : R_DASYN140:
+cM_h, 3 cM_pa140, 159 cM_ctp, 193 --> cM_ppi, 129 cM_cdpdtdecg, 372 
+
+250 : R_DASYN141:
+cM_h, 3 cM_ctp, 193 cM_pa141, 225 --> cM_ppi, 129 cM_cdpdtdec7eg, 373 
+
+251 : R_DASYN160:
+cM_h, 3 cM_pa160, 162 cM_ctp, 193 --> cM_ppi, 129 cM_cdpdhdecg, 374 
+
+252 : R_DASYN161:
+cM_h, 3 cM_ctp, 193 cM_pa161, 228 --> cM_ppi, 129 cM_cdpdhdec9eg, 375 
+
+253 : R_DASYN180:
+cM_h, 3 cM_pa180, 165 cM_ctp, 193 --> cM_ppi, 129 cM_cdpdodecg, 376 
+
+254 : R_DASYN181:
+cM_h, 3 cM_ctp, 193 cM_pa181, 232 --> cM_ppi, 129 cM_cdpdodec11eg, 377 
+
+255 : R_DASYNAI15:
+cM_h, 3 cM_paai15, 168 cM_ctp, 193 --> cM_ppi, 129 cM_cdpdaipdecg, 378 
+
+256 : R_DASYNAI17:
+cM_h, 3 cM_paai17, 171 cM_ctp, 193 --> cM_ppi, 129 cM_cdpdaihpdecg, 379 
+
+257 : R_DASYNI14:
+cM_h, 3 cM_pai14, 174 cM_ctp, 193 --> cM_ppi, 129 cM_cdpditdecg, 380 
+
+258 : R_DASYNI15:
+cM_h, 3 cM_pai15, 177 cM_ctp, 193 --> cM_ppi, 129 cM_cdpdipdecg, 381 
+
+259 : R_DASYNI16:
+cM_h, 3 cM_pai16, 180 cM_ctp, 193 --> cM_ppi, 129 cM_cdpdihdecg, 382 
+
+260 : R_DASYNI17:
+cM_h, 3 cM_pai17, 183 cM_ctp, 193 --> cM_ppi, 129 cM_cdpdihpdecg, 383 
+
+261 : R_DCMPDA:
+cM_h, 3 cM_h2o, 7 cM_dcmp, 365 --> cM_nh4, 219 cM_dump, 384 
+
+262 : R_DCYTD:
+cM_h, 3 cM_h2o, 7 cM_dcyt, 385 --> cM_nh4, 219 cM_duri, 386 
+
+263 : R_DDGLK:
+cM_atp, 125 cM_2ddglcn, 387 --> cM_h, 3 cM_adp, 151 cM_2ddg6p, 388 
+
+264 : R_DDPA:
+cM_h2o, 7 cM_pep, 154 cM_e4p, 389 --> cM_pi, 110 cM_2dda7p, 390 
+
+265 : R_DDPGA:
+cM_4h2oglt, 391 --> cM_pyr, 152 cM_glx, 392 
+
+266 : R_DEXTRINASE:
+cM_h2o, 7 cM_dextrin, 393 --> cM_glc_D, 281 
+
+267 : R_DEXTRINabc:
+cM_h2o, 7 cM_atp, 125 eM_dextrin, 29 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_dextrin, 393 
+
+268 : R_DGK1:
+cM_atp, 125 cM_dgmp, 394 --> cM_adp, 151 cM_dgdp, 200 
+
+269 : R_DHAD1:
+cM_23dhmb, 395 --> cM_h2o, 7 cM_3mob, 41 
+
+270 : R_DHAD2:
+cM_23dhmp, 0 --> cM_h2o, 7 cM_3mop, 396 
+
+271 : R_DHAK:
+cM_atp, 125 cM_dha, 278 --> cM_h, 3 cM_adp, 151 cM_dhap, 277 
+
+272 : R_DHAPT:
+cM_pep, 154 cM_dha, 278 --> cM_pyr, 152 cM_dhap, 277 
+
+273 : R_DHDPRy:
+cM_h, 3 cM_nadph, 4 cM_23dhdp, 397 --> cM_nadp, 1 cM_thdp, 9 
+
+274 : R_DHDPS:
+cM_pyr, 152 cM_aspsa, 299 --> cM_h, 3 cM_h2o, 7 cM_23dhdp, 397 
+
+275 : R_DHFOR2:
+cM_nadp, 1 cM_dhf, 398 --> cM_nadph, 4 cM_fol, 399 
+
+276 : R_DHFR:
+cM_h, 3 cM_nadph, 4 cM_dhf, 398 --> cM_nadp, 1 cM_thf, 245 
+
+277 : R_DHNAOT4:
+cM_h, 3 cM_dhna, 400 cM_octdp, 401 --> cM_co2, 84 cM_ppi, 129 cM_2dmmql8, 402 
+
+278 : R_DHNAOT7:
+cM_co2, 84 cM_nadh, 123 cM_ppi, 129 cM_2dmmq7, 288 --> cM_nad, 121 cM_dhna, 400 cM_hepdp, 403 
+
+279 : R_DHORD2:
+cM_dhor_S, 404 cM_q8, 405 --> cM_orot, 406 cM_q8h2, 407 
+
+280 : R_DHORD5:
+cM_mqn8, 290 cM_dhor_S, 404 --> cM_orot, 406 cM_mql8, 408 
+
+281 : R_DHORDfum:
+cM_fum, 211 cM_dhor_S, 404 --> cM_succ, 310 cM_orot, 406 
+
+282 : R_DHORDi:
+cM_o2, 306 cM_dhor_S, 404 --> cM_h2o2, 307 cM_orot, 406 
+
+283 : R_DHORTS:
+cM_h2o, 7 cM_dhor_S, 404 --> cM_h, 3 cM_cbasp, 305 
+
+284 : R_DHQS:
+cM_2dda7p, 390 --> cM_pi, 110 cM_3dhq, 409 
+
+285 : R_DHQTi:
+cM_3dhq, 409 --> cM_h2o, 7 cM_3dhsk, 410 
+
+286 : R_DMATT:
+cM_dmpp, 411 cM_ipdp, 412 --> cM_ppi, 129 cM_grdp, 413 
+
+287 : R_DMPPS:
+cM_h, 3 cM_nadh, 123 cM_h2mb4p, 414 --> cM_h2o, 7 cM_nad, 121 cM_dmpp, 411 
+
+288 : R_DMPPS2r:
+cM_h, 3 cM_nadph, 4 cM_h2mb4p, 414 --> cM_nadp, 1 cM_h2o, 7 cM_dmpp, 411 
+
+289 : R_DMQMT:
+cM_amet, 117 cM_2omhmbl, 415 --> cM_h, 3 cM_ahcys, 115 cM_q8h2, 407 
+
+290 : R_DM_atp_c_:
+cM_h2o, 7 cM_atp, 125 --> cM_h, 3 cM_pi, 110 cM_adp, 151 
+
+291 : R_DM_clpn180_LPAREN_c_RPAREN_:
+cM_clpn180, 341 --> 
+
+292 : R_DM_clpnai17_LPAREN_c_RPAREN_:
+cM_clpnai17, 345 --> 
+
+293 : R_DM_clpni17_LPAREN_c_RPAREN_:
+cM_clpni17, 353 --> 
+
+294 : R_DM_dhptd_LPAREN_c_RPAREN_:
+cM_dhptd, 416 --> 
+
+295 : R_DPCOAK:
+cM_atp, 125 cM_dpcoa, 417 --> cM_h, 3 cM_coa, 13 cM_adp, 151 
+
+296 : R_DPRr:
+cM_h, 3 cM_nadph, 4 cM_2dhp, 418 --> cM_nadp, 1 cM_pant_R, 419 
+
+297 : R_DRBK:
+cM_atp, 125 cM_drib, 420 --> cM_h, 3 cM_adp, 151 cM_2dr5p, 421 
+
+298 : R_DRIBabc:
+cM_h2o, 7 cM_atp, 125 eM_drib, 30 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_drib, 420 
+
+299 : R_DRPAr:
+cM_2dr5p, 421 --> cM_acald, 135 cM_g3p, 422 
+
+300 : R_DTMPK:
+cM_atp, 125 cM_dtmp, 423 --> cM_adp, 151 cM_dtdp, 188 
+
+301 : R_DURIK1:
+cM_atp, 125 cM_duri, 386 --> cM_h, 3 cM_adp, 151 cM_dump, 384 
+
+302 : R_DURIPP:
+cM_pi, 110 cM_duri, 386 --> cM_2dr1p, 424 cM_ura, 425 
+
+303 : R_DUTPDP:
+cM_h2o, 7 cM_dutp, 189 --> cM_h, 3 cM_ppi, 129 cM_dump, 384 
+
+304 : R_DXPRIr:
+cM_h, 3 cM_nadph, 4 cM_dxyl5p, 426 --> cM_nadp, 1 cM_2me4p, 427 
+
+305 : R_DXPS:
+cM_h, 3 cM_pyr, 152 cM_g3p, 422 --> cM_co2, 84 cM_dxyl5p, 426 
+
+306 : R_D_LACt2:
+eM_h, 10 eM_lac_D, 31 --> cM_h, 3 cM_lac_D, 428 
+
+307 : R_E4PD:
+cM_h2o, 7 cM_nad, 121 cM_e4p, 389 --> cM_h, 3 cM_nadh, 123 cM_4per, 429 
+
+308 : R_EAR10M12:
+cM_h, 3 cM_nadph, 4 cM_10mtddec2eACP, 16 --> cM_nadp, 1 cM_10mddcaACP, 86 
+
+309 : R_EAR11M12:
+cM_h, 3 cM_nadph, 4 cM_11mtddec2eACP, 18 --> cM_nadp, 1 cM_11mddcaACP, 87 
+
+310 : R_EAR12M14:
+cM_h, 3 cM_nadph, 4 cM_12mtmrs2eACP, 20 --> cM_nadp, 1 cM_12mmyrsACP, 90 
+
+311 : R_EAR13M14:
+cM_h, 3 cM_nadph, 4 cM_13mtmrs2eACP, 22 --> cM_nadp, 1 cM_13mmyrsACP, 91 
+
+312 : R_EAR14M16:
+cM_h, 3 cM_nadph, 4 cM_14mtpalm2eACP, 24 --> cM_nadp, 1 cM_14mpalmACP, 251 
+
+313 : R_EAR15M16:
+cM_h, 3 cM_nadph, 4 cM_15mtpalm2eACP, 26 --> cM_nadp, 1 cM_15mpalmACP, 430 
+
+314 : R_EAR4M6:
+cM_h, 3 cM_nadph, 4 cM_4mthex2eACP, 28 --> cM_nadp, 1 cM_4mhexACP, 98 
+
+315 : R_EAR5M6:
+cM_h, 3 cM_nadph, 4 cM_5mthex2eACP, 30 --> cM_nadp, 1 cM_5mhexACP, 99 
+
+316 : R_EAR6M8x:
+cM_h, 3 cM_6mtoct2eACP, 32 cM_nadh, 123 --> cM_6mocACP, 102 cM_nad, 121 
+
+317 : R_EAR7M8:
+cM_h, 3 cM_nadph, 4 cM_7mtoct2eACP, 34 --> cM_nadp, 1 cM_7mocACP, 103 
+
+318 : R_EAR8M10:
+cM_h, 3 cM_nadph, 4 cM_8mtdec2eACP, 36 --> cM_nadp, 1 cM_8mdcaACP, 105 
+
+319 : R_EAR9M10:
+cM_h, 3 cM_nadph, 4 cM_9mtdec2eACP, 38 --> cM_nadp, 1 cM_9mdcaACP, 107 
+
+320 : R_EDA_R:
+cM_2ddg6p, 388 --> cM_pyr, 152 cM_g3p, 422 
+
+321 : R_EHGLAT:
+cM_akg, 5 cM_e4hglu, 431 --> cM_glu_L, 8 cM_4h2oglt, 391 
+
+322 : R_ENO:
+cM_2pg, 432 --> cM_h2o, 7 cM_pep, 154 
+
+323 : R_ETOHt:
+eM_etoh, 32 --> cM_etoh, 274 
+
+324 : R_EX_4abut_LPAREN_e_RPAREN_:
+eM_4abut, 33 --> 
+
+325 : R_EX_ac_LPAREN_e_RPAREN_:
+eM_ac, 1 --> 
+
+326 : R_EX_acald_LPAREN_e_RPAREN_:
+eM_acald, 0 --> 
+
+327 : R_EX_adpcbl_LPAREN_e_RPAREN_:
+eM_adocbl, 2 --> 
+
+328 : R_EX_ala_L_LPAREN_e_RPAREN_:
+eM_ala_L, 11 --> 
+
+329 : R_EX_alaasp_LPAREN_e_RPAREN_:
+eM_alaasp, 3 --> 
+
+330 : R_EX_alagln_LPAREN_e_RPAREN_:
+eM_alagln, 4 --> 
+
+331 : R_EX_alaglu_LPAREN_e_RPAREN_:
+eM_alaglu, 5 --> 
+
+332 : R_EX_alagly_LPAREN_e_RPAREN_:
+eM_alagly, 6 --> 
+
+333 : R_EX_alahis_LPAREN_e_RPAREN_:
+eM_alahis, 7 --> 
+
+334 : R_EX_alaleu_LPAREN_e_RPAREN_:
+eM_alaleu, 8 --> 
+
+335 : R_EX_alathr_LPAREN_e_RPAREN_:
+eM_alathr, 9 --> 
+
+336 : R_EX_arab_L_LPAREN_e_RPAREN_:
+eM_arab_L, 12 --> 
+
+337 : R_EX_arg_L_LPAREN_e_RPAREN_:
+eM_arg_L, 13 --> 
+
+338 : R_EX_arsenb_LPAREN_e_RPAREN_:
+eM_arsenb, 14 --> 
+
+339 : R_EX_asn_L_LPAREN_e_RPAREN_:
+eM_asn_L, 15 --> 
+
+340 : R_EX_aso3_LPAREN_e_RPAREN_:
+eM_aso3, 16 --> 
+
+341 : R_EX_aso4_LPAREN_e_RPAREN_:
+eM_aso4, 17 --> 
+
+342 : R_EX_asp_L_LPAREN_e_RPAREN_:
+eM_asp_L, 18 --> 
+
+343 : R_EX_biomass_LPAREN_e_RPAREN_:
+cM_biomass, 433 --> 
+
+344 : R_EX_btn_LPAREN_e_RPAREN_:
+eM_btn, 19 --> 
+
+345 : R_EX_ca2_LPAREN_e_RPAREN_:
+eM_ca2, 20 --> 
+
+346 : R_EX_cbl1_LPAREN_e_RPAREN_:
+eM_cbl1, 21 --> 
+
+347 : R_EX_cbl2_LPAREN_e_RPAREN_:
+eM_cbl2, 22 --> 
+
+348 : R_EX_cd2_LPAREN_e_RPAREN_:
+eM_cd2, 23 --> 
+
+349 : R_EX_cgly_LPAREN_e_RPAREN_:
+eM_cgly, 24 --> 
+
+350 : R_EX_cit_LPAREN_e_RPAREN_:
+eM_cit, 34 --> 
+
+351 : R_EX_cl_LPAREN_e_RPAREN_:
+eM_cl, 35 --> 
+
+352 : R_EX_co2_LPAREN_e_RPAREN_:
+eM_co2, 25 --> 
+
+353 : R_EX_cobalt2_LPAREN_e_RPAREN_:
+eM_cobalt2, 26 --> 
+
+354 : R_EX_cu2_LPAREN_e_RPAREN_:
+eM_cu2, 28 --> 
+
+355 : R_EX_cys_L_LPAREN_e_RPAREN_:
+eM_cys_L, 27 --> 
+
+356 : R_EX_dextrin_LPAREN_e_RPAREN_:
+eM_dextrin, 29 --> 
+
+357 : R_EX_drib_LPAREN_e_RPAREN_:
+eM_drib, 30 --> 
+
+358 : R_EX_etoh_LPAREN_e_RPAREN_:
+eM_etoh, 32 --> 
+
+359 : R_EX_fe2_LPAREN_e_RPAREN_:
+eM_fe2, 36 --> 
+
+360 : R_EX_fe3_LPAREN_e_RPAREN_:
+eM_fe3, 37 --> 
+
+361 : R_EX_fol_LPAREN_e_RPAREN_:
+eM_fol, 38 --> 
+
+362 : R_EX_for_LPAREN_e_RPAREN_:
+eM_for, 39 --> 
+
+363 : R_EX_gal_LPAREN_e_RPAREN_:
+eM_gal, 40 --> 
+
+364 : R_EX_glc_LPAREN_e_RPAREN_:
+eM_glc_D, 41 --> 
+
+365 : R_EX_gln_L_LPAREN_e_RPAREN_:
+eM_gln_L, 42 --> 
+
+366 : R_EX_glu_L_LPAREN_e_RPAREN_:
+eM_glu_L, 43 --> 
+
+367 : R_EX_gly_LPAREN_e_RPAREN_:
+eM_gly, 44 --> 
+
+368 : R_EX_glyasn_LPAREN_e_RPAREN_:
+eM_glyasn, 45 --> 
+
+369 : R_EX_glyasp_LPAREN_e_RPAREN_:
+eM_glyasp, 46 --> 
+
+370 : R_EX_glyb_LPAREN_e_RPAREN_:
+eM_glyb, 47 --> 
+
+371 : R_EX_glyc3p_LPAREN_e_RPAREN_:
+eM_glyc3p, 48 --> 
+
+372 : R_EX_glycys_LPAREN_e_RPAREN_:
+eM_glycys, 49 --> 
+
+373 : R_EX_glygln_LPAREN_e_RPAREN_:
+eM_glygln, 50 --> 
+
+374 : R_EX_glyglu_LPAREN_e_RPAREN_:
+eM_glyglu, 51 --> 
+
+375 : R_EX_glyleu_LPAREN_e_RPAREN_:
+eM_glyleu, 52 --> 
+
+376 : R_EX_glymet_LPAREN_e_RPAREN_:
+eM_glymet, 53 --> 
+
+377 : R_EX_glyphe_LPAREN_e_RPAREN_:
+eM_glyphe, 54 --> 
+
+378 : R_EX_glypro_LPAREN_e_RPAREN_:
+eM_glypro, 55 --> 
+
+379 : R_EX_glytyr_LPAREN_e_RPAREN_:
+eM_glytyr, 56 --> 
+
+380 : R_EX_h_LPAREN_e_RPAREN_:
+eM_h, 10 --> 
+
+381 : R_EX_h2o_LPAREN_e_RPAREN_:
+eM_h2o, 57 --> 
+
+382 : R_EX_hg2_LPAREN_e_RPAREN_:
+eM_hg2, 58 --> 
+
+383 : R_EX_his_L_LPAREN_e_RPAREN_:
+eM_his_L, 59 --> 
+
+384 : R_EX_hxan_LPAREN_e_RPAREN_:
+eM_hxan, 60 --> 
+
+385 : R_EX_ile_L_LPAREN_e_RPAREN_:
+eM_ile_L, 61 --> 
+
+386 : R_EX_k_LPAREN_e_RPAREN_:
+eM_k, 62 --> 
+
+387 : R_EX_lac_D_LPAREN_e_RPAREN_:
+eM_lac_D, 31 --> 
+
+388 : R_EX_lac_L_LPAREN_e_RPAREN_:
+eM_lac_L, 63 --> 
+
+389 : R_EX_lcts_LPAREN_e_RPAREN_:
+eM_lcts, 64 --> 
+
+390 : R_EX_leu_L_LPAREN_e_RPAREN_:
+eM_leu_L, 65 --> 
+
+391 : R_EX_lys_L_LPAREN_e_RPAREN_:
+eM_lys_L, 66 --> 
+
+392 : R_EX_malt_LPAREN_e_RPAREN_:
+eM_malt, 67 --> 
+
+393 : R_EX_malthx_LPAREN_e_RPAREN_:
+eM_malthx, 68 --> 
+
+394 : R_EX_malttr_LPAREN_e_RPAREN_:
+eM_malttr, 69 --> 
+
+395 : R_EX_mantr_LPAREN_e_RPAREN_:
+eM_mantr, 70 --> 
+
+396 : R_EX_met_D_LPAREN_e_RPAREN_:
+eM_met_D, 71 --> 
+
+397 : R_EX_met_L_LPAREN_e_RPAREN_:
+eM_met_L, 72 --> 
+
+398 : R_EX_metala_LPAREN_e_RPAREN_:
+eM_metala, 73 --> 
+
+399 : R_EX_metsox_R_L_LPAREN_e_RPAREN_:
+eM_metsox_R_L, 74 --> 
+
+400 : R_EX_metsox_S_L_LPAREN_e_RPAREN_:
+eM_metsox_S_L, 75 --> 
+
+401 : R_EX_mg2_LPAREN_e_RPAREN_:
+eM_mg2, 76 --> 
+
+402 : R_EX_mn2_LPAREN_e_RPAREN_:
+eM_mn2, 77 --> 
+
+403 : R_EX_mqn7_LPAREN_e_RPAREN_:
+eM_mqn7, 78 --> 
+
+404 : R_EX_na1_LPAREN_e_RPAREN_:
+eM_na1, 79 --> 
+
+405 : R_EX_nac_LPAREN_e_RPAREN_:
+eM_nac, 80 --> 
+
+406 : R_EX_nh4_LPAREN_e_RPAREN_:
+eM_nh4, 81 --> 
+
+407 : R_EX_o2_LPAREN_e_RPAREN_:
+eM_o2, 82 --> 
+
+408 : R_EX_ocdca_LPAREN_e_RPAREN_:
+eM_ocdca, 83 --> 
+
+409 : R_EX_orn_LPAREN_e_RPAREN_:
+eM_orn, 84 --> 
+
+410 : R_EX_pb_LPAREN_e_RPAREN_:
+eM_pb, 85 --> 
+
+411 : R_EX_phe_L_LPAREN_e_RPAREN_:
+eM_phe_L, 86 --> 
+
+412 : R_EX_pheme_LPAREN_e_RPAREN_:
+eM_pheme, 87 --> 
+
+413 : R_EX_pi_LPAREN_e_RPAREN_:
+eM_pi, 88 --> 
+
+414 : R_EX_pnto_R_LPAREN_e_RPAREN_:
+eM_pnto_R, 89 --> 
+
+415 : R_EX_pro_L_LPAREN_e_RPAREN_:
+eM_pro_L, 90 --> 
+
+416 : R_EX_pullulan1200_LPAREN_e_RPAREN_:
+eM_pullulan1200, 91 --> 
+
+417 : R_EX_pydx_LPAREN_e_RPAREN_:
+eM_pydx, 92 --> 
+
+418 : R_EX_rib_D_LPAREN_e_RPAREN_:
+eM_rib_D, 93 --> 
+
+419 : R_EX_ribflv_LPAREN_e_RPAREN_:
+eM_ribflv, 94 --> 
+
+420 : R_EX_ser_L_LPAREN_e_RPAREN_:
+eM_ser_L, 95 --> 
+
+421 : R_EX_sheme_LPAREN_e_RPAREN_:
+eM_sheme, 96 --> 
+
+422 : R_EX_so4_LPAREN_e_RPAREN_:
+eM_so4, 97 --> 
+
+423 : R_EX_spmd_LPAREN_e_RPAREN_:
+eM_spmd, 98 --> 
+
+424 : R_EX_stys_LPAREN_e_RPAREN_:
+eM_stys, 99 --> 
+
+425 : R_EX_succ_LPAREN_e_RPAREN_:
+eM_succ, 100 --> 
+
+426 : R_EX_sucr_LPAREN_e_RPAREN_:
+eM_sucr, 101 --> 
+
+427 : R_EX_taur_LPAREN_e_RPAREN_:
+eM_taur, 102 --> 
+
+428 : R_EX_thm_LPAREN_e_RPAREN_:
+eM_thm, 103 --> 
+
+429 : R_EX_thr_L_LPAREN_e_RPAREN_:
+eM_thr_L, 104 --> 
+
+430 : R_EX_thymd_LPAREN_e_RPAREN_:
+eM_thymd, 105 --> 
+
+431 : R_EX_tma_LPAREN_e_RPAREN_:
+eM_tma, 106 --> 
+
+432 : R_EX_tre_LPAREN_e_RPAREN_:
+eM_tre, 107 --> 
+
+433 : R_EX_trp_L_LPAREN_e_RPAREN_:
+eM_trp_L, 108 --> 
+
+434 : R_EX_tyr_L_LPAREN_e_RPAREN_:
+eM_tyr_L, 109 --> 
+
+435 : R_EX_val_L_LPAREN_e_RPAREN_:
+eM_val_L, 110 --> 
+
+436 : R_EX_xyl_D_LPAREN_e_RPAREN_:
+eM_xyl_D, 111 --> 
+
+437 : R_EX_zn2_LPAREN_e_RPAREN_:
+eM_zn2, 112 --> 
+
+438 : R_FACOAL140:
+cM_coa, 13 cM_atp, 125 cM_ttdca, 434 --> cM_amp, 128 cM_ppi, 129 cM_tdcoa, 158 
+
+439 : R_FACOAL160:
+cM_coa, 13 cM_atp, 125 cM_hdca, 435 --> cM_amp, 128 cM_ppi, 129 cM_pmtcoa, 160 
+
+440 : R_FACOAL161:
+cM_coa, 13 cM_atp, 125 cM_hdcea, 436 --> cM_amp, 128 cM_ppi, 129 cM_hdcoa, 437 
+
+441 : R_FACOAL180:
+cM_coa, 13 cM_atp, 125 cM_ocdca, 438 --> cM_amp, 128 cM_ppi, 129 cM_stcoa, 163 
+
+442 : R_FACOAL181:
+cM_coa, 13 cM_atp, 125 cM_ocdcea, 439 --> cM_amp, 128 cM_ppi, 129 cM_odecoa, 440 
+
+443 : R_FACOALAI15:
+cM_coa, 13 cM_atp, 125 cM_fa4, 441 --> cM_amp, 128 cM_ppi, 129 cM_aipdcoa, 167 
+
+444 : R_FACOALAI17:
+cM_coa, 13 cM_atp, 125 cM_fa12, 442 --> cM_amp, 128 cM_ppi, 129 cM_aihpdcoa, 170 
+
+445 : R_FACOALI14:
+cM_coa, 13 cM_atp, 125 cM_fa1, 443 --> cM_amp, 128 cM_ppi, 129 cM_itdcoa, 172 
+
+446 : R_FACOALI15:
+cM_coa, 13 cM_atp, 125 cM_fa3, 444 --> cM_amp, 128 cM_ppi, 129 cM_ipdcoa, 175 
+
+447 : R_FACOALI16:
+cM_coa, 13 cM_atp, 125 cM_fa6, 445 --> cM_amp, 128 cM_ppi, 129 cM_ihdcoa, 178 
+
+448 : R_FACOALI17:
+cM_coa, 13 cM_atp, 125 cM_fa11, 446 --> cM_amp, 128 cM_ppi, 129 cM_ihpdcoa, 181 
+
+449 : R_FBA:
+cM_fdp, 447 --> cM_dhap, 277 cM_g3p, 422 
+
+450 : R_FBA2:
+cM_f1p, 448 --> cM_glyald, 272 cM_dhap, 277 
+
+451 : R_FBA3:
+cM_s17bp, 449 --> cM_dhap, 277 cM_e4p, 389 
+
+452 : R_FCI:
+cM_fuc_L, 450 --> cM_fcl_L, 451 
+
+453 : R_FCLK:
+cM_atp, 125 cM_fcl_L, 451 --> cM_h, 3 cM_adp, 151 cM_fc1p, 452 
+
+454 : R_FCLPA:
+cM_fc1p, 452 --> cM_dhap, 277 cM_lald_L, 453 
+
+455 : R_FE2abc:
+cM_h2o, 7 cM_atp, 125 eM_fe2, 36 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_fe2, 454 
+
+456 : R_FE3abc:
+cM_h2o, 7 cM_atp, 125 eM_fe3, 37 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_fe3, 455 
+
+457 : R_FEDCabc:
+cM_h2o, 7 cM_atp, 125 eM_cit, 34 eM_fe3, 37 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_fe3, 455 cM_cit, 456 
+
+458 : R_FERO:
+cM_h, 3 cM_o2, 306 cM_fe2, 454 --> cM_h2o, 7 cM_fe3, 455 
+
+459 : R_FFSD:
+cM_h2o, 7 cM_suc6p, 457 --> cM_fru, 458 cM_g6p, 459 
+
+460 : R_FMNAT:
+cM_h, 3 cM_atp, 125 cM_fmn, 311 --> cM_ppi, 129 cM_fad, 460 
+
+461 : R_FOLt:
+eM_h, 10 eM_fol, 38 --> cM_h, 3 cM_fol, 399 
+
+462 : R_FORTHFC:
+cM_h, 3 cM_5forthf, 461 --> cM_nh4, 219 cM_methf, 462 
+
+463 : R_FORt2r:
+eM_h, 10 eM_for, 39 --> cM_h, 3 cM_for, 463 
+
+464 : R_FRD2:
+cM_fum, 211 cM_mql8, 408 --> cM_mqn8, 290 cM_succ, 310 
+
+465 : R_FRD3:
+cM_fum, 211 cM_2dmmql8, 402 --> cM_2dmmq8, 289 cM_succ, 310 
+
+466 : R_FRD7:
+cM_fum, 211 cM_q8h2, 407 --> cM_succ, 310 cM_q8, 405 
+
+467 : R_FRTT:
+cM_ipdp, 412 cM_frdp, 464 --> cM_ppi, 129 cM_ggdp, 465 
+
+468 : R_FT:
+cM_ipdp, 412 cM_frdp, 464 --> cM_ppi, 129 cM_ttc_ggdp, 466 
+
+469 : R_FTHFCL:
+cM_atp, 125 cM_5fthf, 467 --> cM_pi, 110 cM_adp, 151 cM_methf, 462 
+
+470 : R_FTHFL:
+cM_atp, 125 cM_thf, 245 cM_for, 463 --> cM_pi, 110 cM_adp, 151 cM_10fthf, 243 
+
+471 : R_FUM:
+cM_h2o, 7 cM_fum, 211 --> cM_mal_L, 468 
+
+472 : R_G1PACT:
+cM_accoa, 40 cM_gam1p, 469 --> cM_h, 3 cM_coa, 13 cM_acgam1p, 470 
+
+473 : R_G1PTT:
+cM_h, 3 cM_dttp, 187 cM_g1p, 471 --> cM_ppi, 129 cM_dtdpglu, 472 
+
+474 : R_G3PAT120:
+cM_ddcaACP, 92 cM_glyc3p, 473 --> cM_ACP, 12 cM_1ddecg3p, 221 
+
+475 : R_G3PAT140:
+cM_myrsACP, 93 cM_glyc3p, 473 --> cM_ACP, 12 cM_1tdecg3p, 157 
+
+476 : R_G3PAT141:
+cM_tdeACP, 224 cM_glyc3p, 473 --> cM_ACP, 12 cM_1tdec7eg3p, 223 
+
+477 : R_G3PAT160:
+cM_palmACP, 94 cM_glyc3p, 473 --> cM_ACP, 12 cM_1hdecg3p, 161 
+
+478 : R_G3PAT161:
+cM_hdeACP, 227 cM_glyc3p, 473 --> cM_ACP, 12 cM_1hdec9eg3p, 226 
+
+479 : R_G3PAT180:
+cM_ocdcaACP, 229 cM_glyc3p, 473 --> cM_ACP, 12 cM_1odecg3p, 164 
+
+480 : R_G3PAT181:
+cM_octeACP, 231 cM_glyc3p, 473 --> cM_ACP, 12 cM_1odec11eg3p, 230 
+
+481 : R_G3PATAI15:
+cM_h, 3 cM_aipdcoa, 167 cM_glyc3p, 473 --> cM_coa, 13 cM_1aipdecg3p, 166 
+
+482 : R_G3PATAI17:
+cM_aihpdcoa, 170 cM_glyc3p, 473 --> cM_coa, 13 cM_1aihpdecg3p, 169 
+
+483 : R_G3PATI14:
+cM_h, 3 cM_itdcoa, 172 cM_glyc3p, 473 --> cM_coa, 13 cM_1itdecg3p, 173 
+
+484 : R_G3PATI15:
+cM_h, 3 cM_ipdcoa, 175 cM_glyc3p, 473 --> cM_coa, 13 cM_1ipdecg3p, 176 
+
+485 : R_G3PATI16:
+cM_h, 3 cM_ihdcoa, 178 cM_glyc3p, 473 --> cM_coa, 13 cM_1ihdecg3p, 179 
+
+486 : R_G3PATI17:
+cM_ihpdcoa, 181 cM_glyc3p, 473 --> cM_coa, 13 cM_1ihpdecg3p, 182 
+
+487 : R_G3PCT:
+cM_h, 3 cM_ctp, 193 cM_glyc3p, 473 --> cM_ppi, 129 cM_cdpglyc, 325 
+
+488 : R_G3PD1:
+cM_nad, 121 cM_glyc3p, 473 --> cM_h, 3 cM_nadh, 123 cM_dhap, 277 
+
+489 : R_G3PD2:
+cM_nadp, 1 cM_glyc3p, 473 --> cM_h, 3 cM_nadph, 4 cM_dhap, 277 
+
+490 : R_G5SADs:
+cM_glu5sa, 474 --> cM_h, 3 cM_h2o, 7 cM_1pyr5c, 475 
+
+491 : R_G5SDr:
+cM_h, 3 cM_nadph, 4 cM_glu5p, 476 --> cM_nadp, 1 cM_pi, 110 cM_glu5sa, 474 
+
+492 : R_G6PDA:
+cM_h2o, 7 cM_gam6p, 217 --> cM_f6p, 120 cM_nh4, 219 
+
+493 : R_G6PI:
+cM_g6p, 459 --> cM_g6p_B, 477 
+
+494 : R_G6PI3:
+cM_g6p_B, 477 --> cM_f6p, 120 
+
+495 : R_GALK:
+cM_atp, 125 cM_gal, 478 --> cM_h, 3 cM_adp, 151 cM_gal1p, 479 
+
+496 : R_GALM1r:
+cM_glc_bD, 315 --> cM_glc_D, 281 
+
+497 : R_GALS3:
+cM_h2o, 7 cM_melib, 480 --> cM_glc_D, 281 cM_gal, 478 
+
+498 : R_GALT:
+cM_h, 3 cM_utp, 358 cM_gal1p, 479 --> cM_ppi, 129 cM_udpgal, 481 
+
+499 : R_GALabc:
+cM_h2o, 7 cM_atp, 125 eM_gal, 40 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_gal, 478 
+
+500 : R_GAPD:
+cM_pi, 110 cM_nad, 121 cM_g3p, 422 --> cM_h, 3 cM_nadh, 123 cM_13dpg, 482 
+
+501 : R_GAPD_NADP:
+cM_nadp, 1 cM_pi, 110 cM_g3p, 422 --> cM_h, 3 cM_nadph, 4 cM_13dpg, 482 
+
+502 : R_GARFTi:
+cM_10fthf, 243 cM_gar, 483 --> cM_h, 3 cM_thf, 245 cM_fgam, 484 
+
+503 : R_GF6PTA:
+cM_f6p, 120 cM_gln_L, 261 --> cM_glu_L, 8 cM_gam6p, 217 
+
+504 : R_GGT:
+cM_ggdp, 465 --> cM_ppi, 129 cM_pphtd, 485 
+
+505 : R_GGTA:
+cM_glu_L, 8 cM_cgly, 291 --> cM_h2o, 7 cM_gthrd, 486 
+
+506 : R_GGTT:
+cM_ipdp, 412 cM_ggdp, 465 --> cM_ppi, 129 cM_pendp, 487 
+
+507 : R_GHMT2r:
+cM_thf, 245 cM_ser_L, 488 --> cM_h2o, 7 cM_gly, 124 cM_mlthf, 489 
+
+508 : R_GK1:
+cM_atp, 125 cM_gmp, 208 --> cM_adp, 151 cM_gdp, 192 
+
+509 : R_GK2:
+cM_datp, 195 cM_gmp, 208 --> cM_gdp, 192 cM_dadp, 196 
+
+510 : R_GLCP3:
+cM_h, 3 cM_pi, 110 cM_glycogen, 490 --> cM_g1p, 471 cM_glycogenb, 491 
+
+511 : R_GLCS3:
+cM_glycogenb, 491 cM_adpglc, 492 --> cM_adp, 151 cM_glycogen, 490 
+
+512 : R_GLCTR4r:
+cM_pi, 110 cM_sucr, 493 --> cM_fru, 458 cM_g1p, 471 
+
+513 : R_GLCabc:
+cM_h2o, 7 cM_atp, 125 eM_glc_D, 41 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_glc_D, 281 
+
+514 : R_GLGC:
+cM_h, 3 cM_atp, 125 cM_g1p, 471 --> cM_ppi, 129 cM_adpglc, 492 
+
+515 : R_GLNS:
+cM_glu_L, 8 cM_atp, 125 cM_nh4, 219 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_gln_L, 261 
+
+516 : R_GLNt2r:
+eM_h, 10 eM_gln_L, 42 --> cM_h, 3 cM_gln_L, 261 
+
+517 : R_GLU5K:
+cM_glu_L, 8 cM_atp, 125 --> cM_adp, 151 cM_glu5p, 476 
+
+518 : R_GLUABUTt7:
+cM_4abut, 134 eM_glu_L, 43 --> cM_glu_L, 8 eM_4abut, 33 
+
+519 : R_GLUDC:
+cM_h, 3 cM_glu_L, 8 --> cM_co2, 84 cM_4abut, 134 
+
+520 : R_GLUDy:
+cM_nadp, 1 cM_h2o, 7 cM_glu_L, 8 --> cM_h, 3 cM_nadph, 4 cM_akg, 5 cM_nh4, 219 
+
+521 : R_GLUOX:
+cM_nadp, 1 cM_glu_L, 8 --> cM_h, 3 cM_nadph, 4 cM_akg, 5 cM_gln_L, 261 
+
+522 : R_GLUPRT:
+cM_h2o, 7 cM_prpp, 209 cM_gln_L, 261 --> cM_glu_L, 8 cM_ppi, 129 cM_pram, 494 
+
+523 : R_GLUR:
+cM_glu_D, 495 --> cM_glu_L, 8 
+
+524 : R_GLUSy:
+cM_h, 3 cM_nadph, 4 cM_akg, 5 cM_gln_L, 261 --> cM_nadp, 1 cM_glu_L, 8 
+
+525 : R_GLUTRS:
+cM_glu_L, 8 cM_atp, 125 cM_trnaglu, 496 --> cM_amp, 128 cM_ppi, 129 cM_glutrna, 497 
+
+526 : R_GLXO1:
+cM_h2o, 7 cM_nad, 121 cM_glx, 392 --> cM_h, 3 cM_nadh, 123 cM_oxa, 498 
+
+527 : R_GLYASN1c:
+cM_h2o, 7 cM_glyasn, 499 --> cM_gly, 124 cM_asn_L, 301 
+
+528 : R_GLYASNabc:
+cM_h2o, 7 cM_atp, 125 eM_glyasn, 45 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_glyasn, 499 
+
+529 : R_GLYASP1c:
+cM_h2o, 7 cM_glyasp, 500 --> cM_gly, 124 cM_asp_L, 214 
+
+530 : R_GLYASPabc:
+cM_h2o, 7 cM_atp, 125 eM_glyasp, 46 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_glyasp, 500 
+
+531 : R_GLYB_R:
+cM_h, 3 cM_pi, 110 cM_nadh, 123 cM_glyb, 501 --> cM_h2o, 7 cM_nad, 121 cM_actp, 150 cM_tma, 502 
+
+532 : R_GLYBabc:
+cM_h2o, 7 cM_atp, 125 eM_glyb, 47 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_glyb, 501 
+
+533 : R_GLYBt2r:
+eM_h, 10 eM_glyb, 47 --> cM_h, 3 cM_glyb, 501 
+
+534 : R_GLYC3Pabc:
+cM_h2o, 7 cM_atp, 125 eM_glyc3p, 48 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_glyc3p, 473 
+
+535 : R_GLYCDx:
+cM_nad, 121 cM_glyc, 273 --> cM_h, 3 cM_nadh, 123 cM_dha, 278 
+
+536 : R_GLYCYSabc:
+cM_h2o, 7 cM_atp, 125 eM_glycys, 49 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_glycys, 293 
+
+537 : R_GLYGLN1c:
+cM_h2o, 7 cM_glygln, 503 --> cM_gly, 124 cM_gln_L, 261 
+
+538 : R_GLYGLNabc:
+cM_h2o, 7 cM_atp, 125 eM_glygln, 50 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_glygln, 503 
+
+539 : R_GLYGLU1c:
+cM_h2o, 7 cM_glyglu, 504 --> cM_glu_L, 8 cM_gly, 124 
+
+540 : R_GLYGLUabc:
+cM_h2o, 7 cM_atp, 125 eM_glyglu, 51 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_glyglu, 504 
+
+541 : R_GLYK:
+cM_atp, 125 cM_glyc, 273 --> cM_h, 3 cM_adp, 151 cM_glyc3p, 473 
+
+542 : R_GLYLEUHYDROc:
+cM_h2o, 7 cM_glyleu, 505 --> cM_gly, 124 cM_leu_L, 267 
+
+543 : R_GLYLEUPEPT1tc:
+eM_h, 10 eM_glyleu, 52 --> cM_h, 3 cM_glyleu, 505 
+
+544 : R_GLYMET1c:
+cM_h2o, 7 cM_glymet, 506 --> cM_gly, 124 cM_met_L, 507 
+
+545 : R_GLYMETabc:
+cM_h2o, 7 cM_atp, 125 eM_glymet, 53 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_glymet, 506 
+
+546 : R_GLYOX:
+cM_h2o, 7 cM_lgt_S, 508 --> cM_h, 3 cM_lac_D, 428 cM_gthrd, 486 
+
+547 : R_GLYPHEHYc:
+cM_h2o, 7 cM_glyphe, 509 --> cM_gly, 124 cM_phe_L, 510 
+
+548 : R_GLYPHEabc:
+cM_h2o, 7 cM_atp, 125 eM_glyphe, 54 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_glyphe, 509 
+
+549 : R_GLYPROPRO1c:
+cM_h2o, 7 cM_glypro, 511 --> cM_gly, 124 cM_pro_L, 512 
+
+550 : R_GLYPROabc:
+cM_h2o, 7 cM_atp, 125 eM_glypro, 55 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_glypro, 511 
+
+551 : R_GLYR:
+cM_h, 3 cM_pi, 110 cM_nadh, 123 cM_gly, 124 --> cM_h2o, 7 cM_nad, 121 cM_actp, 150 cM_nh4, 219 
+
+552 : R_GLYTYR1c:
+cM_h2o, 7 cM_glytyr, 513 --> cM_gly, 124 cM_tyr_L, 514 
+
+553 : R_GLYTYRabc:
+cM_h2o, 7 cM_atp, 125 eM_glytyr, 56 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_glytyr, 513 
+
+554 : R_GLYt2r:
+eM_h, 10 eM_gly, 44 --> cM_h, 3 cM_gly, 124 
+
+555 : R_GLYt4r:
+eM_gly, 44 eM_na1, 79 --> cM_gly, 124 cM_na1, 515 
+
+556 : R_GMPS2:
+cM_h2o, 7 cM_atp, 125 cM_gln_L, 261 cM_xmp, 516 --> cM_h, 3 cM_glu_L, 8 cM_amp, 128 cM_ppi, 129 cM_gmp, 208 
+
+557 : R_GNNUC:
+cM_h2o, 7 cM_gsn, 517 --> cM_rib_D, 204 cM_gua, 518 
+
+558 : R_GPDDA1:
+cM_h2o, 7 cM_g3pc, 519 --> cM_h, 3 cM_chol, 330 cM_glyc3p, 473 
+
+559 : R_GPDDA2:
+cM_h2o, 7 cM_g3pe, 520 --> cM_h, 3 cM_glyc3p, 473 cM_etha, 521 
+
+560 : R_GPDDA4:
+cM_h2o, 7 cM_g3pg, 522 --> cM_h, 3 cM_glyc, 273 cM_glyc3p, 473 
+
+561 : R_GRTT:
+cM_ipdp, 412 cM_grdp, 413 --> cM_ppi, 129 cM_frdp, 464 
+
+562 : R_GTPDPK:
+cM_atp, 125 cM_gtp, 137 --> cM_h, 3 cM_amp, 128 cM_gdptp, 523 
+
+563 : R_GUAPRT:
+cM_prpp, 209 cM_gua, 518 --> cM_ppi, 129 cM_gmp, 208 
+
+564 : R_H2CO3D:
+cM_h2o, 7 cM_co2, 84 --> cM_h, 3 cM_hco3, 252 
+
+565 : R_H2Ot:
+eM_h2o, 57 --> cM_h2o, 7 
+
+566 : R_HACD1:
+cM_h, 3 cM_nadh, 123 cM_aacoa, 127 --> cM_nad, 121 cM_3hbcoa, 524 
+
+567 : R_HACD2:
+cM_h, 3 cM_nadh, 123 cM_3ohcoa, 525 --> cM_nad, 121 cM_3hhcoa, 526 
+
+568 : R_HACD3:
+cM_h, 3 cM_nadh, 123 cM_3oocoa, 527 --> cM_nad, 121 cM_3hocoa, 528 
+
+569 : R_HACD4:
+cM_h, 3 cM_nadh, 123 cM_3odcoa, 529 --> cM_nad, 121 cM_3hdcoa, 530 
+
+570 : R_HACD5:
+cM_h, 3 cM_nadh, 123 cM_3oddcoa, 531 --> cM_nad, 121 cM_3hddcoa, 532 
+
+571 : R_HACD6:
+cM_h, 3 cM_nadh, 123 cM_3otdcoa, 533 --> cM_nad, 121 cM_3htdcoa, 534 
+
+572 : R_HACD7:
+cM_h, 3 cM_nadh, 123 cM_3ohdcoa, 535 --> cM_nad, 121 cM_3hhdcoa, 536 
+
+573 : R_HACD9:
+cM_nad, 121 cM_3hmbcoa, 537 --> cM_h, 3 cM_nadh, 123 cM_2maacoa, 538 
+
+574 : R_HADPCOADH3:
+cM_nad, 121 cM_3hadpcoa, 539 --> cM_h, 3 cM_nadh, 123 cM_oxadpcoa, 540 
+
+575 : R_HBZOPT:
+cM_4hbz, 335 cM_octdp, 401 --> cM_ppi, 129 cM_3ophb, 541 
+
+576 : R_HDG3PACT:
+cM_ihdcoa, 178 cM_glyc3p, 473 --> cM_coa, 13 cM_1hdecg3p, 161 
+
+577 : R_HEMEti:
+cM_h2o, 7 cM_atp, 125 eM_pheme, 87 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_pheme, 542 
+
+578 : R_HETT:
+cM_hepdp, 403 cM_ipdp, 412 --> cM_ppi, 129 cM_octdp, 401 
+
+579 : R_HETZK:
+cM_atp, 125 cM_4mhetz, 543 --> cM_h, 3 cM_adp, 151 cM_4mpetz, 544 
+
+580 : R_HEX1:
+cM_atp, 125 cM_glc_D, 281 --> cM_h, 3 cM_adp, 151 cM_g6p, 459 
+
+581 : R_HEX7:
+cM_atp, 125 cM_fru, 458 --> cM_h, 3 cM_f6p, 120 cM_adp, 151 
+
+582 : R_HEXTT:
+cM_ipdp, 412 cM_hexdp, 545 --> cM_ppi, 129 cM_hepdp, 403 
+
+583 : R_HEXb:
+cM_atp, 125 cM_glc_bD, 315 --> cM_h, 3 cM_adp, 151 cM_g6p_B, 477 
+
+584 : R_HG2abc:
+cM_h2o, 7 cM_atp, 125 cM_hg2, 546 --> cM_h, 3 cM_pi, 110 cM_adp, 151 eM_hg2, 58 
+
+585 : R_HIBD:
+cM_nad, 121 cM_3hmp, 547 --> cM_h, 3 cM_nadh, 123 cM_2mop, 548 
+
+586 : R_HISTD:
+cM_h2o, 7 cM_nad, 121 cM_histd, 549 --> cM_h, 3 cM_nadh, 123 cM_his_L, 265 
+
+587 : R_HISTDOX:
+cM_nad, 121 cM_histd, 549 --> cM_h, 3 cM_nadh, 123 cM_histl_L, 550 
+
+588 : R_HISTLOX:
+cM_h2o, 7 cM_nad, 121 cM_histl_L, 550 --> cM_h, 3 cM_nadh, 123 cM_his_L, 265 
+
+589 : R_HISTP:
+cM_h2o, 7 cM_hisp, 551 --> cM_pi, 110 cM_histd, 549 
+
+590 : R_HISt2r:
+eM_h, 10 eM_his_L, 59 --> cM_h, 3 cM_his_L, 265 
+
+591 : R_HMPK1:
+cM_atp, 125 cM_4ahmmp, 552 --> cM_h, 3 cM_adp, 151 cM_4ampm, 553 
+
+592 : R_HSDx:
+cM_nad, 121 cM_hom_L, 554 --> cM_h, 3 cM_nadh, 123 cM_aspsa, 299 
+
+593 : R_HSDy:
+cM_nadp, 1 cM_hom_L, 554 --> cM_h, 3 cM_nadph, 4 cM_aspsa, 299 
+
+594 : R_HSK:
+cM_atp, 125 cM_hom_L, 554 --> cM_h, 3 cM_adp, 151 cM_phom, 555 
+
+595 : R_HSST:
+cM_hom_L, 554 cM_succoa, 556 --> cM_coa, 13 cM_suchms, 557 
+
+596 : R_HSTPTr:
+cM_akg, 5 cM_hisp, 551 --> cM_glu_L, 8 cM_imacp, 558 
+
+597 : R_HXPRT:
+cM_prpp, 209 cM_hxan, 559 --> cM_ppi, 129 cM_imp, 215 
+
+598 : R_HYXNt:
+eM_hxan, 60 --> cM_hxan, 559 
+
+599 : R_IBCOATA:
+cM_ACP, 12 cM_ibcoa, 560 --> cM_coa, 13 cM_2mpropACP, 95 
+
+600 : R_ICDHy:
+cM_nadp, 1 cM_icit, 561 --> cM_nadph, 4 cM_akg, 5 cM_co2, 84 
+
+601 : R_IG3PS:
+cM_gln_L, 261 cM_prlp, 562 --> cM_h, 3 cM_glu_L, 8 cM_aicar, 213 cM_eig3p, 563 
+
+602 : R_IGPDH:
+cM_eig3p, 563 --> cM_h2o, 7 cM_imacp, 558 
+
+603 : R_IHDCOATA:
+cM_coa, 13 cM_14mpentdecACP, 564 --> cM_ACP, 12 cM_ihdcoa, 178 
+
+604 : R_IHDUDPG:
+cM_udpg, 246 cM_m12dihglyc, 565 --> cM_h, 3 cM_udp, 248 cM_diglcpgi17, 566 
+
+605 : R_IHDUDPMG:
+cM_udpg, 246 cM_12dihdglyc, 567 --> cM_h, 3 cM_udp, 248 cM_m12dihglyc, 565 
+
+606 : R_IHPDCOATA:
+cM_coa, 13 cM_15mpalmACP, 430 --> cM_ACP, 12 cM_ihpdcoa, 181 
+
+607 : R_ILETA:
+cM_akg, 5 cM_ile_L, 568 --> cM_glu_L, 8 cM_3mop, 396 
+
+608 : R_ILEabc:
+cM_h2o, 7 cM_atp, 125 eM_ile_L, 61 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_ile_L, 568 
+
+609 : R_ILEt2r:
+eM_h, 10 eM_ile_L, 61 --> cM_h, 3 cM_ile_L, 568 
+
+610 : R_IMACTD:
+cM_h2o, 7 cM_nad, 121 cM_im4act, 569 --> cM_h, 3 cM_nadh, 123 cM_im4ac, 570 
+
+611 : R_IMPC:
+cM_h2o, 7 cM_imp, 215 --> cM_fprica, 244 
+
+612 : R_IMPD:
+cM_h2o, 7 cM_nad, 121 cM_imp, 215 --> cM_h, 3 cM_nadh, 123 cM_xmp, 516 
+
+613 : R_INSH:
+cM_h2o, 7 cM_ins, 571 --> cM_rib_D, 204 cM_hxan, 559 
+
+614 : R_IPDCOATA:
+cM_coa, 13 cM_13mmyrsACP, 91 --> cM_ACP, 12 cM_ipdcoa, 175 
+
+615 : R_IPDPS:
+cM_h, 3 cM_nadh, 123 cM_h2mb4p, 414 --> cM_h2o, 7 cM_nad, 121 cM_ipdp, 412 
+
+616 : R_IPDPS2:
+cM_h, 3 cM_nadph, 4 cM_h2mb4p, 414 --> cM_nadp, 1 cM_h2o, 7 cM_ipdp, 412 
+
+617 : R_IPDPUPT:
+cM_ipdp, 412 cM_ttc_ggdp, 466 --> cM_ppi, 129 cM_udcpdp, 572 
+
+618 : R_IPMDr:
+cM_nad, 121 cM_3c2hmp, 573 --> cM_h, 3 cM_nadh, 123 cM_3c4mop, 574 
+
+619 : R_IPPMIa:
+cM_3c2hmp, 573 --> cM_h2o, 7 cM_2ippm, 575 
+
+620 : R_IPPMIb:
+cM_h2o, 7 cM_2ippm, 575 --> cM_3c3hmp, 39 
+
+621 : R_ISOMALT:
+cM_h2o, 7 cM_isomal, 576 --> cM_glc_D, 281 
+
+622 : R_ITDCOATA:
+cM_coa, 13 cM_12mtridecACP, 89 --> cM_ACP, 12 cM_itdcoa, 172 
+
+623 : R_IVCOATA:
+cM_ACP, 12 cM_ivcoa, 577 --> cM_coa, 13 cM_3mbutACP, 96 
+
+624 : R_KARA1:
+cM_nadp, 1 cM_23dhmb, 395 --> cM_h, 3 cM_nadph, 4 cM_alac_S, 153 
+
+625 : R_KARA2:
+cM_h, 3 cM_nadph, 4 cM_2ahbut, 10 --> cM_23dhmp, 0 cM_nadp, 1 
+
+626 : R_KARA3:
+cM_nadp, 1 cM_23dhmb, 395 --> cM_h, 3 cM_nadph, 4 cM_33hmeoxobut, 259 
+
+627 : R_KAS14:
+cM_h, 3 cM_malACP, 82 cM_acACP, 184 --> cM_ACP, 12 cM_actACP, 64 cM_co2, 84 
+
+628 : R_KAS_HP:
+cM_h, 3 cM_nadph, 4 cM_malACP, 82 cM_myrsACP, 93 --> cM_nadp, 1 cM_ACP, 12 cM_3hpalmACP, 61 cM_co2, 84 
+
+629 : R_Kt3r:
+eM_h, 10 cM_k, 578 --> cM_h, 3 eM_k, 62 
+
+630 : R_L2A6ODs:
+cM_l2a6o, 370 --> cM_h, 3 cM_h2o, 7 cM_thdp, 9 
+
+631 : R_LACZ:
+cM_h2o, 7 cM_lcts, 579 --> cM_glc_D, 281 cM_gal, 478 
+
+632 : R_LARGNAT:
+cM_oaa, 308 cM_Largn, 580 --> cM_asp_L, 214 cM_pphn, 333 
+
+633 : R_LCADi:
+cM_h2o, 7 cM_nad, 121 cM_lald_L, 453 --> cM_h, 3 cM_nadh, 123 cM_lac_L, 581 
+
+634 : R_LCARS:
+cM_h, 3 cM_nadh, 123 cM_lald_L, 453 --> cM_nad, 121 cM_12ppd_S, 582 
+
+635 : R_LCTSabc:
+cM_h2o, 7 cM_atp, 125 eM_lcts, 64 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_lcts, 579 
+
+636 : R_LDH_D:
+cM_nad, 121 cM_lac_D, 428 --> cM_h, 3 cM_nadh, 123 cM_pyr, 152 
+
+637 : R_LDH_L:
+cM_nad, 121 cM_lac_L, 581 --> cM_h, 3 cM_nadh, 123 cM_pyr, 152 
+
+638 : R_LEUTA:
+cM_akg, 5 cM_leu_L, 267 --> cM_glu_L, 8 cM_4mop, 583 
+
+639 : R_LEUabc:
+cM_h2o, 7 cM_atp, 125 eM_leu_L, 65 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_leu_L, 267 
+
+640 : R_LEUt2r:
+eM_h, 10 eM_leu_L, 65 --> cM_h, 3 cM_leu_L, 267 
+
+641 : R_LPLIPAL1A120:
+cM_h2o, 7 cM_1ddecg3p, 221 --> cM_h, 3 cM_ddca, 130 cM_glyc3p, 473 
+
+642 : R_LPLIPAL1A140:
+cM_h2o, 7 cM_1tdecg3p, 157 --> cM_h, 3 cM_ttdca, 434 cM_glyc3p, 473 
+
+643 : R_LPLIPAL1A141:
+cM_h2o, 7 cM_1tdec7eg3p, 223 --> cM_h, 3 cM_glyc3p, 473 cM_ttdcea, 584 
+
+644 : R_LPLIPAL1A160:
+cM_h2o, 7 cM_1hdecg3p, 161 --> cM_h, 3 cM_hdca, 435 cM_glyc3p, 473 
+
+645 : R_LPLIPAL1A161:
+cM_h2o, 7 cM_1hdec9eg3p, 226 --> cM_h, 3 cM_hdcea, 436 cM_glyc3p, 473 
+
+646 : R_LPLIPAL1A180:
+cM_h2o, 7 cM_1odecg3p, 164 --> cM_h, 3 cM_ocdca, 438 cM_glyc3p, 473 
+
+647 : R_LPLIPAL1A181:
+cM_h2o, 7 cM_1odec11eg3p, 230 --> cM_h, 3 cM_ocdcea, 439 cM_glyc3p, 473 
+
+648 : R_LPLIPAL1E120:
+cM_h2o, 7 cM_1agpe120, 585 --> cM_h, 3 cM_ddca, 130 cM_g3pe, 520 
+
+649 : R_LPLIPAL1E140:
+cM_h2o, 7 cM_1agpe140, 586 --> cM_h, 3 cM_ttdca, 434 cM_g3pe, 520 
+
+650 : R_LPLIPAL1E141:
+cM_h2o, 7 cM_1agpe141, 587 --> cM_h, 3 cM_g3pe, 520 cM_ttdcea, 584 
+
+651 : R_LPLIPAL1E160:
+cM_h2o, 7 cM_1agpe160, 588 --> cM_h, 3 cM_hdca, 435 cM_g3pe, 520 
+
+652 : R_LPLIPAL1E161:
+cM_h2o, 7 cM_1agpe161, 589 --> cM_h, 3 cM_hdcea, 436 cM_g3pe, 520 
+
+653 : R_LPLIPAL1E180:
+cM_h2o, 7 cM_1agpe180, 590 --> cM_h, 3 cM_ocdca, 438 cM_g3pe, 520 
+
+654 : R_LPLIPAL1E181:
+cM_h2o, 7 cM_1agpe181, 591 --> cM_h, 3 cM_ocdcea, 439 cM_g3pe, 520 
+
+655 : R_LPLIPAL1G120:
+cM_h2o, 7 cM_1agpg120, 592 --> cM_h, 3 cM_ddca, 130 cM_g3pg, 522 
+
+656 : R_LPLIPAL1G140:
+cM_h2o, 7 cM_1agpg140, 593 --> cM_h, 3 cM_ttdca, 434 cM_g3pg, 522 
+
+657 : R_LPLIPAL1G141:
+cM_h2o, 7 cM_1agpg141, 594 --> cM_h, 3 cM_g3pg, 522 cM_ttdcea, 584 
+
+658 : R_LPLIPAL1G160:
+cM_h2o, 7 cM_1agpg160, 595 --> cM_h, 3 cM_hdca, 435 cM_g3pg, 522 
+
+659 : R_LPLIPAL1G161:
+cM_h2o, 7 cM_1agpg161, 596 --> cM_h, 3 cM_hdcea, 436 cM_g3pg, 522 
+
+660 : R_LPLIPAL1G180:
+cM_h2o, 7 cM_1agpg180, 597 --> cM_h, 3 cM_ocdca, 438 cM_g3pg, 522 
+
+661 : R_LPLIPAL1G181:
+cM_h2o, 7 cM_1agpg181, 598 --> cM_h, 3 cM_ocdcea, 439 cM_g3pg, 522 
+
+662 : R_LPLIPAL2A120:
+cM_h2o, 7 cM_2ddecg3p, 599 --> cM_h, 3 cM_ddca, 130 cM_glyc3p, 473 
+
+663 : R_LPLIPAL2A140:
+cM_h2o, 7 cM_2tdecg3p, 600 --> cM_h, 3 cM_ttdca, 434 cM_glyc3p, 473 
+
+664 : R_LPLIPAL2A141:
+cM_h2o, 7 cM_2tdec7eg3p, 601 --> cM_h, 3 cM_glyc3p, 473 cM_ttdcea, 584 
+
+665 : R_LPLIPAL2A160:
+cM_h2o, 7 cM_2hdecg3p, 602 --> cM_h, 3 cM_hdca, 435 cM_glyc3p, 473 
+
+666 : R_LPLIPAL2A161:
+cM_h2o, 7 cM_2hdec9eg3p, 603 --> cM_h, 3 cM_hdcea, 436 cM_glyc3p, 473 
+
+667 : R_LPLIPAL2A180:
+cM_h2o, 7 cM_2odecg3p, 604 --> cM_h, 3 cM_ocdca, 438 cM_glyc3p, 473 
+
+668 : R_LPLIPAL2A181:
+cM_h2o, 7 cM_2odec11eg3p, 605 --> cM_h, 3 cM_ocdcea, 439 cM_glyc3p, 473 
+
+669 : R_LPLIPAL2E120:
+cM_h2o, 7 cM_2agpe120, 606 --> cM_h, 3 cM_ddca, 130 cM_g3pe, 520 
+
+670 : R_LPLIPAL2E140:
+cM_h2o, 7 cM_2agpe140, 607 --> cM_h, 3 cM_ttdca, 434 cM_g3pe, 520 
+
+671 : R_LPLIPAL2E141:
+cM_h2o, 7 cM_2agpe141, 608 --> cM_h, 3 cM_g3pe, 520 cM_ttdcea, 584 
+
+672 : R_LPLIPAL2E160:
+cM_h2o, 7 cM_2agpe160, 609 --> cM_h, 3 cM_hdca, 435 cM_g3pe, 520 
+
+673 : R_LPLIPAL2E161:
+cM_h2o, 7 cM_2agpe161, 610 --> cM_h, 3 cM_hdcea, 436 cM_g3pe, 520 
+
+674 : R_LPLIPAL2E180:
+cM_h2o, 7 cM_2agpe180, 611 --> cM_h, 3 cM_ocdca, 438 cM_g3pe, 520 
+
+675 : R_LPLIPAL2E181:
+cM_h2o, 7 cM_2agpe181, 612 --> cM_h, 3 cM_ocdcea, 439 cM_g3pe, 520 
+
+676 : R_LPLIPAL2G120:
+cM_h2o, 7 cM_2agpg120, 613 --> cM_h, 3 cM_ddca, 130 cM_g3pg, 522 
+
+677 : R_LPLIPAL2G140:
+cM_h2o, 7 cM_2agpg140, 614 --> cM_h, 3 cM_ttdca, 434 cM_g3pg, 522 
+
+678 : R_LPLIPAL2G141:
+cM_h2o, 7 cM_2agpg141, 615 --> cM_h, 3 cM_g3pg, 522 cM_ttdcea, 584 
+
+679 : R_LPLIPAL2G160:
+cM_h2o, 7 cM_2agpg160, 616 --> cM_h, 3 cM_hdca, 435 cM_g3pg, 522 
+
+680 : R_LPLIPAL2G161:
+cM_h2o, 7 cM_2agpg161, 617 --> cM_h, 3 cM_hdcea, 436 cM_g3pg, 522 
+
+681 : R_LPLIPAL2G180:
+cM_h2o, 7 cM_2agpg180, 618 --> cM_h, 3 cM_ocdca, 438 cM_g3pg, 522 
+
+682 : R_LPLIPAL2G181:
+cM_h2o, 7 cM_2agpg181, 619 --> cM_h, 3 cM_ocdcea, 439 cM_g3pg, 522 
+
+683 : R_LYSDC:
+cM_h, 3 cM_lys_L, 369 --> cM_co2, 84 cM_15dap, 620 
+
+684 : R_LYSt2r:
+eM_h, 10 eM_lys_L, 66 --> cM_h, 3 cM_lys_L, 369 
+
+685 : R_L_LACD2:
+cM_q8, 405 cM_lac_L, 581 --> cM_pyr, 152 cM_q8h2, 407 
+
+686 : R_L_LACD3:
+cM_mqn8, 290 cM_lac_L, 581 --> cM_pyr, 152 cM_mql8, 408 
+
+687 : R_L_LACDr:
+cM_lac_L, 581 cM_ficytC, 621 --> cM_h, 3 cM_pyr, 152 cM_focytC, 622 
+
+688 : R_L_LACt2r:
+eM_h, 10 eM_lac_L, 63 --> cM_h, 3 cM_lac_L, 581 
+
+689 : R_MADGBG:
+cM_h2o, 7 cM_madg, 623 --> cM_glc_D, 281 cM_meoh, 624 
+
+690 : R_MALDDH:
+cM_nad, 121 cM_mal_D, 625 --> cM_co2, 84 cM_nadh, 123 cM_pyr, 152 
+
+691 : R_MALT:
+cM_h2o, 7 cM_malt, 279 --> cM_glc_D, 281 
+
+692 : R_MALTHXabc:
+cM_h2o, 7 cM_atp, 125 eM_malthx, 68 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_malthx, 284 
+
+693 : R_MALTTRabc:
+cM_h2o, 7 cM_atp, 125 eM_malttr, 69 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_malttr, 280 
+
+694 : R_MALTabc:
+cM_h2o, 7 cM_atp, 125 eM_malt, 67 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_malt, 279 
+
+695 : R_MAN6PI:
+cM_man6p, 626 --> cM_f6p, 120 
+
+696 : R_MANA4:
+cM_h2o, 7 cM_mantr, 627 --> cM_gal, 478 cM_melib, 480 
+
+697 : R_MANTRabc:
+cM_h2o, 7 cM_atp, 125 eM_mantr, 70 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_mantr, 627 
+
+698 : R_MBDGBG:
+cM_h2o, 7 cM_mbdg, 628 --> cM_glc_D, 281 cM_meoh, 624 
+
+699 : R_MCCCr:
+cM_atp, 125 cM_hco3, 252 cM_3mb2coa, 629 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_3mgcoa, 630 
+
+700 : R_MCOATA:
+cM_ACP, 12 cM_malcoa, 141 --> cM_coa, 13 cM_malACP, 82 
+
+701 : R_ME2:
+cM_nadp, 1 cM_mal_L, 468 --> cM_nadph, 4 cM_co2, 84 cM_pyr, 152 
+
+702 : R_MECDPDH2:
+cM_nadh, 123 cM_2mecdp, 631 --> cM_h2o, 7 cM_nad, 121 cM_h2mb4p, 414 
+
+703 : R_MECDPS:
+cM_2p4c2me, 328 --> cM_cmp, 326 cM_2mecdp, 631 
+
+704 : R_MEPCT:
+cM_h, 3 cM_ctp, 193 cM_2me4p, 427 --> cM_ppi, 129 cM_4c2me, 327 
+
+705 : R_METALA1c:
+cM_h2o, 7 cM_metala, 632 --> cM_ala_L, 258 cM_met_L, 507 
+
+706 : R_METALAabc:
+cM_h2o, 7 cM_atp, 125 eM_metala, 73 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_metala, 632 
+
+707 : R_METAT:
+cM_h2o, 7 cM_atp, 125 cM_met_L, 507 --> cM_pi, 110 cM_amet, 117 cM_ppi, 129 
+
+708 : R_METDabc:
+cM_h2o, 7 cM_atp, 125 eM_met_D, 71 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_met_D, 633 
+
+709 : R_METFR:
+cM_nadp, 1 cM_5mthf, 634 --> cM_h, 3 cM_nadph, 4 cM_mlthf, 489 
+
+710 : R_METSOX1abc:
+cM_h2o, 7 cM_atp, 125 eM_metsox_S_L, 75 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_metsox_S_L, 635 
+
+711 : R_METSOX2abc:
+cM_h2o, 7 cM_atp, 125 eM_metsox_R_L, 74 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_metsox_R_L, 636 
+
+712 : R_METSOXR1r:
+cM_trdrd, 239 cM_metsox_S_L, 635 --> cM_h2o, 7 cM_trdox, 241 cM_met_L, 507 
+
+713 : R_METSr:
+cM_hcys_L, 238 cM_5mthf, 634 --> cM_h, 3 cM_thf, 245 cM_met_L, 507 
+
+714 : R_METabc:
+cM_h2o, 7 cM_atp, 125 eM_met_L, 72 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_met_L, 507 
+
+715 : R_MG2abc:
+cM_h2o, 7 cM_atp, 125 eM_mg2, 76 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_mg2, 637 
+
+716 : R_MGSA:
+cM_dhap, 277 --> cM_pi, 110 cM_mthgxl, 638 
+
+717 : R_MGt5:
+cM_mg2, 637 --> eM_mg2, 76 
+
+718 : R_MK7te:
+eM_mqn7, 78 --> cM_mqn7, 287 
+
+719 : R_MLTG1:
+cM_h2o, 7 cM_malttr, 280 --> cM_malt, 279 cM_glc_D, 281 
+
+720 : R_MLTG2:
+cM_h2o, 7 cM_maltttr, 282 --> cM_malttr, 280 cM_glc_D, 281 
+
+721 : R_MLTG3:
+cM_h2o, 7 cM_maltpt, 283 --> cM_glc_D, 281 cM_maltttr, 282 
+
+722 : R_MLTG4:
+cM_h2o, 7 cM_malthx, 284 --> cM_glc_D, 281 cM_maltpt, 283 
+
+723 : R_MLTG5:
+cM_h2o, 7 cM_malthp, 285 --> cM_glc_D, 281 cM_malthx, 284 
+
+724 : R_MLTP4:
+cM_pi, 110 cM_malt, 279 --> cM_glc_D, 281 cM_g1p_B, 639 
+
+725 : R_MNabc:
+cM_h2o, 7 cM_atp, 125 eM_mn2, 77 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_mn2, 640 
+
+726 : R_MTAN:
+cM_h2o, 7 cM_5mta, 641 --> cM_ade, 203 cM_5mtr, 642 
+
+727 : R_MTHFC:
+cM_h2o, 7 cM_methf, 462 --> cM_h, 3 cM_10fthf, 243 
+
+728 : R_MTHFD:
+cM_nadp, 1 cM_mlthf, 489 --> cM_nadph, 4 cM_methf, 462 
+
+729 : R_MTHPTGHM:
+cM_5mthglu, 116 cM_hcys_L, 238 --> cM_thglu, 118 cM_met_L, 507 
+
+730 : R_MTRI:
+cM_5mdr1p, 643 --> cM_5mdru1p, 644 
+
+731 : R_MTRK:
+cM_atp, 125 cM_5mtr, 642 --> cM_h, 3 cM_adp, 151 cM_5mdr1p, 643 
+
+732 : R_NACt2r:
+cM_h, 3 cM_nac, 645 --> eM_h, 10 eM_nac, 80 
+
+733 : R_NADK:
+cM_nad, 121 cM_atp, 125 --> cM_nadp, 1 cM_h, 3 cM_adp, 151 
+
+734 : R_NADK2:
+cM_nad, 121 cM_dttp, 187 --> cM_nadp, 1 cM_h, 3 cM_dtdp, 188 
+
+735 : R_NADS1:
+cM_atp, 125 cM_nh4, 219 cM_dnad, 646 --> cM_h, 3 cM_nad, 121 cM_amp, 128 cM_ppi, 129 
+
+736 : R_NADS2:
+cM_h2o, 7 cM_atp, 125 cM_gln_L, 261 cM_dnad, 646 --> cM_h, 3 cM_glu_L, 8 cM_nad, 121 cM_amp, 128 cM_ppi, 129 
+
+737 : R_NAPRT:
+cM_h, 3 cM_prpp, 209 cM_nac, 645 --> cM_ppi, 129 cM_nicrnt, 647 
+
+738 : R_NCPTRCA:
+cM_h, 3 cM_h2o, 7 cM_ncptrc, 220 --> cM_co2, 84 cM_nh4, 219 cM_ptrc, 648 
+
+739 : R_NDPK1:
+cM_atp, 125 cM_gdp, 192 --> cM_gtp, 137 cM_adp, 151 
+
+740 : R_NDPK2:
+cM_atp, 125 cM_udp, 248 --> cM_adp, 151 cM_utp, 358 
+
+741 : R_NDPK4:
+cM_atp, 125 cM_dtdp, 188 --> cM_adp, 151 cM_dttp, 187 
+
+742 : R_NDPK5:
+cM_atp, 125 cM_dgdp, 200 --> cM_adp, 151 cM_dgtp, 199 
+
+743 : R_NDPK6:
+cM_atp, 125 cM_dudp, 190 --> cM_adp, 151 cM_dutp, 189 
+
+744 : R_NDPK7:
+cM_atp, 125 cM_dcdp, 198 --> cM_adp, 151 cM_dctp, 197 
+
+745 : R_NDPK8:
+cM_atp, 125 cM_dadp, 196 --> cM_adp, 151 cM_datp, 195 
+
+746 : R_NDPK9:
+cM_atp, 125 cM_idp, 364 --> cM_adp, 151 cM_itp, 363 
+
+747 : R_NH4tb:
+eM_nh4, 81 --> cM_nh4, 219 
+
+748 : R_NNAM:
+cM_h2o, 7 cM_ncam, 649 --> cM_nh4, 219 cM_nac, 645 
+
+749 : R_NNATr:
+cM_h, 3 cM_atp, 125 cM_nicrnt, 647 --> cM_ppi, 129 cM_dnad, 646 
+
+750 : R_NNDMBRT:
+cM_nicrnt, 647 cM_dmbzid, 650 --> cM_h, 3 cM_nac, 645 cM_5prdmbz, 651 
+
+751 : R_NNDPR:
+cM_h, 3 cM_prpp, 209 cM_quln, 652 --> cM_co2, 84 cM_ppi, 129 cM_nicrnt, 647 
+
+752 : R_NP1_r:
+cM_h, 3 cM_nac, 645 cM_r1p, 653 --> cM_pi, 110 cM_nicrns, 654 
+
+753 : R_NP2MSUCCS:
+cM_fum, 211 cM_2mnptl, 655 --> cM_np2msucc, 656 
+
+754 : R_NT5C:
+cM_h2o, 7 cM_nicrnt, 647 --> cM_pi, 110 cM_nicrns, 654 
+
+755 : R_NTD1:
+cM_h2o, 7 cM_dump, 384 --> cM_pi, 110 cM_duri, 386 
+
+756 : R_NTD10:
+cM_h2o, 7 cM_xmp, 516 --> cM_pi, 110 cM_xtsn, 657 
+
+757 : R_NTD11:
+cM_h2o, 7 cM_imp, 215 --> cM_pi, 110 cM_ins, 571 
+
+758 : R_NTD2:
+cM_h2o, 7 cM_ump, 144 --> cM_pi, 110 cM_uri, 362 
+
+759 : R_NTD3:
+cM_h2o, 7 cM_dcmp, 365 --> cM_pi, 110 cM_dcyt, 385 
+
+760 : R_NTD4:
+cM_h2o, 7 cM_cmp, 326 --> cM_pi, 110 cM_cytd, 361 
+
+761 : R_NTD5:
+cM_h2o, 7 cM_dtmp, 423 --> cM_pi, 110 cM_thymd, 658 
+
+762 : R_NTD5_a:
+cM_h2o, 7 cM_nmn, 659 --> cM_pi, 110 cM_rnam, 660 
+
+763 : R_NTD6:
+cM_h2o, 7 cM_damp, 661 --> cM_pi, 110 cM_dad_2, 662 
+
+764 : R_NTD7:
+cM_h2o, 7 cM_amp, 128 --> cM_pi, 110 cM_adn, 202 
+
+765 : R_NTD8:
+cM_h2o, 7 cM_dgmp, 394 --> cM_pi, 110 cM_dgsn, 663 
+
+766 : R_NTD9:
+cM_h2o, 7 cM_gmp, 208 --> cM_pi, 110 cM_gsn, 517 
+
+767 : R_O2t:
+eM_o2, 82 --> cM_o2, 306 
+
+768 : R_OAADC:
+cM_h, 3 cM_oaa, 308 --> cM_co2, 84 cM_pyr, 152 
+
+769 : R_OAASr:
+cM_h, 3 cM_coa, 13 cM_cit, 456 --> cM_h2o, 7 cM_accoa, 40 cM_oaa, 308 
+
+770 : R_OBTFL:
+cM_coa, 13 cM_2obut, 147 --> cM_for, 463 cM_ppcoa, 664 
+
+771 : R_OCDCAt2:
+eM_h, 10 eM_ocdca, 83 --> cM_h, 3 cM_ocdca, 438 
+
+772 : R_OCDCAtr:
+eM_ocdca, 83 --> cM_ocdca, 438 
+
+773 : R_OHPBAT:
+cM_glu_L, 8 cM_ohpb, 665 --> cM_akg, 5 cM_phthr, 108 
+
+774 : R_OHPHM:
+cM_amet, 117 cM_2ohph, 666 --> cM_h, 3 cM_ahcys, 115 cM_2omph, 667 
+
+775 : R_OIVD1r:
+cM_coa, 13 cM_nad, 121 cM_4mop, 583 --> cM_co2, 84 cM_nadh, 123 cM_ivcoa, 577 
+
+776 : R_OIVD2:
+cM_coa, 13 cM_3mob, 41 cM_nad, 121 --> cM_co2, 84 cM_nadh, 123 cM_ibcoa, 560 
+
+777 : R_OIVD3:
+cM_coa, 13 cM_nad, 121 cM_3mop, 396 --> cM_2mbcoa, 11 cM_co2, 84 cM_nadh, 123 
+
+778 : R_OMBZLM:
+cM_amet, 117 cM_2ombzl, 668 --> cM_h, 3 cM_ahcys, 115 cM_2ommbl, 669 
+
+779 : R_OMMBLHX3:
+cM_h2o, 7 cM_nad, 121 cM_atp, 125 cM_2ommbl, 669 --> cM_h, 3 cM_pi, 110 cM_nadh, 123 cM_adp, 151 cM_2omhmbl, 415 
+
+780 : R_OMPDC:
+cM_h, 3 cM_orot5p, 670 --> cM_co2, 84 cM_ump, 144 
+
+781 : R_OMPHHX3:
+cM_h2o, 7 cM_nad, 121 cM_atp, 125 cM_2omph, 667 --> cM_h, 3 cM_pi, 110 cM_nadh, 123 cM_adp, 151 cM_2ombzl, 668 
+
+782 : R_OPHBDC:
+cM_h, 3 cM_3ophb, 541 --> cM_co2, 84 cM_2oph, 671 
+
+783 : R_OPHHX3:
+cM_h2o, 7 cM_nad, 121 cM_atp, 125 cM_2oph, 671 --> cM_h, 3 cM_pi, 110 cM_nadh, 123 cM_adp, 151 cM_2ohph, 666 
+
+784 : R_ORNDC:
+cM_h, 3 cM_orn, 672 --> cM_co2, 84 cM_ptrc, 648 
+
+785 : R_OROTPT:
+cM_prpp, 209 cM_orot, 406 --> cM_ppi, 129 cM_orot5p, 670 
+
+786 : R_P5CRyr:
+cM_nadp, 1 cM_pro_L, 512 --> cM_h, 3 cM_nadph, 4 cM_1pyr5c, 475 
+
+787 : R_PAAI17P:
+cM_h2o, 7 cM_paai17, 171 --> cM_pi, 110 cM_12daihdglyc, 247 
+
+788 : R_PAI17P:
+cM_h2o, 7 cM_pai17, 183 --> cM_pi, 110 cM_12dihdglyc, 567 
+
+789 : R_PAPA180:
+cM_h2o, 7 cM_pa180, 165 --> cM_pi, 110 cM_12dgr180, 673 
+
+790 : R_PAPPT2:
+cM_udcpp, 143 cM_uGgla, 674 --> cM_ump, 144 cM_uaGgla, 675 
+
+791 : R_PAPPT3:
+cM_udcpp, 143 cM_ugmda, 676 --> cM_ump, 144 cM_uagmda, 677 
+
+792 : R_PBt:
+cM_h2o, 7 cM_atp, 125 cM_pb, 678 --> cM_h, 3 cM_pi, 110 cM_adp, 151 eM_pb, 85 
+
+793 : R_PDHc:
+cM_nad, 121 cM_dhlam, 679 --> cM_h, 3 cM_nadh, 123 cM_lpam, 680 
+
+794 : R_PEPGLY:
+cM_h, 3 cM_uaagmda, 681 cM_PGPm1, 682 --> cM_co2, 84 cM_udcpdp, 572 cM_PGP, 683 
+
+795 : R_PFK:
+cM_f6p, 120 cM_atp, 125 --> cM_h, 3 cM_adp, 151 cM_fdp, 447 
+
+796 : R_PFK_LPAREN_ppi_RPAREN_:
+cM_f6p, 120 cM_ppi, 129 --> cM_h, 3 cM_pi, 110 cM_fdp, 447 
+
+797 : R_PFK_2:
+cM_atp, 125 cM_tag6p_D, 684 --> cM_h, 3 cM_adp, 151 cM_tagdp_D, 685 
+
+798 : R_PFK_3:
+cM_atp, 125 cM_s7p, 686 --> cM_h, 3 cM_adp, 151 cM_s17bp, 449 
+
+799 : R_PFL:
+cM_coa, 13 cM_pyr, 152 --> cM_accoa, 40 cM_for, 463 
+
+800 : R_PGAMT:
+cM_gam1p, 469 --> cM_gam6p, 217 
+
+801 : R_PGCDr:
+cM_nad, 121 cM_3pg, 687 --> cM_h, 3 cM_nadh, 123 cM_3php, 688 
+
+802 : R_PGI:
+cM_g6p, 459 --> cM_f6p, 120 
+
+803 : R_PGK:
+cM_atp, 125 cM_3pg, 687 --> cM_adp, 151 cM_13dpg, 482 
+
+804 : R_PGLYCP:
+cM_h2o, 7 cM_2pglyc, 689 --> cM_pi, 110 cM_glyclt, 690 
+
+805 : R_PGM:
+cM_2pg, 432 --> cM_3pg, 687 
+
+806 : R_PGMT:
+cM_g1p, 471 --> cM_g6p, 459 
+
+807 : R_PGMT2:
+cM_g1p_B, 639 --> cM_g6p_B, 477 
+
+808 : R_PGPGT:
+cM_udpg, 246 cM_prl45tca, 268 --> cM_h, 3 cM_udp, 248 cM_prl45tcaglc, 691 
+
+809 : R_PGPP180:
+cM_h2o, 7 cM_pgp180, 692 --> cM_pi, 110 cM_pg180, 340 
+
+810 : R_PGPPAI17:
+cM_h2o, 7 cM_pgpai17, 693 --> cM_pi, 110 cM_pgai17, 344 
+
+811 : R_PGPPI17:
+cM_h2o, 7 cM_pgpi17, 694 --> cM_pi, 110 cM_pgi17, 352 
+
+812 : R_PGSA120:
+cM_cdpdddecg, 371 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgp120, 695 
+
+813 : R_PGSA140:
+cM_cdpdtdecg, 372 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgp140, 696 
+
+814 : R_PGSA141:
+cM_cdpdtdec7eg, 373 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgp141, 697 
+
+815 : R_PGSA160:
+cM_cdpdhdecg, 374 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgp160, 698 
+
+816 : R_PGSA161:
+cM_cdpdhdec9eg, 375 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgp161, 699 
+
+817 : R_PGSA180:
+cM_cdpdodecg, 376 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgp180, 692 
+
+818 : R_PGSA181:
+cM_cdpdodec11eg, 377 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgp181, 700 
+
+819 : R_PGSAAI15:
+cM_cdpdaipdecg, 378 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgpai15, 701 
+
+820 : R_PGSAAI17:
+cM_cdpdaihpdecg, 379 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgpai17, 693 
+
+821 : R_PGSAI14:
+cM_cdpditdecg, 380 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgpi14, 702 
+
+822 : R_PGSAI15:
+cM_cdpdipdecg, 381 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgpi15, 703 
+
+823 : R_PGSAI16:
+cM_cdpdihdecg, 382 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgpi16, 704 
+
+824 : R_PGSAI17:
+cM_cdpdihpdecg, 383 cM_glyc3p, 473 --> cM_h, 3 cM_cmp, 326 cM_pgpi17, 694 
+
+825 : R_PHETA1:
+cM_akg, 5 cM_phe_L, 510 --> cM_glu_L, 8 cM_phpyr, 705 
+
+826 : R_PHEt2r:
+eM_h, 10 eM_phe_L, 86 --> cM_h, 3 cM_phe_L, 510 
+
+827 : R_PHPB2i:
+cM_h, 3 cM_nadph, 4 cM_aacoa, 127 --> cM_nadp, 1 cM_3hbcoa, 524 
+
+828 : R_PIt7:
+eM_na1, 79 eM_pi, 88 --> cM_pi, 110 cM_na1, 515 
+
+829 : R_PMPK:
+cM_atp, 125 cM_4ampm, 553 --> cM_adp, 151 cM_2mahmp, 706 
+
+830 : R_PMTCOATA:
+cM_coa, 13 cM_palmACP, 94 --> cM_ACP, 12 cM_pmtcoa, 160 
+
+831 : R_PNP:
+cM_pi, 110 cM_rnam, 660 --> cM_h, 3 cM_ncam, 649 cM_r1p, 653 
+
+832 : R_PNTK:
+cM_atp, 125 cM_pnto_R, 707 --> cM_h, 3 cM_adp, 151 cM_4ppan, 708 
+
+833 : R_PNTOabc:
+cM_h2o, 7 cM_atp, 125 eM_pnto_R, 89 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_pnto_R, 707 
+
+834 : R_POR4:
+cM_accoa, 40 cM_co2, 84 cM_fdxrd, 709 --> cM_h, 3 cM_coa, 13 cM_pyr, 152 cM_fdxox, 710 
+
+835 : R_PPA:
+cM_h2o, 7 cM_ppi, 129 --> cM_h, 3 cM_pi, 110 
+
+836 : R_PPAKr:
+cM_adp, 151 cM_ppap, 711 --> cM_atp, 125 cM_ppa, 712 
+
+837 : R_PPCDC:
+cM_h, 3 cM_4ppcys, 713 --> cM_co2, 84 cM_pan4p, 714 
+
+838 : R_PPCKr:
+cM_atp, 125 cM_oaa, 308 --> cM_co2, 84 cM_adp, 151 cM_pep, 154 
+
+839 : R_PPDK:
+cM_pi, 110 cM_atp, 125 cM_pyr, 152 --> cM_h, 3 cM_amp, 128 cM_ppi, 129 cM_pep, 154 
+
+840 : R_PPGPPDP:
+cM_h2o, 7 cM_ppgpp, 715 --> cM_ppi, 129 cM_gdp, 192 
+
+841 : R_PPHTDK:
+cM_pphtd, 485 --> cM_ppi, 129 cM_phytn, 716 
+
+842 : R_PPHTDT:
+cM_pphtd, 485 --> cM_ppi, 129 cM_15phytn, 717 
+
+843 : R_PPM:
+cM_r1p, 653 --> cM_r5p, 718 
+
+844 : R_PPNCL3:
+cM_atp, 125 cM_cys_L, 292 cM_4ppan, 708 --> cM_h, 3 cM_amp, 128 cM_ppi, 129 cM_4ppcys, 713 
+
+845 : R_PPND:
+cM_nad, 121 cM_pphn, 333 --> cM_co2, 84 cM_nadh, 123 cM_34hpp, 719 
+
+846 : R_PPND2:
+cM_nadp, 1 cM_pphn, 333 --> cM_nadph, 4 cM_co2, 84 cM_34hpp, 719 
+
+847 : R_PPNDH:
+cM_h, 3 cM_pphn, 333 --> cM_h2o, 7 cM_co2, 84 cM_phpyr, 705 
+
+848 : R_PPS:
+cM_h2o, 7 cM_atp, 125 cM_pyr, 152 --> cM_h, 3 cM_pi, 110 cM_amp, 128 cM_pep, 154 
+
+849 : R_PPTT:
+cM_ipdp, 412 cM_pendp, 487 --> cM_ppi, 129 cM_hexdp, 545 
+
+850 : R_PRAGS:
+cM_gly, 124 cM_atp, 125 cM_pram, 494 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_gar, 483 
+
+851 : R_PRAIS:
+cM_atp, 125 cM_fpram, 720 --> cM_h, 3 cM_pi, 110 cM_air, 114 cM_adp, 151 
+
+852 : R_PRAMPC:
+cM_h2o, 7 cM_prbamp, 721 --> cM_prfp, 722 
+
+853 : R_PRASCSi:
+cM_5aizc, 113 cM_atp, 125 cM_asp_L, 214 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_25aics, 212 
+
+854 : R_PRATPP:
+cM_h2o, 7 cM_prbatp, 313 --> cM_h, 3 cM_ppi, 129 cM_prbamp, 721 
+
+855 : R_PRFGS:
+cM_h2o, 7 cM_atp, 125 cM_gln_L, 261 cM_fgam, 484 --> cM_h, 3 cM_glu_L, 8 cM_pi, 110 cM_adp, 151 cM_fpram, 720 
+
+856 : R_PRMICI:
+cM_prfp, 722 --> cM_prlp, 562 
+
+857 : R_PRO1x:
+cM_nad, 121 cM_pro_L, 512 --> cM_h, 3 cM_nadh, 123 cM_1pyr5c, 475 
+
+858 : R_PROabc:
+cM_h2o, 7 cM_atp, 125 eM_pro_L, 90 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_pro_L, 512 
+
+859 : R_PRPPS:
+cM_atp, 125 cM_r5p, 718 --> cM_h, 3 cM_amp, 128 cM_prpp, 209 
+
+860 : R_PSCVT:
+cM_pep, 154 cM_skm5p, 723 --> cM_pi, 110 cM_3psme, 334 
+
+861 : R_PSD120:
+cM_h, 3 cM_ps120, 724 --> cM_co2, 84 cM_pe120, 725 
+
+862 : R_PSD140:
+cM_h, 3 cM_ps140, 726 --> cM_co2, 84 cM_pe140, 727 
+
+863 : R_PSD141:
+cM_h, 3 cM_ps141, 728 --> cM_co2, 84 cM_pe141, 729 
+
+864 : R_PSD160:
+cM_h, 3 cM_ps160, 730 --> cM_co2, 84 cM_pe160, 731 
+
+865 : R_PSD161:
+cM_h, 3 cM_ps161, 732 --> cM_co2, 84 cM_pe161, 733 
+
+866 : R_PSD180:
+cM_h, 3 cM_ps180, 734 --> cM_co2, 84 cM_pe180, 735 
+
+867 : R_PSD181:
+cM_h, 3 cM_ps181, 736 --> cM_co2, 84 cM_pe181, 737 
+
+868 : R_PSDAI15:
+cM_h, 3 cM_psai15, 738 --> cM_co2, 84 cM_peai15, 739 
+
+869 : R_PSDAI17:
+cM_h, 3 cM_psai17, 740 --> cM_co2, 84 cM_peai17, 741 
+
+870 : R_PSDI14:
+cM_h, 3 cM_psi14, 742 --> cM_co2, 84 cM_pei14, 743 
+
+871 : R_PSDI15:
+cM_h, 3 cM_psi15, 744 --> cM_co2, 84 cM_pei15, 745 
+
+872 : R_PSDI16:
+cM_h, 3 cM_psi16, 746 --> cM_co2, 84 cM_pei16, 747 
+
+873 : R_PSDI17:
+cM_h, 3 cM_psi17, 748 --> cM_co2, 84 cM_pei17, 749 
+
+874 : R_PSERT:
+cM_glu_L, 8 cM_3php, 688 --> cM_akg, 5 cM_pser_L, 750 
+
+875 : R_PSP_L:
+cM_h2o, 7 cM_pser_L, 750 --> cM_pi, 110 cM_ser_L, 488 
+
+876 : R_PSSA120:
+cM_cdpdddecg, 371 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_ps120, 724 
+
+877 : R_PSSA140:
+cM_cdpdtdecg, 372 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_ps140, 726 
+
+878 : R_PSSA141:
+cM_cdpdtdec7eg, 373 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_ps141, 728 
+
+879 : R_PSSA160:
+cM_cdpdhdecg, 374 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_ps160, 730 
+
+880 : R_PSSA161:
+cM_cdpdhdec9eg, 375 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_ps161, 732 
+
+881 : R_PSSA180:
+cM_cdpdodecg, 376 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_ps180, 734 
+
+882 : R_PSSA181:
+cM_cdpdodec11eg, 377 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_ps181, 736 
+
+883 : R_PSSAAI15:
+cM_cdpdaipdecg, 378 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_psai15, 738 
+
+884 : R_PSSAAI17:
+cM_cdpdaihpdecg, 379 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_psai17, 740 
+
+885 : R_PSSAI14:
+cM_cdpditdecg, 380 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_psi14, 742 
+
+886 : R_PSSAI15:
+cM_cdpdipdecg, 381 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_psi15, 744 
+
+887 : R_PSSAI16:
+cM_cdpdihdecg, 382 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_psi16, 746 
+
+888 : R_PSSAI17:
+cM_cdpdihpdecg, 383 cM_ser_L, 488 --> cM_h, 3 cM_cmp, 326 cM_psi17, 748 
+
+889 : R_PTA2:
+cM_pi, 110 cM_ppcoa, 664 --> cM_coa, 13 cM_ppap, 711 
+
+890 : R_PTAr:
+cM_accoa, 40 cM_pi, 110 --> cM_coa, 13 cM_actp, 150 
+
+891 : R_PTPAT:
+cM_h, 3 cM_atp, 125 cM_pan4p, 714 --> cM_ppi, 129 cM_dpcoa, 417 
+
+892 : R_PULLe:
+eM_h2o, 57 eM_pullulan1200, 91 --> eM_malttr, 69 
+
+893 : R_PUNP1:
+cM_pi, 110 cM_adn, 202 --> cM_ade, 203 cM_r1p, 653 
+
+894 : R_PUNP2:
+cM_pi, 110 cM_dad_2, 662 --> cM_ade, 203 cM_2dr1p, 424 
+
+895 : R_PUNP3:
+cM_pi, 110 cM_gsn, 517 --> cM_gua, 518 cM_r1p, 653 
+
+896 : R_PUNP4:
+cM_pi, 110 cM_dgsn, 663 --> cM_2dr1p, 424 cM_gua, 518 
+
+897 : R_PUNP5:
+cM_pi, 110 cM_ins, 571 --> cM_hxan, 559 cM_r1p, 653 
+
+898 : R_PUNP6:
+cM_pi, 110 cM_din, 751 --> cM_2dr1p, 424 cM_hxan, 559 
+
+899 : R_PUNP7:
+cM_pi, 110 cM_xtsn, 657 --> cM_r1p, 653 cM_xan, 752 
+
+900 : R_PYDAMK:
+cM_atp, 125 cM_pydam, 753 --> cM_h, 3 cM_adp, 151 cM_pyam5p, 754 
+
+901 : R_PYDXK:
+cM_atp, 125 cM_pydx, 755 --> cM_h, 3 cM_adp, 151 cM_pydx5p, 756 
+
+902 : R_PYDXNK:
+cM_atp, 125 cM_pydxn, 757 --> cM_h, 3 cM_adp, 151 cM_pdx5p, 758 
+
+903 : R_PYDXtr:
+eM_pydx, 92 --> cM_pydx, 755 
+
+904 : R_PYK:
+cM_h, 3 cM_adp, 151 cM_pep, 154 --> cM_atp, 125 cM_pyr, 152 
+
+905 : R_PYNP2r:
+cM_pi, 110 cM_uri, 362 --> cM_ura, 425 cM_r1p, 653 
+
+906 : R_QULNS:
+cM_dhap, 277 cM_iasp, 309 --> cM_h2o, 7 cM_pi, 110 cM_quln, 652 
+
+907 : R_RAFGH:
+cM_h2o, 7 cM_raffin, 759 --> cM_gal, 478 cM_sucr, 493 
+
+908 : R_RAFH:
+cM_h2o, 7 cM_raffin, 759 --> cM_fru, 458 cM_melib, 480 
+
+909 : R_RB5PE:
+cM_ru5p_L, 760 --> cM_xu5p_L, 761 
+
+910 : R_RBFK:
+cM_atp, 125 cM_ribflv, 762 --> cM_h, 3 cM_adp, 151 cM_fmn, 311 
+
+911 : R_RBK:
+cM_atp, 125 cM_rib_D, 204 --> cM_h, 3 cM_adp, 151 cM_r5p, 718 
+
+912 : R_RBK_D:
+cM_atp, 125 cM_rbl_D, 763 --> cM_h, 3 cM_adp, 151 cM_ru5p_D, 764 
+
+913 : R_RBK_L1:
+cM_atp, 125 cM_rbl_L, 296 --> cM_h, 3 cM_adp, 151 cM_ru5p_L, 760 
+
+914 : R_RBP4E:
+cM_ru5p_L, 760 --> cM_xu5p_D, 765 
+
+915 : R_RHCCE:
+cM_rhcys, 233 --> cM_hcys_L, 238 cM_dhptd, 416 
+
+916 : R_RIBABCte:
+cM_h2o, 7 cM_atp, 125 cM_rib_D, 204 --> cM_h, 3 cM_pi, 110 cM_adp, 151 eM_rib_D, 93 
+
+917 : R_RIBFLVt2r:
+eM_h, 10 eM_ribflv, 94 --> cM_h, 3 cM_ribflv, 762 
+
+918 : R_RIBabc:
+cM_h2o, 7 cM_atp, 125 eM_rib_D, 93 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_rib_D, 204 
+
+919 : R_RMK:
+cM_atp, 125 cM_rml, 766 --> cM_h, 3 cM_adp, 151 cM_rml1p, 767 
+
+920 : R_RMK2:
+cM_atp, 125 cM_xylu_L, 768 --> cM_h, 3 cM_adp, 151 cM_xu1p_L, 769 
+
+921 : R_RMPA:
+cM_rml1p, 767 --> cM_dhap, 277 cM_lald_L, 453 
+
+922 : R_RNDR1:
+cM_adp, 151 cM_trdrd, 239 --> cM_h2o, 7 cM_dadp, 196 cM_trdox, 241 
+
+923 : R_RNDR2:
+cM_gdp, 192 cM_trdrd, 239 --> cM_h2o, 7 cM_dgdp, 200 cM_trdox, 241 
+
+924 : R_RNDR3:
+cM_cdp, 194 cM_trdrd, 239 --> cM_h2o, 7 cM_dcdp, 198 cM_trdox, 241 
+
+925 : R_RNDR4:
+cM_trdrd, 239 cM_udp, 248 --> cM_h2o, 7 cM_dudp, 190 cM_trdox, 241 
+
+926 : R_RNTR1:
+cM_atp, 125 cM_trdrd, 239 --> cM_h2o, 7 cM_datp, 195 cM_trdox, 241 
+
+927 : R_RNTR2:
+cM_gtp, 137 cM_trdrd, 239 --> cM_h2o, 7 cM_dgtp, 199 cM_trdox, 241 
+
+928 : R_RNTR3:
+cM_ctp, 193 cM_trdrd, 239 --> cM_h2o, 7 cM_dctp, 197 cM_trdox, 241 
+
+929 : R_RNTR4:
+cM_trdrd, 239 cM_utp, 358 --> cM_h2o, 7 cM_dutp, 189 cM_trdox, 241 
+
+930 : R_RPE:
+cM_ru5p_D, 764 --> cM_xu5p_D, 765 
+
+931 : R_RPI:
+cM_r5p, 718 --> cM_ru5p_D, 764 
+
+932 : R_RZ5PP:
+cM_h2o, 7 cM_5prdmbz, 651 --> cM_pi, 110 cM_rdmbzi, 206 
+
+933 : R_SALCS2:
+cM_ichor, 770 --> cM_pyr, 152 cM_salc, 771 
+
+934 : R_SBTDOX:
+cM_nad, 121 cM_btd_SS, 772 --> cM_h, 3 cM_nadh, 123 cM_actn_S, 773 
+
+935 : R_SELNPS:
+cM_h2o, 7 cM_atp, 125 cM_seln, 774 --> cM_pi, 110 cM_amp, 128 cM_selnp, 775 
+
+936 : R_SERATi:
+cM_accoa, 40 cM_ser_L, 488 --> cM_coa, 13 cM_acser, 359 
+
+937 : R_SERt2r:
+eM_h, 10 eM_ser_L, 95 --> cM_h, 3 cM_ser_L, 488 
+
+938 : R_SGAT:
+cM_stcoa, 163 cM_glyc3p, 473 --> cM_coa, 13 cM_1odecg3p, 164 
+
+939 : R_SHEMEabc:
+cM_h2o, 7 cM_atp, 125 eM_sheme, 96 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_sheme, 776 
+
+940 : R_SHK3Dr:
+cM_h, 3 cM_nadph, 4 cM_3dhsk, 410 --> cM_nadp, 1 cM_skm, 777 
+
+941 : R_SHKK:
+cM_atp, 125 cM_skm, 777 --> cM_h, 3 cM_adp, 151 cM_skm5p, 723 
+
+942 : R_SHSL2:
+cM_h2s, 237 cM_suchms, 557 --> cM_h, 3 cM_hcys_L, 238 cM_succ, 310 
+
+943 : R_SO4t2:
+eM_h, 10 eM_so4, 97 --> cM_h, 3 cM_so4, 331 
+
+944 : R_SPMDabc:
+cM_h2o, 7 cM_atp, 125 eM_spmd, 98 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_spmd, 778 
+
+945 : R_SPMS:
+cM_ptrc, 648 cM_ametam, 779 --> cM_h, 3 cM_5mta, 641 cM_spmd, 778 
+
+946 : R_SPODM:
+cM_h, 3 cM_o2s, 780 --> cM_o2, 306 cM_h2o2, 307 
+
+947 : R_STCOATA:
+cM_coa, 13 cM_ocdcaACP, 229 --> cM_ACP, 12 cM_stcoa, 163 
+
+948 : R_STYSGH:
+cM_h2o, 7 cM_stys, 781 --> cM_gal, 478 cM_raffin, 759 
+
+949 : R_STYSabc:
+cM_h2o, 7 cM_atp, 125 eM_stys, 99 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_stys, 781 
+
+950 : R_SUCCt2r:
+eM_h, 10 eM_succ, 100 --> cM_h, 3 cM_succ, 310 
+
+951 : R_SUCD1:
+cM_succ, 310 cM_fad, 460 --> cM_fum, 211 cM_fadh2, 782 
+
+952 : R_SUCD4:
+cM_q8, 405 cM_fadh2, 782 --> cM_q8h2, 407 cM_fad, 460 
+
+953 : R_SUCDi:
+cM_succ, 310 cM_q8, 405 --> cM_fum, 211 cM_q8h2, 407 
+
+954 : R_SUCDimq:
+cM_mqn8, 290 cM_succ, 310 --> cM_fum, 211 cM_mql8, 408 
+
+955 : R_SUCR:
+cM_h2o, 7 cM_sucr, 493 --> cM_glc_D, 281 cM_fru, 458 
+
+956 : R_SUCRt2:
+eM_h, 10 eM_sucr, 101 --> cM_h, 3 cM_sucr, 493 
+
+957 : R_SUDPDGT:
+cM_udpg, 246 cM_m12dsglyc, 783 --> cM_h, 3 cM_udp, 248 cM_diglcpg180, 784 
+
+958 : R_SUDPMGT:
+cM_udpg, 246 cM_12dgr180, 673 --> cM_h, 3 cM_udp, 248 cM_m12dsglyc, 783 
+
+959 : R_TALA:
+cM_g3p, 422 cM_s7p, 686 --> cM_f6p, 120 cM_e4p, 389 
+
+960 : R_TARCGLYLi:
+cM_h, 3 cM_tartr_L, 785 --> cM_co2, 84 cM_glyc_R, 786 
+
+961 : R_TARTD:
+cM_tartr_L, 785 --> cM_h2o, 7 cM_oaa, 308 
+
+962 : R_TARTRDH:
+cM_nad, 121 cM_tartr_L, 785 --> cM_h, 3 cM_nadh, 123 cM_oxglyc, 787 
+
+963 : R_TARTRDH2:
+cM_nad, 121 cM_tartr_M, 788 --> cM_h, 3 cM_nadh, 123 cM_oxglyc, 787 
+
+964 : R_TAURabc:
+cM_h2o, 7 cM_atp, 125 eM_taur, 102 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_taur, 789 
+
+965 : R_TDCOATA:
+cM_coa, 13 cM_myrsACP, 93 --> cM_ACP, 12 cM_tdcoa, 158 
+
+966 : R_TDG3PACT:
+cM_tdcoa, 158 cM_glyc3p, 473 --> cM_coa, 13 cM_1tdecg3p, 157 
+
+967 : R_TDPDRE:
+cM_dtdp4d6dg, 790 --> cM_dtdp4d6dm, 791 
+
+968 : R_TDPDRRr:
+cM_h, 3 cM_nadph, 4 cM_dtdp4d6dm, 791 --> cM_nadp, 1 cM_dtdprmn, 792 
+
+969 : R_TDPGDH:
+cM_dtdpglu, 472 --> cM_h2o, 7 cM_dtdp4d6dg, 790 
+
+970 : R_TECA1S180:
+cM_cdpglyc, 325 cM_diglcpg180, 784 --> cM_h, 3 cM_cmp, 326 cM_sttca1, 793 
+
+971 : R_TECA1SAI17:
+cM_diglcpgai17, 250 cM_cdpglyc, 325 --> cM_h, 3 cM_cmp, 326 cM_ai17tca1, 794 
+
+972 : R_TECA1SI17:
+cM_cdpglyc, 325 cM_diglcpgi17, 566 --> cM_h, 3 cM_cmp, 326 cM_i17tca1, 795 
+
+973 : R_TECA2S180:
+cM_udpg, 246 cM_sttca1, 793 --> cM_h, 3 cM_udp, 248 cM_sttcaglc, 796 
+
+974 : R_TECA2SAI17:
+cM_udpg, 246 cM_ai17tca1, 794 --> cM_h, 3 cM_udp, 248 cM_ai17tcaglc, 797 
+
+975 : R_TECA2SI17:
+cM_udpg, 246 cM_i17tca1, 795 --> cM_h, 3 cM_udp, 248 cM_i17tcaglc, 798 
+
+976 : R_TECA3S180:
+cM_atp, 125 cM_ala_D, 255 cM_sttca1, 793 --> cM_h2o, 7 cM_amp, 128 cM_ppi, 129 cM_sttcaala_D, 799 
+
+977 : R_TECA3SAI17:
+cM_atp, 125 cM_ala_D, 255 cM_ai17tca1, 794 --> cM_h2o, 7 cM_amp, 128 cM_ppi, 129 cM_ai17tcaala_D, 800 
+
+978 : R_TECA3SI17:
+cM_atp, 125 cM_ala_D, 255 cM_i17tca1, 795 --> cM_h2o, 7 cM_amp, 128 cM_ppi, 129 cM_i17tcaala_D, 801 
+
+979 : R_TECA4S:
+cM_h2o, 7 cM_udpg, 246 cM_udpacgal, 802 --> cM_ump, 144 cM_udp, 248 cM_tcam, 803 
+
+980 : R_TECA5S180:
+cM_uacgam, 142 cM_sttca1, 793 --> cM_h, 3 cM_udp, 248 cM_sttcaacgam, 804 
+
+981 : R_TECA5SAI17:
+cM_uacgam, 142 cM_ai17tca1, 794 --> cM_h, 3 cM_udp, 248 cM_ai17tcaacgam, 805 
+
+982 : R_TECA5SI17:
+cM_uacgam, 142 cM_i17tca1, 795 --> cM_h, 3 cM_udp, 248 cM_i17tcaacgam, 806 
+
+983 : R_TECAAE:
+cM_prl45tcaala, 269 cM_PGPm1, 682 --> cM_udcpp, 143 cM_glyc45tcaala_D, 807 
+
+984 : R_TECAGE:
+cM_PGPm1, 682 cM_prl45tcaglc, 691 --> cM_udcpp, 143 cM_glyc45tcaglc, 808 
+
+985 : R_TECAUE:
+cM_prl45tca, 268 cM_PGPm1, 682 --> cM_udcpp, 143 cM_glyc45tca, 809 
+
+986 : R_THD1:
+cM_nadph, 4 cM_nad, 121 --> cM_nadp, 1 cM_nadh, 123 
+
+987 : R_THD2:
+cM_nadp, 1 cM_nadh, 123 eM_h, 10 --> cM_h, 3 cM_nadph, 4 cM_nad, 121 
+
+988 : R_THIORDXi:
+cM_trdrd, 239 cM_h2o2, 307 --> cM_h2o, 7 cM_trdox, 241 
+
+989 : R_THMDt2r:
+eM_h, 10 eM_thymd, 105 --> cM_h, 3 cM_thymd, 658 
+
+990 : R_THMt3:
+cM_h, 3 eM_thm, 103 --> eM_h, 10 cM_thm, 810 
+
+991 : R_THRAr:
+cM_thr_L, 271 --> cM_gly, 124 cM_acald, 135 
+
+992 : R_THRD_L:
+cM_thr_L, 271 --> cM_2obut, 147 cM_nh4, 219 
+
+993 : R_THRS:
+cM_h2o, 7 cM_phom, 555 --> cM_pi, 110 cM_thr_L, 271 
+
+994 : R_THRt2r:
+eM_h, 10 eM_thr_L, 104 --> cM_h, 3 cM_thr_L, 271 
+
+995 : R_THZPSN:
+cM_atp, 125 cM_cys_L, 292 cM_dxyl5p, 426 cM_tyr_L, 514 --> cM_h, 3 cM_h2o, 7 cM_co2, 84 cM_amp, 128 cM_ppi, 129 cM_ala_L, 258 cM_4mpetz, 544 cM_4hba, 811 
+
+996 : R_TKT1:
+cM_r5p, 718 cM_xu5p_D, 765 --> cM_g3p, 422 cM_s7p, 686 
+
+997 : R_TKT2:
+cM_e4p, 389 cM_xu5p_D, 765 --> cM_f6p, 120 cM_g3p, 422 
+
+998 : R_TMAt2r:
+eM_h, 10 eM_tma, 106 --> cM_h, 3 cM_tma, 502 
+
+999 : R_TMDK1:
+cM_atp, 125 cM_thymd, 658 --> cM_h, 3 cM_adp, 151 cM_dtmp, 423 
+
+1000 : R_TMDPK:
+cM_atp, 125 cM_thm, 810 --> cM_h, 3 cM_amp, 128 cM_thmpp, 148 
+
+1001 : R_TMPPP:
+cM_h, 3 cM_4mpetz, 544 cM_2mahmp, 706 --> cM_ppi, 129 cM_thmmp, 812 
+
+1002 : R_TPI:
+cM_dhap, 277 --> cM_g3p, 422 
+
+1003 : R_TRDOXOX:
+cM_h2o, 7 cM_trdox, 241 cM_peptmet_L, 813 --> cM_trdrd, 239 cM_peptmetox_L, 814 
+
+1004 : R_TRDRr:
+cM_h, 3 cM_nadph, 4 cM_trdox, 241 --> cM_nadp, 1 cM_trdrd, 239 
+
+1005 : R_TREGLUDR2:
+cM_pi, 110 cM_tre, 815 --> cM_glc_D, 281 cM_g1p_B, 639 
+
+1006 : R_TREH:
+cM_h2o, 7 cM_tre, 815 --> cM_glc_D, 281 
+
+1007 : R_TREabc:
+cM_h2o, 7 cM_atp, 125 eM_tre, 107 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_tre, 815 
+
+1008 : R_TRPS1:
+cM_ser_L, 488 cM_3ig3p, 816 --> cM_h2o, 7 cM_g3p, 422 cM_trp_L, 817 
+
+1009 : R_TRPS2r:
+cM_ser_L, 488 cM_indole, 818 --> cM_h2o, 7 cM_trp_L, 817 
+
+1010 : R_TRPS3r:
+cM_3ig3p, 816 --> cM_g3p, 422 cM_indole, 818 
+
+1011 : R_TRPt2r:
+eM_h, 10 eM_trp_L, 108 --> cM_h, 3 cM_trp_L, 817 
+
+1012 : R_TRSARr:
+cM_h, 3 cM_nadh, 123 cM_2h3oppan, 819 --> cM_nad, 121 cM_glyc_R, 786 
+
+1013 : R_TRSARry:
+cM_h, 3 cM_nadph, 4 cM_2h3oppan, 819 --> cM_nadp, 1 cM_glyc_R, 786 
+
+1014 : R_TYRTA:
+cM_akg, 5 cM_tyr_L, 514 --> cM_glu_L, 8 cM_34hpp, 719 
+
+1015 : R_TYRt2r:
+eM_h, 10 eM_tyr_L, 109 --> cM_h, 3 cM_tyr_L, 514 
+
+1016 : R_UAAGDS:
+cM_atp, 125 cM_26dap_M, 368 cM_uamag, 820 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_ugmd, 821 
+
+1017 : R_UACMAMAT:
+cM_unaga, 145 cM_uacmam, 822 --> cM_h, 3 cM_udp, 248 cM_acbdma14gapuc, 324 
+
+1018 : R_UAG2E:
+cM_uacgam, 142 --> cM_uacmam, 822 
+
+1019 : R_UAG2EMA:
+cM_h2o, 7 cM_uacgam, 142 --> cM_h, 3 cM_acmana, 155 cM_udp, 248 
+
+1020 : R_UAG4E:
+cM_uacgam, 142 --> cM_udpacgal, 802 
+
+1021 : R_UAGCVT_r:
+cM_uacgam, 142 cM_pep, 154 --> cM_pi, 110 cM_uaccg, 823 
+
+1022 : R_UAGDP:
+cM_h, 3 cM_utp, 358 cM_acgam1p, 470 --> cM_ppi, 129 cM_uacgam, 142 
+
+1023 : R_UAGPT2:
+cM_uacgam, 142 cM_uaGgla, 675 --> cM_h, 3 cM_udp, 248 cM_uaaGgla, 824 
+
+1024 : R_UAGPT3:
+cM_uacgam, 142 cM_uagmda, 677 --> cM_h, 3 cM_udp, 248 cM_uaagmda, 681 
+
+1025 : R_UAMAGS:
+cM_atp, 125 cM_glu_D, 495 cM_uama, 825 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_uamag, 820 
+
+1026 : R_UAMAS:
+cM_atp, 125 cM_ala_L, 258 cM_uamr, 826 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_uama, 825 
+
+1027 : R_UAPGR:
+cM_h, 3 cM_nadph, 4 cM_uaccg, 823 --> cM_nadp, 1 cM_uamr, 826 
+
+1028 : R_UDCPDP:
+cM_h2o, 7 cM_udcpdp, 572 --> cM_h, 3 cM_pi, 110 cM_udcpp, 143 
+
+1029 : R_UDPG4E:
+cM_udpg, 246 --> cM_udpgal, 481 
+
+1030 : R_UDPGALM:
+cM_udpgal, 481 --> cM_udpgalfur, 827 
+
+1031 : R_UGLT:
+cM_udpg, 246 cM_gal1p, 479 --> cM_g1p, 471 cM_udpgal, 481 
+
+1032 : R_UGMDDS:
+cM_atp, 125 cM_alaala, 256 cM_ugmd, 821 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_ugmda, 676 
+
+1033 : R_UP4GH:
+cM_h2o, 7 cM_up4g, 828 --> cM_h, 3 cM_ump, 144 cM_utp, 358 
+
+1034 : R_UPPRT:
+cM_prpp, 209 cM_ura, 425 --> cM_ppi, 129 cM_ump, 144 
+
+1035 : R_URIDK1:
+cM_atp, 125 cM_ump, 144 --> cM_adp, 151 cM_udp, 248 
+
+1036 : R_URIDK2:
+cM_atp, 125 cM_dump, 384 --> cM_adp, 151 cM_dudp, 190 
+
+1037 : R_URIK1:
+cM_atp, 125 cM_uri, 362 --> cM_h, 3 cM_ump, 144 cM_adp, 151 
+
+1038 : R_URIK2:
+cM_gtp, 137 cM_uri, 362 --> cM_h, 3 cM_ump, 144 cM_gdp, 192 
+
+1039 : R_URIK3:
+cM_uri, 362 cM_itp, 363 --> cM_h, 3 cM_ump, 144 cM_idp, 364 
+
+1040 : R_URIK9:
+cM_dttp, 187 cM_uri, 362 --> cM_h, 3 cM_ump, 144 cM_dtdp, 188 
+
+1041 : R_UTPATPT:
+cM_amp, 128 cM_utp, 358 --> cM_adp, 151 cM_udp, 248 
+
+1042 : R_VALTA:
+cM_akg, 5 cM_val_L, 829 --> cM_glu_L, 8 cM_3mob, 41 
+
+1043 : R_VALabc:
+cM_h2o, 7 cM_atp, 125 eM_val_L, 110 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_val_L, 829 
+
+1044 : R_VALt2r:
+eM_h, 10 eM_val_L, 110 --> cM_h, 3 cM_val_L, 829 
+
+1045 : R_XPPTr:
+cM_ppi, 129 cM_xmp, 516 --> cM_prpp, 209 cM_xan, 752 
+
+1046 : R_XTSNH:
+cM_h2o, 7 cM_xtsn, 657 --> cM_rib_D, 204 cM_xan, 752 
+
+1047 : R_XYLI1:
+cM_xyl_D, 830 --> cM_xylu_D, 831 
+
+1048 : R_XYLI2:
+cM_glc_D, 281 --> cM_fru
