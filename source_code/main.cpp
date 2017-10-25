@@ -59,7 +59,6 @@ int main (int argc, char* argv[])
     //Write metabolite and compartment data to output file
     output << "\nMETABOLITES\n\n";
     for(unsigned int i = 0u; i < spList->size(); ++i) {
-
         std::string spId = spList->get(i)->getId();
         std::string spName = spId.substr(0, spId.size()-2);
         std::string spComp = spId.substr(spId.size()-1, spId.size());
@@ -92,6 +91,7 @@ int main (int argc, char* argv[])
         output2 << e.first << " : " << e.second << "\n";
     }
 
+
     //Create arrays for GLPK stoichiometry matrix
     int ia[1+10000], ja[1+10000]; //need a good way to determine the size of the array from metabolite and reaction data...?
     double ar[1+10000];
@@ -101,7 +101,6 @@ int main (int argc, char* argv[])
     output << "\nREACTIONS\n\n";
     for(unsigned int i = 0u; i < reacList->size(); ++i) {
         Reaction *reac = reacList->get(i);
-
         std::string reacId = reac->getId();
         const char *reacId_char = reacId.c_str();
         glp_set_col_name(lp, i+1, reacId_char);
@@ -183,6 +182,11 @@ int main (int argc, char* argv[])
         output << "\n\n";
     }
 
+    //Close output files (cannot be after glp_load / glp_matrix functions for some reason..)
+    output.close();
+    output2.close();
+    output3.close();
+
     //Cout sparse matrix
     for(int i=1; i < matrixCount; i++){
         std::cout << ia[i] << ", " << ja[i] << ", " << ar[i] << "\n"; //last reaction not sparse...?
@@ -191,11 +195,6 @@ int main (int argc, char* argv[])
     //Load and solve GLPK matrix
     glp_load_matrix(lp, matrixCount-1,ia,ja,ar);
     glp_simplex(lp, NULL);
-
-    //Close output files
-    output.close();
-    output2.close();
-    output3.close();
 
     //Delete SBML and GLPK elements
     delete document;

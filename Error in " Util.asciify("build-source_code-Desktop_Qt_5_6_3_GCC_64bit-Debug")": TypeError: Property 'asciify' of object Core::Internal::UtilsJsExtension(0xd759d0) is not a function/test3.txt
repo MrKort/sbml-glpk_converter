@@ -3143,4 +3143,65 @@ cM_h2o, 7 cM_xtsn, 657 --> cM_rib_D, 204 cM_xan, 752
 cM_xyl_D, 830 --> cM_xylu_D, 831 
 
 1048 : R_XYLI2:
-cM_glc_D, 281 --> cM_fru
+cM_glc_D, 281 --> cM_fru, 458 
+
+1049 : R_XYLK:
+cM_atp, 125 cM_xylu_D, 831 --> cM_h, 3 cM_adp, 151 cM_xu5p_D, 765 
+
+1050 : R_XYLt:
+eM_xyl_D, 111 --> cM_xyl_D, 830 
+
+1051 : R_YUMPS:
+cM_ura, 425 cM_r5p, 718 --> cM_h2o, 7 cM_psd5p, 832 
+
+1052 : R_ZNabc:
+cM_h2o, 7 cM_atp, 125 eM_zn2, 112 --> cM_h, 3 cM_pi, 110 cM_adp, 151 cM_zn2, 833 
+
+1053 : R_dreplication:
+--> cM_dnarep, 834 
+
+1054 : R_pbiosynthesis:
+--> cM_proteinsynth, 835 
+
+1055 : R_r0060:
+cM_ser_L, 488 --> cM_pyr, 152 cM_nh4, 219 
+
+1056 : R_r0082:
+cM_h, 3 cM_HC01434, 836 --> cM_akg, 5 cM_co2, 84 
+
+1057 : R_r0127:
+cM_h2o, 7 cM_asn_L, 301 --> cM_asp_L, 214 cM_nh4, 219 
+
+1058 : R_r0339:
+cM_atp, 125 cM_glyc_R, 786 --> cM_h, 3 cM_adp, 151 cM_3pg, 687 
+
+1059 : R_r0345:
+cM_atp, 125 cM_damp, 661 --> cM_adp, 151 cM_dadp, 196 
+
+1060 : R_r0392:
+cM_h2o, 7 cM_nad, 121 cM_glyald, 272 --> cM_h, 3 cM_nadh, 123 cM_glyc_R, 786 
+
+1061 : R_r0422:
+cM_nadp, 1 cM_icit, 561 --> cM_h, 3 cM_nadph, 4 cM_HC01434, 836 
+
+1062 : R_r0570:
+cM_2dr1p, 424 --> cM_2dr5p, 421 
+
+1063 : R_r0792:
+cM_nad, 121 cM_5mthf, 634 --> cM_h, 3 cM_nadh, 123 cM_mlthf, 489 
+
+1064 : R_r1667:
+eM_arg_L, 13 cM_orn, 672 --> cM_arg_L, 297 eM_orn, 84 
+
+1065 : R_r2137:
+eM_cl, 35 --> cM_cl, 837 
+
+1066 : R_rtranscription:
+--> cM_rnatrans, 838 
+
+1067 : R_sink_PGPm1_LSQBKT_c_RSQBKT_:
+cM_PGPm1, 682 --> 
+
+1068 : R_biomass082:
+cM_nadp, 1 cM_h2o, 7 cM_glu_L, 8 cM_ACP, 12 cM_coa, 13 cM_amet, 117 cM_nad, 121 cM_gly, 124 cM_atp, 125 cM_gtp, 137 cM_thmpp, 148 cM_dttp, 187 cM_ctp, 193 cM_datp, 195 cM_dctp, 197 cM_dgtp, 199 cM_adocbl, 207 cM_asp_L, 214 cM_10fthf, 243 cM_thf, 245 cM_ala_L, 258 cM_gln_L, 261 cM_his_L, 265 cM_leu_L, 267 cM_thr_L, 271 cM_2dmmq8, 289 cM_mqn8, 290 cM_cys_L, 292 cM_arg_L, 297 cM_asn_L, 301 cM_ca2, 319 cM_so4, 331 cM_pg180, 340 cM_clpn180, 341 cM_pgai17, 344 cM_clpnai17, 345 cM_pgi17, 352 cM_clpni17, 353 cM_cobalt2, 355 cM_utp, 358 cM_cu2, 366 cM_lys_L, 369 cM_q8, 405 cM_fe2, 454 cM_fe3, 455 cM_fad, 460 cM_gthrd, 486 cM_ser_L, 488 cM_met_L, 507 cM_phe_L, 510 cM_pro_L, 512 cM_tyr_L, 514 cM_pheme, 542 cM_ile_L, 568 cM_udcpdp, 572 cM_k, 578 cM_5mthf, 634 cM_mg2, 637 cM_mn2, 640 cM_ptrc, 648 cM_PGP, 683 cM_pe180, 735 cM_peai17, 741 cM_pei17, 749 cM_pydx5p, 756 cM_ribflv, 762 cM_sheme, 776 cM_spmd, 778 cM_sttca1, 793 cM_ai17tca1, 794 cM_i17tca1, 795 cM_sttcaglc, 796 cM_ai17tcaglc, 797 cM_i17tcaglc, 798 cM_sttcaala_D, 799 cM_ai17tcaala_D, 800 cM_i17tcaala_D, 801 cM_tcam, 803 cM_sttcaacgam, 804 cM_ai17tcaacgam, 805 cM_i17tcaacgam, 806 cM_glyc45tcaala_D, 807 cM_glyc45tcaglc, 808 cM_glyc45tca, 809 cM_trp_L, 817 cM_val_L, 829 cM_zn2, 833 cM_dnarep, 834 cM_proteinsynth, 835 cM_cl, 837 cM_rnatrans, 838 --> cM_h, 3 cM_pi, 110 cM_ppi, 129 cM_adp, 151 cM_apoACP, 185 cM_cbi, 320 cM_biomass, 433 cM_dmbzid, 650 cM_PGPm1, 682 
+

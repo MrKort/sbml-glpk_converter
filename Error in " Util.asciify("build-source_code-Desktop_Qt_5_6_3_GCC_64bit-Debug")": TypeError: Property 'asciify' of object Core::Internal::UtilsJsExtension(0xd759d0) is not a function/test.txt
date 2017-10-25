@@ -9480,3 +9480,35 @@ Reactants: 2
 Products: 2
 1 M_arg_L c + 1 M_orn e
 
+reaction 1065 : R_r2137 (Major Facilitator(MFS) TCDB:2.A.1.14.6)
+reversible? Y
+fast? N
+Reactants: 1
+1 M_cl e
+Products: 1
+1 M_cl c
+
+reaction 1066 : R_rtranscription (RNA transcription c0)
+reversible? N
+fast? N
+Reactants: 0
+
+Products: 1
+1 M_rnatrans c
+
+reaction 1067 : R_sink_PGPm1_LSQBKT_c_RSQBKT_ (Sink reaction for peptidoglycan polymer (n-1) subunits)
+reversible? Y
+fast? N
+Reactants: 1
+1 M_PGPm1 c
+Products: 0
+
+
+reaction 1068 : R_biomass082 (biomass0)
+reversible? N
+fast? N
+Reactants: 91
+0.0079397 M_nadp c + 37.16 M_h2o c + 0.26101 M_glu_L c + 0.0079397 M_ACP c + 0.0079397 M_coa c + 0.0079397 M_amet c + 0.0079397 M_nad c + 0.40933 M_gly c + 41.2914 M_atp c + 0.042403 M_gtp c + 0.0079397 M_thmpp c + 0.0169 M_dttp c + 0.026124 M_ctp c + 0.0169 M_datp c + 0.0099768 M_dctp c + 0.0099768 M_dgtp c + 0.0079397 M_adocbl c + 0.14833 M_asp_L c + 0.0079397 M_10fthf c + 0.0079397 M_thf c + 0.26756 M_ala_L c + 0.26101 M_gln_L c + 0.081948 M_his_L c + 0.34746 M_leu_L c + 0.18684 M_thr_L c + 0.0079397 M_2dmmq8 c + 0.0079397 M_mqn8 c + 0.056954 M_cys_L c + 0.1934 M_arg_L c + 0.14833 M_asn_L c + 0.0079397 M_ca2 c + 0.0079397 M_so4 c + 0.0085871 M_pg180 c + 0.0085871 M_clpn180 c + 0.0085871 M_pgai17 c + 0.0085871 M_clpnai17 c + 0.0085871 M_pgi17 c + 0.0085871 M_clpni17 c + 0.0079397 M_cobalt2 c + 0.028225 M_utp c + 0.0079397 M_cu2 c + 0.3237 M_lys_L c + 0.0079397 M_q8 c + 0.0079397 M_fe2 c + 0.0079397 M_fe3 c + 0.0079397 M_fad c + 0.0079397 M_gthrd c + 0.21675 M_ser_L c + 0.1135 M_met_L c + 0.17619 M_phe_L c + 0.16103 M_pro_L c + 0.11104 M_tyr_L c + 0.0079397 M_pheme c + 0.27043 M_ile_L c + 0.0018061 M_udcpdp c + 0.0079397 M_k c + 0.0079397 M_5mthf c + 0.0079397 M_mg2 c + 0.0079397 M_mn2 c + 0.0079397 M_ptrc c + 0.0018061 M_PGP c + 0.0085871 M_pe180 c + 0.0085871 M_peai17 c + 0.0085871 M_pei17 c + 0.0079397 M_pydx5p c + 0.0079397 M_ribflv c + 0.0079397 M_sheme c + 0.0079397 M_spmd c + 0.0018061 M_sttca1 c + 0.0018061 M_ai17tca1 c + 0.0018061 M_i17tca1 c + 0.0018061 M_sttcaglc c + 0.0018061 M_ai17tcaglc c + 0.0018061 M_i17tcaglc c + 0.0018061 M_sttcaala_D c + 0.0018061 M_ai17tcaala_D c + 0.0018061 M_i17tcaala_D c + 0.0018061 M_tcam c + 0.0018061 M_sttcaacgam c + 0.0018061 M_ai17tcaacgam c + 0.0018061 M_i17tcaacgam c + 0.0018061 M_glyc45tcaala_D c + 0.0018061 M_glyc45tcaglc c + 0.0018061 M_glyc45tca c + 0.054496 M_trp_L c + 0.30772 M_val_L c + 0.0079397 M_zn2 c + 1 M_dnarep c + 1 M_proteinsynth c + 0.0079397 M_cl c + 1 M_rnatrans c
+Products: 9
+41.257 M_h c + 41.2491 M_pi c + 0.1849 M_ppi c + 41.257 M_adp c + 0.0079397 M_apoACP c + 0.0079397 M_cbi c + 1 M_biomass c + 0.0079397 M_dmbzid c + 0.0072242 M_PGPm1 c
+
