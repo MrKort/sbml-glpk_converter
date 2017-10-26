@@ -52,9 +52,8 @@ int main (int argc, char* argv[])
 
     //Create internal and external maps to link metabolite name to metabolite number
     std::map<std::string, int> environment;
-    int envCount = 0;
     std::map<std::string, int> cytosol;
-    int cytCount = 0;
+    int metaCount = 0;
 
     //Write metabolite and compartment data to output file
     output << "\nMETABOLITES\n\n";
@@ -64,15 +63,16 @@ int main (int argc, char* argv[])
         std::string spComp = spId.substr(spId.size()-1, spId.size());
         const char *spName_char = spName.c_str();
         glp_set_row_name(lp, i+1, spName_char);
+        glp_set_row_bnds(lp, i+1, GLP_FX, 0.0, 0.0);
 
         //Store metabolite name and number in map
         if(spComp == "e") {
-            environment[spName] = envCount;
-            ++envCount;
+            environment[spName] = metaCount;
+            ++metaCount;
         }
         else if(spComp == "c") {
-            cytosol[spName] = cytCount;
-            ++cytCount;
+            cytosol[spName] = metaCount;
+            ++metaCount;
         }
         else {
             std::cerr << "Unexpected compartment whilst reading SBML file: " << filename << "\n";
@@ -104,6 +104,14 @@ int main (int argc, char* argv[])
         std::string reacId = reac->getId();
         const char *reacId_char = reacId.c_str();
         glp_set_col_name(lp, i+1, reacId_char);
+        glp_set_col_bnds(lp, i+1, GLP_DB, -1000.0, 1000.0); //Negative bounds were not allowed? But they seem to work.. Test with disected reversible reactions
+
+        if(i+1 != reacList->size()) {
+            glp_set_obj_coef(lp, i+1, 0.0);
+        }
+        else {
+            glp_set_obj_coef(lp, i+1, 1.0);
+        }
 
         output3 << i << " : " << reacId << ":\n";
 
@@ -119,23 +127,23 @@ int main (int argc, char* argv[])
             std::string subId = reac->getReactant(j)->getSpecies();
             std::string subName = subId.substr(0,subId.size()-2);
             std::string subComp = subId.substr(subId.size()-1, subId.size());
-            int subStoi = reac->getReactant(j)->getStoichiometry();
+            double subStoi = reac->getReactant(j)->getStoichiometry();
             output << (j == 0 ? "" : " + ");
             output   << reac->getReactant(j)->getStoichiometry()
                      << " " << subName << " " << subComp;
 
             //Build stoichiometry matrix using maps.find() to get metabolite number
             if(subComp == "e") {
-                auto subNum = environment.find(subName);
-                ia[matrixCount] = subNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = -subStoi;
+                int subNum = environment.find(subName)->second;
+                ia[matrixCount] = subNum+1, ja[matrixCount] = i+1, ar[matrixCount] = -subStoi;
                 matrixCount++;
-                output3 << subComp << subNum->first << ", " << subNum->second << " ";
+//                output3 << subComp << subNum->first << ", " << subNum->second << " ";
             }
             else if(subComp == "c") {
-                auto subNum = cytosol.find(subName);
-                ia[matrixCount] = subNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = -subStoi;
+                int subNum = cytosol.find(subName)->second;
+                ia[matrixCount] = subNum+1, ja[matrixCount] = i+1, ar[matrixCount] = -subStoi;
                 matrixCount++;
-                output3 << subComp << subNum->first << ", " << subNum->second << " ";
+//                output3 << subComp << subNum->first << ", " << subNum->second << " ";
             }
             else {
                 std::cerr << "Unexpected compartment whilst reading reactants from SBML file: " << filename << "\n";
@@ -151,23 +159,23 @@ int main (int argc, char* argv[])
             std::string prodId = reac->getProduct(j)->getSpecies();
             std::string prodName = prodId.substr(0, prodId.size()-2);
             std::string prodComp = prodId.substr(prodId.size()-1, prodId.size());
-            int prodStoi = reac->getProduct(j)->getStoichiometry();
+            double prodStoi = reac->getProduct(j)->getStoichiometry();
             output << (j == 0 ? "" : " + ");
             output   << reac->getProduct(j)->getStoichiometry()
                      << " " << prodName << " " << prodComp;
 
             //Build stoichiometry matrix using maps.find() to get metabolite number
             if(prodComp == "e") {
-                auto prodNum = environment.find(prodName);
-                ia[matrixCount] = prodNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = prodStoi;
+                int prodNum = environment.find(prodName)->second;
+                ia[matrixCount] = prodNum+1, ja[matrixCount] = i+1, ar[matrixCount] = prodStoi;
                 matrixCount++;
-                output3 << prodComp << prodNum->first << ", " << prodNum->second << " ";
+//                output3 << prodComp << prodNum->first << ", " << prodNum->second << " ";
             }
             else if(prodComp == "c") {
-                auto prodNum = cytosol.find(prodName);
-                ia[matrixCount] = prodNum->second+1, ja[matrixCount] = i+1, ar[matrixCount] = prodStoi;
+                int prodNum = cytosol.find(prodName)->second;
+                ia[matrixCount] = prodNum+1, ja[matrixCount] = i+1, ar[matrixCount] = prodStoi;
                 matrixCount++;
-                output3 << prodComp << prodNum->first << ", " << prodNum->second << " ";
+//                output3 << prodComp << prodNum->first << ", " << prodNum->second << " ";
             }
             else {
                 std::cerr << "Unexpected compartment whilst reading products from SBML file: " << filename << "\n";
@@ -189,11 +197,12 @@ int main (int argc, char* argv[])
 
     //Cout sparse matrix
     for(int i=1; i < matrixCount; i++){
-        std::cout << ia[i] << ", " << ja[i] << ", " << ar[i] << "\n"; //last reaction not sparse...?
+        std::cout << i << ", " << ia[i] << ", " << ja[i] << ", " << ar[i] << "\n"; //last reaction not sparse...?
     }
+    std::cout << "\n";
 
     //Load and solve GLPK matrix
-    glp_load_matrix(lp, matrixCount-1,ia,ja,ar);
+    glp_load_matrix(lp, matrixCount-1,ia,ja,ar); //rename ia[],ja[],ar[] arrays to logical names
     glp_simplex(lp, NULL);
 
     //Delete SBML and GLPK elements
