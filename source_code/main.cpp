@@ -25,7 +25,7 @@ int main (int argc, char* argv[])
     glp_prob *lp;
     lp = glp_create_prob();
     glp_set_obj_dir(lp, GLP_MAX);
-    glp_add_cols(lp, reacList->size());
+    glp_add_cols(lp, reacList->size()*2); //times 2 to account for potential reversible reactions
     glp_add_rows(lp, spList->size());
 
     //Create internal and external maps to link metabolite name to metabolite number
@@ -59,43 +59,51 @@ int main (int argc, char* argv[])
 
     //Create arrays for GLPK
     int ia[1+10000], ja[1+10000]; //need a good way to determine the size of the array from metabolite and reaction data...?
-    double ar[1+10000];
+    double ar[1+10000]; //after first run the exact sizes for these arrays are known, and can be used for further calculations
     int matrixCount = 1;
-    int reverCount = 1;
+    int revCount = 1;
 
     //Write substrates and products from SMBL files into GLPK arrays
     for(unsigned int i = 0u; i < reacList->size(); ++i) {
-        Reaction *reac = reacList->get(i);
-        std::string reacId = reac->getId();
+        const Reaction *reac = reacList->get(i);
+        const std::string reacId = reac->getId();
         const char *reacId_char = reacId.c_str();
         glp_set_col_name(lp, i+1, reacId_char);
-        glp_set_col_bnds(lp, i+1, GLP_DB, -1000.0, 1000.0); //Negative bounds were not allowed? But they seem to work.. Test with disected reversible reactions
+        glp_set_col_bnds(lp, i+1, GLP_DB, 0.0, 1000.0);
 
         if(i+1 != reacList->size()) {
             glp_set_obj_coef(lp, i+1, 0.0);
         }
         else {
-            glp_set_obj_coef(lp, i+1, 1.0);
+            glp_set_obj_coef(lp, i+1, 1.0); //only the last reaction (biomass production) is set as an objective function
         }
 
         //For loop for substrates
         unsigned int m = reac->getListOfReactants()->size();
         for(unsigned int j = 0u; j < m; ++j) {
-            std::string subId = reac->getReactant(j)->getSpecies();
-            std::string subName = subId.substr(0,subId.size()-2);
-            std::string subComp = subId.substr(subId.size()-1, subId.size());
-            double subStoi = reac->getReactant(j)->getStoichiometry();
+            const std::string subId = reac->getReactant(j)->getSpecies();
+            const std::string subName = subId.substr(0,subId.size()-2);
+            const std::string subComp = subId.substr(subId.size()-1, subId.size());
+            const double subStoi = reac->getReactant(j)->getStoichiometry();
 
             //Build stoichiometry matrix using maps.find() to get metabolite number
             if(subComp == "e") {
-                int subNum = environment.find(subName)->second;
+                const int subNum = environment.find(subName)->second;
                 ia[matrixCount] = subNum+1, ja[matrixCount] = i+1, ar[matrixCount] = -subStoi;
                 matrixCount++;
+                if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
+                    ia[matrixCount] = subNum+1, ja[matrixCount] = reacList->size() + revCount, ar[matrixCount] = +subStoi;
+                    matrixCount++;
+                }
             }
             else if(subComp == "c") {
-                int subNum = cytosol.find(subName)->second;
+                const int subNum = cytosol.find(subName)->second;
                 ia[matrixCount] = subNum+1, ja[matrixCount] = i+1, ar[matrixCount] = -subStoi;
                 matrixCount++;
+                if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
+                    ia[matrixCount] = subNum+1, ja[matrixCount] = reacList->size() + revCount, ar[matrixCount] = +subStoi;
+                    matrixCount++;
+                }
             }
             else {
                 std::cerr << "Unexpected compartment whilst reading reactants from SBML file: " << filename << "\n";
@@ -106,37 +114,57 @@ int main (int argc, char* argv[])
         //For loop for products
         m = reac->getListOfProducts()->size();
         for(unsigned int j = 0u; j < m; ++j) {
-            std::string prodId = reac->getProduct(j)->getSpecies();
-            std::string prodName = prodId.substr(0, prodId.size()-2);
-            std::string prodComp = prodId.substr(prodId.size()-1, prodId.size());
-            double prodStoi = reac->getProduct(j)->getStoichiometry();
+            const std::string prodId = reac->getProduct(j)->getSpecies();
+            const std::string prodName = prodId.substr(0, prodId.size()-2);
+            const std::string prodComp = prodId.substr(prodId.size()-1, prodId.size());
+            const double prodStoi = reac->getProduct(j)->getStoichiometry();
 
             //Build stoichiometry matrix using maps.find() to get metabolite number
             if(prodComp == "e") {
-                int prodNum = environment.find(prodName)->second;
+                const int prodNum = environment.find(prodName)->second;
                 ia[matrixCount] = prodNum+1, ja[matrixCount] = i+1, ar[matrixCount] = +prodStoi;
                 matrixCount++;
+                if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
+                    ia[matrixCount] = prodNum+1, ja[matrixCount] = reacList->size() + revCount, ar[matrixCount] = -prodStoi;
+                    matrixCount++;
+                }
             }
             else if(prodComp == "c") {
-                int prodNum = cytosol.find(prodName)->second;
+                const int prodNum = cytosol.find(prodName)->second;
                 ia[matrixCount] = prodNum+1, ja[matrixCount] = i+1, ar[matrixCount] = +prodStoi;
                 matrixCount++;
+                if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
+                    ia[matrixCount] = prodNum+1, ja[matrixCount] = reacList->size() + revCount, ar[matrixCount] = -prodStoi;
+                    matrixCount++;
+                }
             }
             else {
                 std::cerr << "Unexpected compartment whilst reading products from SBML file: " << filename << "\n";
                 exit(4);
             }
         }
+        if(reac->getReversible()) { //check if reaction is reversible, if so give reverse reaction a name, obj_coef, and bounds
+            glp_set_obj_coef(lp, reacList->size() + revCount, 0.0);
+            const std::string revReacId = reacId + "_reverse";
+            const char *reacId_char = revReacId.c_str();
+            glp_set_col_name(lp, reacList->size() + revCount, reacId_char);
+            glp_set_col_bnds(lp, reacList->size() + revCount, GLP_DB, 0.0, 1000.0);
+            revCount++;
+        }
     }
 
-    //Cout sparse matrix
+    //Output sparse matrix to csv file
+    std::ofstream output("test.csv");
+    output << "Matrix Index\tMetabolite#\tReaction#\tStoichiometry\n";
     for(int i=1; i < matrixCount; i++){
-        std::cout << i << ", " << ia[i] << ", " << ja[i] << ", " << ar[i] << "\n";
+        output << i << "\t" << ia[i] << "\t" << ja[i] << "\t" << ar[i] << "\n"; // this can be used to correctly set ia, ja, and ar sizes
     }
-    std::cout << "\n";
+    output.close();
+
+    std::cout << "Maximum number of reactions: " << reacList->size() + revCount - 1 << "\n\n"; //this can be used to correctly set glp_add_col
 
     //Load and solve GLPK matrix
-    glp_load_matrix(lp, matrixCount-1,ia,ja,ar); //rename ia[],ja[],ar[] arrays to logical names
+    glp_load_matrix(lp, matrixCount-1,ia,ja,ar);
     glp_simplex(lp, NULL);
 
     //Delete SBML and GLPK elements
