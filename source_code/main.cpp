@@ -125,6 +125,7 @@ int main (int argc, char* argv[])
                 ia[matrixCount] = prodNum+1, ja[matrixCount] = i+1, ar[matrixCount] = +prodStoi;
                 matrixCount++;
                 if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
+                    //create output file with reaction and metabolite name and numbers here, to analyse the internal/external reactions
                     ia[matrixCount] = prodNum+1, ja[matrixCount] = reacList->size() + revCount, ar[matrixCount] = -prodStoi;
                     matrixCount++;
                 }
@@ -153,7 +154,7 @@ int main (int argc, char* argv[])
         }
     }
 
-    //Output sparse matrix to csv file
+    //Output sparse matrix to .csv file
     std::ofstream output("test.csv");
     output << "Matrix Index\tMetabolite#\tReaction#\tStoichiometry\n";
     for(int i=1; i < matrixCount; i++){
@@ -161,7 +162,13 @@ int main (int argc, char* argv[])
     }
     output.close();
 
-    std::cout << "Maximum number of reactions: " << reacList->size() + revCount - 1 << "\n\n"; //this can be used to correctly set glp_add_col
+    std::cout << "\nNumber of external metabolites: " << environment.size() << "\n";
+    std::cout << "Number of internal metabolites: " << cytosol.size() << "\n";
+    std::cout << "Total number metabolites: " << spList->size() << "\n";
+    std::cout << "\nNumber of forward reactions: " << reacList->size() << "\n";
+    std::cout << "Number of reverse reactions: " << revCount - 1 << "\n";
+    std::cout << "Total number of reactions: " << reacList->size() + (revCount - 1) << "\n"; //this can be used to correctly set glp_add_col
+    std::cout << "\nNumber of non-zeroes in sparse matrix: " << matrixCount - 1 << "\n\n";
 
     //Load and solve GLPK matrix
     glp_load_matrix(lp, matrixCount-1,ia,ja,ar);
