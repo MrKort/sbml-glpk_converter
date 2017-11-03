@@ -38,8 +38,8 @@ int main (int argc, char* argv[])
         std::string spId = spList->get(i)->getId();
         std::string spName = spId.substr(0, spId.size()-2);
         std::string spComp = spId.substr(spId.size()-1, spId.size());
-        const char *spName_char = spName.c_str();
-        glp_set_row_name(lp, i+1, spName_char);
+        const char *spId_char = spId.c_str();
+        glp_set_row_name(lp, i+1, spId_char);
         glp_set_row_bnds(lp, i+1, GLP_FX, 0.0, 0.0);
 
         //Store metabolite name and number in map
@@ -60,7 +60,6 @@ int main (int argc, char* argv[])
     //Create vectors for GLPK
     std::vector<int> vecMeta, vecReac;
     std::vector<double> vecStoi;
-    //vecMeta.push_back(0), vecReac.push_back(0), vecStoi.push_back(0.0); //fill first unused element in array
 
     int matrixCount = 1;
     int revCount = 1;
@@ -156,11 +155,13 @@ int main (int argc, char* argv[])
         }
     }
 
-    //Output sparse matrix to .csv file
+    //Output sparse matrix with reaction and metabolite IDs to .csv file
     std::ofstream output("test.csv");
-    output << "Matrix Index\tMetabolite#\tReaction#\tStoichiometry\n";
+    output << "Matrix Index\tMetabolite#\tMetaboliteID\tReaction#\tReactionID\tStoichiometry\n";
     for(int i=1; i < matrixCount; i++){
-        output << i << "\t" << vecMeta[i-1] << "\t" << vecReac[i-1] << "\t" << vecStoi[i-1] << "\n"; // this can be used to correctly set ia, ja, and ar sizes
+        output << i << "\t" << vecMeta[i-1] << "\t" << glp_get_row_name(lp, vecMeta[i-1])
+                    << "\t" << vecReac[i-1] << "\t" << glp_get_col_name(lp, vecReac[i-1])
+                    << "\t" << vecStoi[i-1] << "\n";
     }
     output.close();
 
