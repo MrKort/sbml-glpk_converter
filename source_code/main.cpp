@@ -91,19 +91,19 @@ int main (int argc, char* argv[])
             if(subComp == "e") {
                 const int subNum = environment.find(subName)->second;
                 vecMeta.push_back(subNum+1), vecReac.push_back(i+1), vecStoi.push_back(-subStoi);
-                matrixCount++;
+                ++matrixCount;
                 if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
                     vecMeta.push_back(subNum+1), vecReac.push_back(reacList->size() + revCount), vecStoi.push_back(+subStoi);
-                    matrixCount++;
+                    ++matrixCount;
                 }
             }
             else if(subComp == "c") {
                 const int subNum = cytosol.find(subName)->second;
                 vecMeta.push_back(subNum+1), vecReac.push_back(i+1), vecStoi.push_back(-subStoi);
-                matrixCount++;
+                ++matrixCount;
                 if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
                     vecMeta.push_back(subNum+1), vecReac.push_back(reacList->size() + revCount), vecStoi.push_back(+subStoi);
-                    matrixCount++;
+                    ++matrixCount;
                 }
             }
             else {
@@ -124,20 +124,20 @@ int main (int argc, char* argv[])
             if(prodComp == "e") {
                 const int prodNum = environment.find(prodName)->second;
                 vecMeta.push_back(prodNum+1), vecReac.push_back(i+1), vecStoi.push_back(+prodStoi);
-                matrixCount++;
+                ++matrixCount;
                 if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
                     //create output file with reaction and metabolite name and numbers here, to analyse the internal/external reactions
                     vecMeta.push_back(prodNum+1), vecReac.push_back(reacList->size() + revCount), vecStoi.push_back(-prodStoi);
-                    matrixCount++;
+                    ++matrixCount;
                 }
             }
             else if(prodComp == "c") {
                 const int prodNum = cytosol.find(prodName)->second;
                 vecMeta.push_back(prodNum+1), vecReac.push_back(i+1), vecStoi.push_back(+prodStoi);
-                matrixCount++;
+                ++matrixCount;
                 if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
                     vecMeta.push_back(prodNum+1), vecReac.push_back(reacList->size() + revCount), vecStoi.push_back(-prodStoi);
-                    matrixCount++;
+                    ++matrixCount;
                 }
             }
             else {
@@ -151,14 +151,14 @@ int main (int argc, char* argv[])
             const char *reacId_char = revReacId.c_str();
             glp_set_col_name(lp, reacList->size() + revCount, reacId_char);
             glp_set_col_bnds(lp, reacList->size() + revCount, GLP_DB, 0.0, 1000.0);
-            revCount++;
+            ++revCount;
         }
     }
 
     //Output sparse matrix with reaction and metabolite IDs to .csv file
     std::ofstream output("test.csv");
     output << "Matrix Index\tMetabolite#\tMetaboliteID\tReaction#\tReactionID\tStoichiometry\n";
-    for(int i=1; i < matrixCount; i++){
+    for(int i=1; i < matrixCount; ++i){
         output << i << "\t" << vecMeta[i-1] << "\t" << glp_get_row_name(lp, vecMeta[i-1])
                     << "\t" << vecReac[i-1] << "\t" << glp_get_col_name(lp, vecReac[i-1])
                     << "\t" << vecStoi[i-1] << "\n";
