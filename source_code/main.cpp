@@ -76,13 +76,7 @@ int main (int argc, char* argv[])
         const char *reacId_char = reacId.c_str();
         glp_set_col_name(lp, i+1, reacId_char);
         glp_set_col_bnds(lp, i+1, GLP_DB, 0.0, 1000.0);
-
-//        if(i+1 != reacList->size()) {
-          glp_set_obj_coef(lp, i+1, 0.0);
-//        }
-//        else {
-//            glp_set_obj_coef(lp, i+1, 1.0); //only the last reaction (biomass production) is set as an objective function
-//        }
+        glp_set_obj_coef(lp, i+1, 0.0);
 
         //For loop for substrates
         unsigned int m = reac->getListOfReactants()->size();
