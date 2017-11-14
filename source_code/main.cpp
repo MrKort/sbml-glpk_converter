@@ -31,7 +31,7 @@ int main (int argc, char* argv[])
     //Create internal and external maps to link metabolite name to metabolite number
     std::map<std::string, int> environment;
     std::map<std::string, int> cytosol;
-    int metaCount = 0;
+    unsigned int metaCount = 0u;
 
     //Read metabolite data from SBML file
     for(unsigned int i = 0u; i < spList->size(); ++i) {
@@ -53,16 +53,21 @@ int main (int argc, char* argv[])
         }
         else {
             std::cerr << "Unexpected compartment whilst reading SBML file: " << filename << "\n";
-            exit(2);
+            exit(1);
         }
+    }
+    if(!cytosol.find("M_biomass")->second) {
+        std::cerr << "Error: could not find a biomass producing reaction.\n";
+        exit(2);
     }
 
     //Create vectors for GLPK
     std::vector<int> vecMeta, vecReac;
     std::vector<double> vecStoi;
 
-    int matrixCount = 1;
-    int revCount = 1;
+    //These counters are initialised at 1, because glp can't handle 0's
+    unsigned int matrixCount = 1u;
+    unsigned int revCount = 1u;
 
     //Write substrates and products from SMBL files into GLPK arrays
     for(unsigned int i = 0u; i < reacList->size(); ++i) {
@@ -72,12 +77,12 @@ int main (int argc, char* argv[])
         glp_set_col_name(lp, i+1, reacId_char);
         glp_set_col_bnds(lp, i+1, GLP_DB, 0.0, 1000.0);
 
-        if(i+1 != reacList->size()) {
-            glp_set_obj_coef(lp, i+1, 0.0);
-        }
-        else {
-            glp_set_obj_coef(lp, i+1, 1.0); //only the last reaction (biomass production) is set as an objective function
-        }
+//        if(i+1 != reacList->size()) {
+          glp_set_obj_coef(lp, i+1, 0.0);
+//        }
+//        else {
+//            glp_set_obj_coef(lp, i+1, 1.0); //only the last reaction (biomass production) is set as an objective function
+//        }
 
         //For loop for substrates
         unsigned int m = reac->getListOfReactants()->size();
@@ -132,6 +137,7 @@ int main (int argc, char* argv[])
                 }
             }
             else if(prodComp == "c") {
+                if(prodName == "M_biomass") glp_set_obj_coef(lp, i+1, 1.0);
                 const int prodNum = cytosol.find(prodName)->second;
                 vecMeta.push_back(prodNum+1), vecReac.push_back(i+1), vecStoi.push_back(+prodStoi);
                 ++matrixCount;
