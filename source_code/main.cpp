@@ -158,12 +158,15 @@ int main (int argc, char* argv[])
     //Output sparse matrix with reaction and metabolite IDs to .csv file
     std::ofstream output("test.csv");
     output << "Matrix Index\tMetabolite#\tMetaboliteID\tReaction#\tReactionID\tStoichiometry\n";
-    for(int i=1; i < matrixCount; ++i){
+    for(unsigned int i=1; i < matrixCount; ++i){
         output << i << "\t" << vecMeta[i-1] << "\t" << glp_get_row_name(lp, vecMeta[i-1])
                     << "\t" << vecReac[i-1] << "\t" << glp_get_col_name(lp, vecReac[i-1])
                     << "\t" << vecStoi[i-1] << "\n";
     }
     output.close();
+
+//    glp_del_cols(lp, (reacList->size()*2 - (reacList->size() + (revCount - 1)), const int delCol[]));
+//    Please advise how to remove the columns...
 
     std::cout << "\nNumber of external metabolites: " << environment.size() << "\n";
     std::cout << "Number of internal metabolites: " << cytosol.size() << "\n";
