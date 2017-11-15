@@ -58,14 +58,13 @@ int main (int argc, char* argv[])
     std::vector<std::pair<int, std::string>> vecMeta, vecReac;
     std::vector<double> vecStoi;
 
+    //TEST new storage method for glp array counters together with meta and reac names
     std::pair<int, std::string> test(1, "test");
     std::pair<int, std::string> test2(2, "test2");
-
     vecMeta.push_back(test);
     vecMeta.push_back(test2);
-
     std::cout << vecMeta[0].first << "\t" << vecMeta[0].second;
-    std::cout << (vecMeta.data())->second;
+    std::cout << (vecMeta.data())->second; // doesn't seem to work with .data()-1, because of the pair element
 
     //These counters are initialised at 1, because glp can't handle 0's
     unsigned int matrixCount = 1u;
