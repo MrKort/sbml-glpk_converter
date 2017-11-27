@@ -4,18 +4,12 @@
 #include <sbml/packages/fbc/common/FbcExtensionTypes.h>
 #include <fstream>
 #include <map>
-#include <regex>
-
 LIBSBML_CPP_NAMESPACE_USE
 
 int main (int argc, char* argv[])
 {
     //Declare test input file
-    const char* filename = "/home/kevin/Git/sbml-glpk_converter/test.xml";
-
-//##############################//
-//  SBML FILE READING FUNCTION  //
-//##############################//
+    const char* filename   = "/home/kevin/Git/sbml-glpk_converter/test.xml";
 
     //Read test input file with SBML
     SBMLDocument* document = readSBML(filename);
@@ -32,7 +26,6 @@ int main (int argc, char* argv[])
     //Create internal and external maps to link metabolite name to metabolite number
     std::map<std::string, int> environment;
     std::map<std::string, int> cytosol;
-    std::map<int, std::string> metaName;
     unsigned int metaCount = 0u;
 
     //Read metabolite data from SBML file
@@ -40,8 +33,6 @@ int main (int argc, char* argv[])
         std::string spId = spList->get(i)->getId();
         std::string spName = spId.substr(0, spId.size()-2);
         std::string spComp = spId.substr(spId.size()-1, spId.size());
-
-        metaName[metaCount] = spId; //store metaNumber and metaId in a map independent of compartmentalisation
 
         //Store metabolite name and number in map
         if(spComp == "e") {
@@ -64,26 +55,17 @@ int main (int argc, char* argv[])
 
     //Create vectors for GLPK
     std::vector<int> vecMeta, vecReac; //vector with GLPK index value
+    std::vector<std::pair<std::string, std::string> > vecName; //vector with SBML descriptive name
     std::vector<double> vecStoi;
-    std::map<int, std::string> reacName;
 
     //These counters are initialised at 1, because glp can't handle 0's
     unsigned int matrixCount = 1u;
     unsigned int revCount = 1u;
-    unsigned int ObjFunc;
 
     //Write substrates and products from SMBL files into GLPK arrays
     for(unsigned int i = 0u; i < reacList->size(); ++i) {
         const Reaction *reac = reacList->get(i);
         const std::string reacId = reac->getId();
-        reacName[i] = reacId;
-
-        //Determine wheter the reaction name is biomass0, this is usually the objective function
-        //In the future update the objective function determenation by using SBML::FBC:objective_function
-        if(reac->getName() == "biomass0") {
-            std::cout << "\nObjective function found!\nID: " << i << "\tName: " << reac->getId() << "\n\n";
-            ObjFunc = i;
-        }
 
         //For loop for substrates
         unsigned int m = reac->getListOfReactants()->size();
@@ -96,19 +78,23 @@ int main (int argc, char* argv[])
             //Build stoichiometry matrix using maps.find() to get metabolite number
             if(subComp == "e") {
                 const int subNum = environment.find(subName)->second;
-                vecMeta.push_back(subNum+1), vecReac.push_back(i+1), vecStoi.push_back(-subStoi);
+                std::pair<std::string, std::string> reacInfo(reacId, subId);
+                vecMeta.push_back(subNum+1), vecName.push_back(reacInfo), vecReac.push_back(i+1), vecStoi.push_back(-subStoi);
                 ++matrixCount;
                 if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
-                    vecMeta.push_back(subNum+1), vecReac.push_back(reacList->size() + revCount), vecStoi.push_back(+subStoi);
+                    std::pair<std::string, std::string> reacInfo(reacId + "_reverse", subId);
+                    vecMeta.push_back(subNum+1), vecName.push_back(reacInfo), vecReac.push_back(reacList->size() + revCount), vecStoi.push_back(+subStoi);
                     ++matrixCount;
                 }
             }
             else if(subComp == "c") {
                 const int subNum = cytosol.find(subName)->second;
-                vecMeta.push_back(subNum+1), vecReac.push_back(i+1), vecStoi.push_back(-subStoi);
+                std::pair<std::string, std::string> reacInfo(reacId, subId);
+                vecMeta.push_back(subNum+1), vecName.push_back(reacInfo), vecReac.push_back(i+1), vecStoi.push_back(-subStoi);
                 ++matrixCount;
                 if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
-                    vecMeta.push_back(subNum+1), vecReac.push_back(reacList->size() + revCount), vecStoi.push_back(+subStoi);
+                    std::pair<std::string, std::string> reacInfo(reacId + "_reverse", subId);
+                    vecMeta.push_back(subNum+1), vecName.push_back(reacInfo), vecReac.push_back(reacList->size() + revCount), vecStoi.push_back(+subStoi);
                     ++matrixCount;
                 }
             }
@@ -129,19 +115,23 @@ int main (int argc, char* argv[])
             //Build stoichiometry matrix using maps.find() to get metabolite number
             if(prodComp == "e") {
                 const int prodNum = environment.find(prodName)->second;
-                vecMeta.push_back(prodNum+1), vecReac.push_back(i+1), vecStoi.push_back(+prodStoi);
+                std::pair<std::string, std::string> reacInfo(reacId, prodId);
+                vecMeta.push_back(prodNum+1), vecName.push_back(reacInfo), vecReac.push_back(i+1), vecStoi.push_back(+prodStoi);
                 ++matrixCount;
                 if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
-                    vecMeta.push_back(prodNum+1), vecReac.push_back(reacList->size() + revCount), vecStoi.push_back(-prodStoi);
+                    std::pair<std::string, std::string> reacInfo(reacId + "_reverse", prodId);
+                    vecMeta.push_back(prodNum+1), vecName.push_back(reacInfo), vecReac.push_back(reacList->size() + revCount), vecStoi.push_back(-prodStoi);
                     ++matrixCount;
                 }
             }
             else if(prodComp == "c") {
                 const int prodNum = cytosol.find(prodName)->second;
-                vecMeta.push_back(prodNum+1), vecReac.push_back(i+1), vecStoi.push_back(+prodStoi);
+                std::pair<std::string, std::string> reacInfo(reacId, prodId);
+                vecMeta.push_back(prodNum+1), vecName.push_back(reacInfo), vecReac.push_back(i+1), vecStoi.push_back(+prodStoi);
                 ++matrixCount;
                 if(reac->getReversible()) { //check if reaction is reversible, if so create the reverse reaction
-                    vecMeta.push_back(prodNum+1), vecReac.push_back(reacList->size() + revCount), vecStoi.push_back(-prodStoi);
+                    std::pair<std::string, std::string> reacInfo(reacId + "_reverse", prodId);
+                    vecMeta.push_back(prodNum+1), vecName.push_back(reacInfo), vecReac.push_back(reacList->size() + revCount), vecStoi.push_back(-prodStoi);
                     ++matrixCount;
                 }
             }
@@ -151,7 +141,11 @@ int main (int argc, char* argv[])
             }
         }
         if(reac->getReversible()) { //check if reaction is reversible, if so give reverse reaction a name, obj_coef, and bounds
-            reacName[numReac + revCount-1] = reacId + "_reverse";
+//            glp_set_obj_coef(lp, reacList->size() + revCount, 0.0);
+//            const std::string revReacId = reacId + "_reverse";
+//            const char *reacId_char = revReacId.c_str();
+//            glp_set_col_name(lp, reacList->size() + revCount, reacId_char);
+//            glp_set_col_bnds(lp, reacList->size() + revCount, GLP_DB, 0.0, 1000.0);
             ++revCount;
         }
     }
@@ -165,40 +159,51 @@ int main (int argc, char* argv[])
 // GLPK READ AND SOLVE FUNCTION //
 //##############################//
 
-//        CREATE A NEW GLPK PROBLEM
+    //    CREATE A NEW GLPK PROBLEM
         glp_prob *lp;
         lp = glp_create_prob();
         glp_set_obj_dir(lp, GLP_MAX);
 
-//        ADD ROW AND COLUMNS FOR STOICHIOMETRY MATRIX
+    //    ADD ROW AND COLUMNS FOR STOICHIOMETRY MATRIX
         glp_add_cols(lp, numReac + (revCount - 1));
         glp_add_rows(lp, numMeta);
 
-//        ASSIGN METABOLITE NAME AND BOUNDS
+    //    ASSIGN METABOLITE NAME AND BOUNDS
         for(unsigned int i = 0; i < numMeta; ++i){
-            glp_set_row_name(lp, i+1, metaName.find(i)->second.c_str());
+            //const char *spId_char = vecName[i].second.c_str();
+            //glp_set_row_name(lp, i+1, spId_char);
             glp_set_row_bnds(lp, i+1, GLP_FX, 0.0, 0.0);
         }
 
-//        ASSIGN REACTION NAME AND BOUNDS
-        for(unsigned int i = 0; i < numReac + (revCount - 1); ++i) {
-            glp_set_col_name(lp, i+1, reacName.find(i)->second.c_str());
+    //    ASSIGN REACTION NAME AND BOUNDS
+        for(unsigned int i = 0; i < numReac; ++i) {
+            //const char *reacId_char = vecName[i].first.c_str();
+            //glp_set_col_name(lp, i+1, reacId_char);
             glp_set_col_bnds(lp, i+1, GLP_DB, 0.0, 1000.0);
             glp_set_obj_coef(lp, i+1, 0.0);
 
-//        CHECK FOR FUCTION OBJECTIVE REACTION
-            if(i == ObjFunc) {
-                glp_set_obj_coef(lp, i+1, 1.0);
-            }
+    //    CHECK FOR FUCTION OBJECTIVE REACTION
+//            if(vecName[i].second == "M_biomass_c") {
+//                std::cout << "\n\ntesting!\n\n";
+//                glp_set_obj_coef(lp, i+1, 1.0);
+//            }
         }
 
-//        LOAD AND SOLVE GLPK PROBLEM
-//        vector.data() to access the internal arrays
-//        vector.data()-1 to skip the first[0] element
+    //    SPECIAL RULES FOR REVERSIBLE REACTIONS
+//        glp_set_obj_coef(lp, reacList->size() + revCount, 0.0);
+//        const std::string revReacId = reacId + "_reverse";
+//        const char *reacId_char = revReacId.c_str();
+//        glp_set_col_name(lp, reacList->size() + revCount, reacId_char);
+//        glp_set_col_bnds(lp, reacList->size() + revCount, GLP_DB, 0.0, 1000.0);
+
+
+    //    LOAD AND SOLVE GLPK PROBLEM
+    //vector.data() to access the internal arrays
+    //vector.data()-1 to skip the first[0] element
         glp_load_matrix(lp, matrixCount-1,vecMeta.data()-1,vecReac.data()-1,vecStoi.data()-1);
         glp_simplex(lp, NULL);
 
-//        DELETE THE GLPK PROBLEM
+    //    DELETE THE GLPK PROBLEM
         glp_delete_prob(lp);
 
 //##############################//
@@ -206,14 +211,14 @@ int main (int argc, char* argv[])
 //##############################//
 
     //Output sparse matrix with reaction and metabolite IDs to .csv file
-    std::ofstream matrix("sparse_matrix.csv");
-    matrix << "Matrix Index\tMetabolite#\tMetaboliteID\tReaction#\tReactionID\tStoichiometry\n";
+    std::ofstream output("test.csv");
+    output << "Matrix Index\tMetabolite#\tMetaboliteID\tReaction#\tReactionID\tStoichiometry\n";
     for(unsigned int i=1; i < matrixCount; ++i){
-        matrix << i << "\t" << vecMeta[i-1] << "\t" << metaName.find(vecMeta[i-1]-1)->second
-                    << "\t" << vecReac[i-1] << "\t" << reacName.find(vecReac[i-1]-1)->second
+        output << i << "\t" << vecMeta[i-1] << "\t" << vecName[i-1].second //glp_get_row_name(lp, vecMeta[i-1])
+                    << "\t" << vecReac[i-1] << "\t" << vecName[i-1].first //glp_get_col_name(lp, vecReac[i-1])
                     << "\t" << vecStoi[i-1] << "\n";
     }
-    matrix.close();
+    output.close();
 
     std::cout << "\nNumber of external metabolites: " << environment.size() << "\n";
     std::cout << "Number of internal metabolites: " << cytosol.size() << "\n";
