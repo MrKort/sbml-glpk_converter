@@ -12,3 +12,6 @@ TEMPLATE = app
 SOURCES += main.cpp
 LIBS += -L/usr/lib64 -lsbml
 LIBS += -lglpk
+
+HEADERS += \
+    bacterium.h
