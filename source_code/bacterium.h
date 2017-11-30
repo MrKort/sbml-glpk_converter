@@ -5,8 +5,8 @@
 #include <sbml/SBMLTypes.h>
 #include <sbml/packages/fbc/common/fbcfwd.h>
 #include <sbml/packages/fbc/common/FbcExtensionTypes.h>
-#include <fstream>
 #include <map>
+#include <fstream>
 
 LIBSBML_CPP_NAMESPACE_USE
 
@@ -79,9 +79,9 @@ void Bacterium::readInputSBML(const char *&inputFile){
                 exit(1);
             }
         }
-        if(!cytosol.find("M_biomass")->second) {
+        if(!cytosol.find("M_biomass_c")->second) {
 //Throw here!
-            std::cerr << "Error: could not find a biomass producing reaction.\n";
+            std::cerr << "Error: could not find a biomass metabolite in cytosol compartment.\n";
             exit(2);
         }
 

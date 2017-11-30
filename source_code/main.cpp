@@ -7,23 +7,26 @@ int main (int argc, char* argv[])
     //Start of sim timer
     auto startTime = std::chrono::high_resolution_clock::now();
 
-    Bacterium test; //Use constructor with argv to initialise
-    Bacterium test2;
+    if(!argc > 1){
+        std::cerr << "Please provide at least one SBML file...";
+        exit(1);
+    }
+    int bacNum = argc - 1;
+    std::vector<const char*> inputFiles(bacNum);
+    for(int i = 0; i < bacNum; ++i) {
+        inputFiles[i] = argv[i + 1];
+    }
 
-    //Declare test input file
-    std::vector<const char*> inputFiles(2);
-    inputFiles[0]= "../test.xml";
-    inputFiles[1]= "../test2.xml";
+    std::vector<Bacterium> bac(bacNum);
 
-    test.readInputSBML(inputFiles[0]);
-    test.doFBA();
-    test.outputMatrix();
-
-    std::cout << "###################################################################\n\n";
-
-    test2.readInputSBML(inputFiles[1]);
-    test2.doFBA();
-    test2.outputMatrix();
+    for(int i = 0; i < bacNum; ++i) {
+        bac[i].readInputSBML(inputFiles[i]);
+        bac[i].doFBA();
+        bac[i].outputMatrix();
+        if (i != bacNum - 1) {
+            std::cout << "###################################################################\n\n";
+        }
+    }
 
     //End of sim timer
     auto endTime = std::chrono::high_resolution_clock::now();
