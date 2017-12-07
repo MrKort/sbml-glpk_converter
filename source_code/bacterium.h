@@ -47,10 +47,9 @@ void Bacterium::readInputSBML(const char *&inputFile){
         SBMLDocument *document = readSBML(inputFile);
 
         unsigned int errors = document->getNumErrors();
-//Throw here!
         if(errors){
-            std::cout << errors << " errors while reading file: " << inputFile << "\n";
-            document->printErrors(std::cerr);
+            std::string errorMessage = std::string("could not read SBML file: ") + inputFile;
+            throw std::string(errorMessage);
         }
 
         Model *model = document->getModel();
@@ -74,15 +73,12 @@ void Bacterium::readInputSBML(const char *&inputFile){
                 cytosol[spId] = metaCount++;
             }
             else {
-//Throw here!
-                std::cerr << "Unexpected compartment whilst reading SBML file: " << inputFile << "\n";
-                exit(1);
+                std::string errorMessage = std::string("unexpected compartment whilst reading SBML file: ") + inputFile;
+                throw std::string (errorMessage);
             }
         }
         if(!cytosol.find("M_biomass_c")->second) {
-//Throw here!
-            std::cerr << "Error: could not find a biomass metabolite in cytosol compartment.\n";
-            exit(2);
+            throw std::string ("could not find a biomass metabolite in cytosol compartment.");
         }
 
         //These counters are initialised at 1, because glp can't handle 0's
@@ -128,9 +124,8 @@ void Bacterium::readInputSBML(const char *&inputFile){
                     }
                 }
                 else {
-//Throw here!
-                    std::cerr << "Unexpected compartment whilst reading substrates from SBML file: " << inputFile << "\n";
-                    exit(3);
+                    std::string errorMessage = std::string("unexpected compartment whilst reading substrates from SBML file: ") + inputFile;
+                    throw std::string (errorMessage);
                 }
             }
 
@@ -161,9 +156,8 @@ void Bacterium::readInputSBML(const char *&inputFile){
                     }
                 }
                 else {
-//Throw here!
-                    std::cerr << "Unexpected compartment whilst reading products from SBML file: " << inputFile << "\n";
-                    exit(4);
+                    std::string errorMessage = std::string("unexpected compartment whilst reading products from SBML file: ") + inputFile;
+                    throw std::string (errorMessage);
                 }
             }
             if(reac->getReversible()) {
@@ -247,7 +241,10 @@ void Bacterium::outputMatrix(){
         std::string outputFile = "./Sparse_Matrices/SM_" + speciesID + ".csv";
 //Check if Sparse_Matrices/ folder exists, otherwise make it
         std::ofstream matrix(outputFile);
-//Throw here! Check outputfile stream open!
+        if(!matrix.is_open()) {
+            std::string errorMessage = std::string("could not open outputfile: ") + outputFile;
+            throw std::string (errorMessage);
+        }
 
         matrix << "Matrix Index\tMetabolite#\tMetaboliteID\tReaction#\tReactionID\tStoichiometry\n";
         for(unsigned int i=1; i < vecStoi.size(); ++i){
