@@ -520,7 +520,7 @@ compiler_clean:
 
 ####### Compile
 
-main.o: ../source_code/main.cpp 
+main.o: ../source_code/main.cpp ../source_code/bacterium.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../source_code/main.cpp
 
 ####### Install

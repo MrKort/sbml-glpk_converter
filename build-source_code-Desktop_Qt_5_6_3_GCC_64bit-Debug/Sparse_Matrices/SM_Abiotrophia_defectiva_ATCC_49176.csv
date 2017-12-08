@@ -6271,3 +6271,4 @@ Matrix Index	Metabolite#	MetaboliteID	Reaction#	ReactionID	Stoichiometry
 6270	342	M_cbi_c	1069	R_biomass082	0.0079397
 6271	468	M_biomass_c	1069	R_biomass082	1
 6272	764	M_dmbzid_c	1069	R_biomass082	0.0079397
+6273	796	M_PGPm1_c	1069	R_biomass082	0.0072242
