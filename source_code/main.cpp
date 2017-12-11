@@ -9,7 +9,7 @@ int main (int argc, char* argv[])
         auto startTime = std::chrono::high_resolution_clock::now();
 
 //Check if arguments are given
-        if(!(argc > 1)){
+        if(!(argc > 1)) {
             throw std::invalid_argument ("please provide at least one SBML file as argument...");
         }
 

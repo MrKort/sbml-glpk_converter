@@ -47,12 +47,11 @@ private:
     void readMetaSBML(const ListOfSpecies *&);
     void readReacSBML(const ListOfReactions *&);
     void initMatrix(const unsigned int &, const bool &, const std::string &, const std::string &, const double &);
-
 };
 
 //#################################################################################################
 
-void Bacterium::readFileSBML(const char *&inputFile){
+void Bacterium::readFileSBML(const char *&inputFile) {
 //##############################//
 //  SBML FILE READING FUNCTION  //
 //##############################//
@@ -85,14 +84,13 @@ void Bacterium::readFileSBML(const char *&inputFile){
         revCount = 1u;
         readReacSBML(reacList);
 
-
 //Delete SBML document variable
         delete document;
         std::cout << "Succesfully read data from SBML input file: " << inputFile
                   << "\nMetabolic data for species: " << speciesID << " stored.\n\n";
 }
 
-void Bacterium::readMetaSBML(const ListOfSpecies *&spList){
+void Bacterium::readMetaSBML(const ListOfSpecies *&spList) {
 //###############################//
 // SBML METABOLITE READ FUNCTION //
 //###############################//
@@ -116,7 +114,7 @@ void Bacterium::readMetaSBML(const ListOfSpecies *&spList){
     }
 }
 
-void Bacterium::readReacSBML(const ListOfReactions *&reacList){
+void Bacterium::readReacSBML(const ListOfReactions *&reacList) {
 //##############################//
 // SBML REACTION READ FUNCTION  //
 //##############################//
@@ -162,7 +160,7 @@ void Bacterium::readReacSBML(const ListOfReactions *&reacList){
 }
 
 void Bacterium::initMatrix(const unsigned int &reacCount, const bool &reacRev,
-                             const std::string &Id, const std::string &Comp, const double &Stoi){
+                             const std::string &Id, const std::string &Comp, const double &Stoi) {
 //##############################//
 //  GLPK MATRIX INITIALISATION  //
 //##############################//
@@ -187,11 +185,11 @@ void Bacterium::initMatrix(const unsigned int &reacCount, const bool &reacRev,
     else {
 //Otherwise throw an error
         std::string errorMessage = std::string("unexpected compartment whilst reading SMBL file for species: ") + speciesID;
-        throw std::logic_error (errorMessage);
+        throw std::logic_error(errorMessage);
     }
 }
 
-void Bacterium::doFBA(){
+void Bacterium::doFBA() {
 //##############################//
 // GLPK READ AND SOLVE FUNCTION //
 //##############################//
@@ -206,7 +204,7 @@ void Bacterium::doFBA(){
             glp_add_rows(lp, metaName.size());
 
 //Assign metabolite names and bounds
-            for(unsigned int i = 0; i < metaName.size(); ++i){
+            for(unsigned int i = 0; i < metaName.size(); ++i) {
                 glp_set_row_name(lp, i+1, metaName.find(i)->second.c_str());
                 glp_set_row_bnds(lp, i+1, GLP_FX, 0.0, 0.0);
             }
@@ -231,7 +229,7 @@ void Bacterium::doFBA(){
 //Load and solve GLPK problem with Simplex method
             //vector.data() to access the internal arrays
             //vector.data()-1 to skip the first[0] element
-            glp_load_matrix(lp, vecStoi.size(),vecMeta.data()-1,vecReac.data()-1,vecStoi.data()-1);
+            glp_load_matrix(lp, vecStoi.size(), vecMeta.data()-1, vecReac.data()-1, vecStoi.data()-1);
             glp_simplex(lp, NULL);
 
 //Delete the current GLPK problem
@@ -239,7 +237,7 @@ void Bacterium::doFBA(){
             std::cout << "Succesfully finished Linear Programming step.\n\n";
 }
 
-void Bacterium::outputMatrix(){
+void Bacterium::outputMatrix() {
 //##############################//
 //    TEST OUTPUT FUNCTIONS     //
 //##############################//
