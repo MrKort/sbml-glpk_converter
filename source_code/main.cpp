@@ -1,4 +1,5 @@
 #include <chrono>
+#include <exception>
 #include "bacterium.h"
 
 int main (int argc, char* argv[])
@@ -9,7 +10,7 @@ int main (int argc, char* argv[])
 
 //Check if arguments are given
         if(!(argc > 1)){
-            throw std::string ("please provide at least one SBML file as argument...");
+            throw std::invalid_argument ("please provide at least one SBML file as argument...");
         }
 
 //Put arguments into inputFiles vector
@@ -38,8 +39,18 @@ int main (int argc, char* argv[])
         std::cout << "Simulation has finished in " << simulationTime << " seconds.\n";
     }
 
-    catch(std::string &errorMessage) {
-        std::cerr << "Encountered an error: " << errorMessage << '\n';
+    catch(std::runtime_error errorMessage) {
+        std::cerr << "Encountered a runtime error: " << errorMessage.what() << '\n';
+        exit(EXIT_FAILURE);
     }
+    catch(std::logic_error errorMessage) {
+        std::cerr << "Encountered a logic error: " << errorMessage.what() << '\n';
+        exit(EXIT_FAILURE);
+    }
+    catch(...) {
+        std::cerr << "Encountered an unknown error...\n";
+        exit(EXIT_FAILURE);
+    }
+
     return 0;
 }

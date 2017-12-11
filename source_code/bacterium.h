@@ -7,6 +7,7 @@
 #include <sbml/packages/fbc/common/FbcExtensionTypes.h>
 #include <map>
 #include <fstream>
+#include <exception>
 
 LIBSBML_CPP_NAMESPACE_USE
 
@@ -62,7 +63,7 @@ void Bacterium::readFileSBML(const char *&inputFile){
         unsigned int errors = document->getNumErrors();
         if(errors){
             std::string errorMessage = std::string("could not read SBML file: ") + inputFile;
-            throw std::string(errorMessage);
+            throw std::runtime_error(errorMessage.c_str());
         }
 
 //Extract SBML model from file
@@ -75,7 +76,7 @@ void Bacterium::readFileSBML(const char *&inputFile){
 
 //Check if biomass is present as a cytosolic metabolite
         if(!cytosol.find("M_biomass_c")->second) {
-            throw std::string ("could not find a biomass metabolite in cytosol compartment.");
+            throw std::logic_error("could not find a biomass metabolite in cytosol compartment.");
         }
 
 //Read reaction data from SBML model & generate initial GLPK matrix
@@ -110,7 +111,7 @@ void Bacterium::readMetaSBML(const ListOfSpecies *&spList){
         }
         else {
             std::string errorMessage = std::string("unexpected compartment whilst reading SMBL file for species: ") + speciesID;
-            throw std::string (errorMessage);
+            throw std::logic_error(errorMessage);
         }
     }
 }
@@ -186,7 +187,7 @@ void Bacterium::initMatrix(const unsigned int &reacCount, const bool &reacRev,
     else {
 //Otherwise throw an error
         std::string errorMessage = std::string("unexpected compartment whilst reading SMBL file for species: ") + speciesID;
-        throw std::string (errorMessage);
+        throw std::logic_error (errorMessage);
     }
 }
 
@@ -257,7 +258,7 @@ void Bacterium::outputMatrix(){
         std::ofstream matrix(outputFile);
         if(!matrix.is_open()) {
             std::string errorMessage = std::string("could not open output file: ") + outputFile;
-            throw std::string (errorMessage);
+            throw std::runtime_error(errorMessage);
         }
 
         matrix << "Matrix Index\tMetabolite#\tMetaboliteID\tReaction#\tReactionID\tStoichiometry\n";
